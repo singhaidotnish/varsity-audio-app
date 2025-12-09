@@ -1,237 +1,758 @@
 // frontend/src/pages/AdminPage.jsx
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5010';
 
 export default function AdminPage() {
   const [loggedIn, setLoggedIn] = useState(false);
+  const [modules, setModules] = useState([]);
   const [chapters, setChapters] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [stats, setStats] = useState(null);
+  const [loading, setLoading] = useState({ chapters: false, modules: false });
   const [converting, setConverting] = useState({});
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState({ text: '', type: '' });
+  const [activeTab, setActiveTab] = useState('dashboard');
+  const [showAddModule, setShowAddModule] = useState(false);
+  const [showAddChapter, setShowAddChapter] = useState(false);
+  const [newModule, setNewModule] = useState({ name: '', description: '', color: '#4CAF50' });
+  const [newChapter, setNewChapter] = useState({ 
+    title: '', 
+    description: '', 
+    content: '', 
+    moduleId: '', 
+    pageUrl: '', 
+    tags: '' 
+  });
 
-  // Simple password check (for demo)
-  const handleLogin = (e) => {
+  // Authentication
+  const adminToken = localStorage.getItem('adminToken') || import.meta.env.VITE_ADMIN_TOKEN;
+
+  useEffect(() => {
+    if (loggedIn) {
+      if (activeTab === 'dashboard') {
+        fetchDashboardStats();
+      } else if (activeTab === 'modules') {
+        fetchModules();
+      } else if (activeTab === 'chapters') {
+        fetchChapters();
+      }
+    }
+  }, [loggedIn, activeTab]);
+
+  const handleLogin = async (e) => {
     e.preventDefault();
     const password = e.target.password.value;
-    if (password === 'admin123' || password === process.env.ADMIN_PASSWORD) {
+    
+    // Simple password check - in production, use proper authentication
+    if (password === 'admin123' || password === import.meta.env.VITE_ADMIN_PASSWORD) {
+      localStorage.setItem('adminToken', 'admin-token'); // Simple token
       setLoggedIn(true);
-      fetchChapters();
+      showMessage('Login successful!', 'success');
     } else {
-      alert('Incorrect password');
+      showMessage('Incorrect password', 'error');
+    }
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('adminToken');
+    setLoggedIn(false);
+    showMessage('Logged out successfully', 'success');
+  };
+
+  const showMessage = (text, type = 'info') => {
+    setMessage({ text, type });
+    setTimeout(() => setMessage({ text: '', type: '' }), 5000);
+  };
+
+  // API Functions
+  const fetchDashboardStats = async () => {
+    try {
+      const response = await axios.get(`${API_URL}/api/admin/dashboard`, {
+        headers: { Authorization: `Bearer ${adminToken}` }
+      });
+      setStats(response.data.stats);
+    } catch (error) {
+      showMessage(`Error fetching stats: ${error.message}`, 'error');
+    }
+  };
+
+  const fetchModules = async () => {
+    setLoading({ ...loading, modules: true });
+    try {
+      const response = await axios.get(`${API_URL}/api/admin/modules`, {
+        headers: { Authorization: `Bearer ${adminToken}` }
+      });
+      if (response.data.success) {
+        setModules(response.data.modules);
+      }
+    } catch (error) {
+      showMessage(`Error fetching modules: ${error.message}`, 'error');
+    } finally {
+      setLoading({ ...loading, modules: false });
     }
   };
 
   const fetchChapters = async () => {
-    setLoading(true);
+    setLoading({ ...loading, chapters: true });
     try {
-      const response = await fetch(`${API_URL}/api/admin/chapters`);
-      const data = await response.json();
-      if (data.success) {
-        setChapters(data.chapters);
-      }
-    } catch (error) {
-      setMessage('Error loading chapters: ' + error.message);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleConvert = async (chapter) => {
-    if (!confirm(`Convert "${chapter.title}" to audio?`)) return;
-    
-    setConverting({ ...converting, [chapter.id]: true });
-    setMessage(`Converting "${chapter.title}"...`);
-    
-    try {
-      const response = await fetch(`${API_URL}/api/admin/convert`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer admin-token' // In production, use real token
-        },
-        body: JSON.stringify({
-          chapterId: chapter.id,
-          title: chapter.title,
-          text: 'Chapter content here...', // In real app, get from database
-          moduleId: chapter.moduleId
-        })
+      const response = await axios.get(`${API_URL}/api/admin/chapters`, {
+        headers: { Authorization: `Bearer ${adminToken}` }
       });
-      
-      const data = await response.json();
-      
-      if (data.success) {
-        setMessage(`✅ "${chapter.title}" converted! Audio URL: ${data.audioUrl}`);
-        fetchChapters(); // Refresh list
-      } else {
-        setMessage(`❌ Failed: ${data.error}`);
+      if (response.data.success) {
+        setChapters(response.data.chapters);
       }
     } catch (error) {
-      setMessage(`❌ Error: ${error.message}`);
+      showMessage(`Error fetching chapters: ${error.message}`, 'error');
     } finally {
-      setConverting({ ...converting, [chapter.id]: false });
+      setLoading({ ...loading, chapters: false });
     }
   };
 
+  const handleAddModule = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        `${API_URL}/api/admin/modules`,
+        newModule,
+        { headers: { Authorization: `Bearer ${adminToken}` } }
+      );
+      
+      if (response.data.success) {
+        showMessage('Module added successfully!', 'success');
+        setShowAddModule(false);
+        setNewModule({ name: '', description: '', color: '#4CAF50' });
+        fetchModules();
+      }
+    } catch (error) {
+      showMessage(`Error adding module: ${error.message}`, 'error');
+    }
+  };
+
+  const handleAddChapter = async (e) => {
+    e.preventDefault();
+    try {
+      const chapterData = {
+        ...newChapter,
+        tags: newChapter.tags.split(',').map(tag => tag.trim()).filter(tag => tag)
+      };
+
+      const response = await axios.post(
+        `${API_URL}/api/admin/chapters`,
+        chapterData,
+        { headers: { Authorization: `Bearer ${adminToken}` } }
+      );
+      
+      if (response.data.success) {
+        showMessage('Chapter added successfully!', 'success');
+        setShowAddChapter(false);
+        setNewChapter({ 
+          title: '', description: '', content: '', 
+          moduleId: '', pageUrl: '', tags: '' 
+        });
+        fetchChapters();
+      }
+    } catch (error) {
+      showMessage(`Error adding chapter: ${error.message}`, 'error');
+    }
+  };
+
+  const handleConvertChapter = async (chapterId, chapterTitle) => {
+    if (!confirm(`Convert "${chapterTitle}" to audio? This may take a few moments.`)) return;
+    
+    setConverting({ ...converting, [chapterId]: true });
+    showMessage(`Converting "${chapterTitle}"...`, 'info');
+    
+    try {
+      // First, get the full chapter content
+      const chapterResponse = await axios.get(
+        `${API_URL}/api/admin/chapters/${chapterId}`,
+        { headers: { Authorization: `Bearer ${adminToken}` } }
+      );
+      
+      const chapter = chapterResponse.data.chapter;
+      
+      // Convert to audio
+      const convertResponse = await axios.post(
+        `${API_URL}/api/admin/chapters/${chapterId}/convert`,
+        {},
+        { headers: { Authorization: `Bearer ${adminToken}` } }
+      );
+      
+      if (convertResponse.data.success) {
+        showMessage(`✅ "${chapterTitle}" converted successfully!`, 'success');
+        fetchChapters();
+      }
+    } catch (error) {
+      showMessage(`❌ Conversion failed: ${error.message}`, 'error');
+    } finally {
+      setConverting({ ...converting, [chapterId]: false });
+    }
+  };
+
+  const handleDeleteChapter = async (chapterId, chapterTitle) => {
+    if (!confirm(`Delete chapter "${chapterTitle}"? This action cannot be undone.`)) return;
+    
+    try {
+      const response = await axios.delete(
+        `${API_URL}/api/admin/chapters/${chapterId}`,
+        { headers: { Authorization: `Bearer ${adminToken}` } }
+      );
+      
+      if (response.data.success) {
+        showMessage(`Chapter "${chapterTitle}" deleted`, 'success');
+        fetchChapters();
+      }
+    } catch (error) {
+      showMessage(`Error deleting chapter: ${error.message}`, 'error');
+    }
+  };
+
+  const handleBulkConvert = async () => {
+    const pendingChapters = chapters.filter(c => c.audioStatus !== 'converted');
+    if (pendingChapters.length === 0) {
+      showMessage('No chapters need conversion', 'info');
+      return;
+    }
+    
+    if (!confirm(`Convert ${pendingChapters.length} chapters to audio? This may take a while.`)) return;
+    
+    const chapterIds = pendingChapters.map(c => c.id);
+    
+    try {
+      const response = await axios.post(
+        `${API_URL}/api/admin/chapters/bulk-convert`,
+        { chapterIds },
+        { headers: { Authorization: `Bearer ${adminToken}` } }
+      );
+      
+      if (response.data.success) {
+        showMessage(`Queued ${pendingChapters.length} chapters for conversion`, 'success');
+        fetchChapters();
+      }
+    } catch (error) {
+      showMessage(`Bulk conversion failed: ${error.message}`, 'error');
+    }
+  };
+
+  // Login Screen
   if (!loggedIn) {
     return (
-      <div className="max-w-md mx-auto py-12">
-        <div className="bg-white border border-gray-200 rounded-xl p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Admin Login</h2>
-          <form onSubmit={handleLogin}>
-            <div className="mb-6">
-              <label className="block text-gray-700 text-sm font-medium mb-2">
-                Admin Password
-              </label>
-              <input
-                type="password"
-                name="password"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Enter admin password"
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 font-medium"
-            >
-              Login
-            </button>
-          </form>
-          <p className="text-gray-500 text-sm mt-6">
-            Contact system administrator for access
+      <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+        <div className="sm:mx-auto sm:w-full sm:max-w-md">
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+            Varsity Audio Admin
+          </h2>
+          <p className="mt-2 text-center text-sm text-gray-600">
+            Convert Zerodha Varsity content to audio
           </p>
+        </div>
+
+        <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+          <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+            <form className="space-y-6" onSubmit={handleLogin}>
+              <div>
+                <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+                  Admin Password
+                </label>
+                <div className="mt-1">
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    autoComplete="current-password"
+                    required
+                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <button
+                  type="submit"
+                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                >
+                  Sign in
+                </button>
+              </div>
+            </form>
+
+            <div className="mt-6">
+              <div className="relative">
+                <div className="absolute inset-0 flex items-center">
+                  <div className="w-full border-t border-gray-300" />
+                </div>
+                <div className="relative flex justify-center text-sm">
+                  <span className="px-2 bg-white text-gray-500">Access restricted</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
   }
 
+  // Admin Dashboard
   return (
-    <div>
-      <div className="flex justify-between items-center mb-8">
-        <div>
-          <h1 className="text-3xl font-bold text-gray-900">Admin Panel</h1>
-          <p className="text-gray-600">Convert text to audio and manage content</p>
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <header className="bg-white shadow">
+        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+          <div>
+            <h1 className="text-3xl font-bold text-gray-900">Admin Dashboard</h1>
+            <p className="text-gray-600">Manage modules, chapters, and audio conversions</p>
+          </div>
+          <button
+            onClick={handleLogout}
+            className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 text-sm font-medium"
+          >
+            Logout
+          </button>
         </div>
-        <button
-          onClick={() => setLoggedIn(false)}
-          className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300"
-        >
-          Logout
-        </button>
-      </div>
+      </header>
 
-      {message && (
-        <div className={`mb-6 p-4 rounded-lg ${message.includes('✅') ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`}>
-          {message}
+      {/* Message Alert */}
+      {message.text && (
+        <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4`}>
+          <div className={`p-4 rounded-lg ${
+            message.type === 'success' ? 'bg-green-50 text-green-800' :
+            message.type === 'error' ? 'bg-red-50 text-red-800' :
+            'bg-blue-50 text-blue-800'
+          }`}>
+            {message.text}
+          </div>
         </div>
       )}
 
-      <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
-        <div className="p-6 border-b border-gray-200">
-          <h3 className="text-lg font-medium text-gray-900">Chapters</h3>
-          <p className="text-gray-600 text-sm mt-1">
-            Convert text to audio using Google TTS. Audio files are uploaded to Cloudinary.
-          </p>
+      <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        {/* Tabs */}
+        <div className="border-b border-gray-200">
+          <nav className="-mb-px flex space-x-8">
+            {['dashboard', 'modules', 'chapters', 'audio'].map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`py-4 px-1 border-b-2 font-medium text-sm capitalize ${
+                  activeTab === tab
+                    ? 'border-blue-500 text-blue-600'
+                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                }`}
+              >
+                {tab}
+              </button>
+            ))}
+          </nav>
         </div>
 
-        {loading ? (
-          <div className="p-12 text-center">
-            <div className="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-600"></div>
-            <p className="text-gray-600 mt-3">Loading chapters...</p>
-          </div>
-        ) : (
-          <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Module</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Chapter</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                {chapters.map(chapter => (
-                  <tr key={chapter.id} className="hover:bg-gray-50">
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="text-sm text-gray-900">{chapter.moduleName}</div>
-                      <div className="text-xs text-gray-500">ID: {chapter.moduleId}</div>
-                    </td>
-                    <td className="px-6 py-4">
-                      <div className="text-sm font-medium text-gray-900">{chapter.title}</div>
-                      <div className="text-xs text-gray-500">
-                        {chapter.contentLength > 0 
-                          ? `${chapter.contentLength} chars` 
-                          : 'No content'
-                        }
+        {/* Dashboard Tab */}
+        {activeTab === 'dashboard' && stats && (
+          <div className="mt-8">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="bg-white overflow-hidden shadow rounded-lg">
+                <div className="p-5">
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0">
+                      <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
+                        <span className="text-blue-600 text-xl">📚</span>
                       </div>
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      {chapter.hasAudio ? (
-                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                          ✅ Converted
-                        </span>
-                      ) : (
-                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
-                          ⏳ Pending
-                        </span>
-                      )}
-                      {chapter.audioUrl && (
-                        <a 
-                          href={chapter.audioUrl} 
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="ml-2 text-blue-600 hover:text-blue-800 text-xs"
-                        >
-                          (link)
-                        </a>
-                      )}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm">
-                      {!chapter.hasAudio ? (
-                        <button
-                          onClick={() => handleConvert(chapter)}
-                          disabled={converting[chapter.id]}
-                          className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50"
-                        >
-                          {converting[chapter.id] ? 'Converting...' : 'Convert to Audio'}
-                        </button>
-                      ) : (
-                        <button
-                          onClick={() => window.open(chapter.audioUrl, '_blank')}
-                          className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
-                        >
-                          Play Audio
-                        </button>
-                      )}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+                    </div>
+                    <div className="ml-5 w-0 flex-1">
+                      <dl>
+                        <dt className="text-sm font-medium text-gray-500 truncate">Total Modules</dt>
+                        <dd className="text-3xl font-bold text-gray-900">{stats.totalModules}</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white overflow-hidden shadow rounded-lg">
+                <div className="p-5">
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0">
+                      <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center">
+                        <span className="text-green-600 text-xl">📖</span>
+                      </div>
+                    </div>
+                    <div className="ml-5 w-0 flex-1">
+                      <dl>
+                        <dt className="text-sm font-medium text-gray-500 truncate">Total Chapters</dt>
+                        <dd className="text-3xl font-bold text-gray-900">{stats.totalChapters}</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white overflow-hidden shadow rounded-lg">
+                <div className="p-5">
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0">
+                      <div className="h-12 w-12 rounded-full bg-yellow-100 flex items-center justify-center">
+                        <span className="text-yellow-600 text-xl">🎵</span>
+                      </div>
+                    </div>
+                    <div className="ml-5 w-0 flex-1">
+                      <dl>
+                        <dt className="text-sm font-medium text-gray-500 truncate">Converted Audio</dt>
+                        <dd className="text-3xl font-bold text-gray-900">{stats.convertedChapters}</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white overflow-hidden shadow rounded-lg">
+                <div className="p-5">
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0">
+                      <div className="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center">
+                        <span className="text-red-600 text-xl">⏳</span>
+                      </div>
+                    </div>
+                    <div className="ml-5 w-0 flex-1">
+                      <dl>
+                        <dt className="text-sm font-medium text-gray-500 truncate">Pending</dt>
+                        <dd className="text-3xl font-bold text-gray-900">{stats.pendingChapters}</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         )}
-      </div>
 
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
-          <h4 className="font-medium text-blue-900 mb-2">Total Chapters</h4>
-          <div className="text-3xl font-bold text-blue-700">{chapters.length}</div>
-        </div>
-        <div className="bg-green-50 border border-green-200 rounded-xl p-6">
-          <h4 className="font-medium text-green-900 mb-2">Converted</h4>
-          <div className="text-3xl font-bold text-green-700">
-            {chapters.filter(c => c.hasAudio).length}
+        {/* Modules Tab */}
+        {activeTab === 'modules' && (
+          <div className="mt-8">
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-2xl font-bold text-gray-900">Modules</h2>
+              <button
+                onClick={() => setShowAddModule(true)}
+                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+              >
+                Add New Module
+              </button>
+            </div>
+
+            {showAddModule && (
+              <div className="mb-6 bg-white p-6 rounded-lg shadow">
+                <h3 className="text-lg font-medium mb-4">Add New Module</h3>
+                <form onSubmit={handleAddModule}>
+                  <div className="grid grid-cols-1 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700">Module Name</label>
+                      <input
+                        type="text"
+                        value={newModule.name}
+                        onChange={(e) => setNewModule({ ...newModule, name: e.target.value })}
+                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700">Description</label>
+                      <textarea
+                        value={newModule.description}
+                        onChange={(e) => setNewModule({ ...newModule, description: e.target.value })}
+                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        rows="3"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700">Color</label>
+                      <input
+                        type="color"
+                        value={newModule.color}
+                        onChange={(e) => setNewModule({ ...newModule, color: e.target.value })}
+                        className="mt-1 h-10 w-full"
+                      />
+                    </div>
+                    <div className="flex space-x-3">
+                      <button
+                        type="submit"
+                        className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                      >
+                        Save Module
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setShowAddModule(false)}
+                        className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            )}
+
+            {loading.modules ? (
+              <div className="text-center py-12">
+                <div className="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-600"></div>
+                <p className="text-gray-600 mt-3">Loading modules...</p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {modules.map(module => (
+                  <div key={module.id} className="bg-white rounded-lg shadow p-6">
+                    <div className="flex items-start justify-between">
+                      <div>
+                        <h3 className="text-lg font-medium text-gray-900">{module.name}</h3>
+                        <p className="text-sm text-gray-600 mt-1">{module.description}</p>
+                        <div className="mt-4 flex items-center text-sm text-gray-500">
+                          <span className="mr-4">📚 {module.chapterCount} chapters</span>
+                          <span 
+                            className="w-3 h-3 rounded-full inline-block mr-1"
+                            style={{ backgroundColor: module.color }}
+                          ></span>
+                          <span>Module {module.id}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
-        </div>
-        <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
-          <h4 className="font-medium text-yellow-900 mb-2">Pending</h4>
-          <div className="text-3xl font-bold text-yellow-700">
-            {chapters.filter(c => !c.hasAudio).length}
+        )}
+
+        {/* Chapters Tab */}
+        {activeTab === 'chapters' && (
+          <div className="mt-8">
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-2xl font-bold text-gray-900">Chapters</h2>
+              <div className="flex space-x-3">
+                <button
+                  onClick={handleBulkConvert}
+                  className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
+                >
+                  Bulk Convert Pending
+                </button>
+                <button
+                  onClick={() => setShowAddChapter(true)}
+                  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                >
+                  Add New Chapter
+                </button>
+              </div>
+            </div>
+
+            {showAddChapter && (
+              <div className="mb-6 bg-white p-6 rounded-lg shadow">
+                <h3 className="text-lg font-medium mb-4">Add New Chapter</h3>
+                <form onSubmit={handleAddChapter}>
+                  <div className="grid grid-cols-1 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700">Title</label>
+                      <input
+                        type="text"
+                        value={newChapter.title}
+                        onChange={(e) => setNewChapter({ ...newChapter, title: e.target.value })}
+                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700">Description</label>
+                      <input
+                        type="text"
+                        value={newChapter.description}
+                        onChange={(e) => setNewChapter({ ...newChapter, description: e.target.value })}
+                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700">Content</label>
+                      <textarea
+                        value={newChapter.content}
+                        onChange={(e) => setNewChapter({ ...newChapter, content: e.target.value })}
+                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        rows="5"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700">Module</label>
+                      <select
+                        value={newChapter.moduleId}
+                        onChange={(e) => setNewChapter({ ...newChapter, moduleId: e.target.value })}
+                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        required
+                      >
+                        <option value="">Select a module</option>
+                        {modules.map(module => (
+                          <option key={module.id} value={module.id}>
+                            {module.name} (ID: {module.id})
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700">Page URL (Optional)</label>
+                      <input
+                        type="url"
+                        value={newChapter.pageUrl}
+                        onChange={(e) => setNewChapter({ ...newChapter, pageUrl: e.target.value })}
+                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="https://zerodha.com/varsity/chapters/..."
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700">Tags (comma-separated)</label>
+                      <input
+                        type="text"
+                        value={newChapter.tags}
+                        onChange={(e) => setNewChapter({ ...newChapter, tags: e.target.value })}
+                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="module-12, psychology, trading"
+                      />
+                    </div>
+                    <div className="flex space-x-3">
+                      <button
+                        type="submit"
+                        className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                      >
+                        Save Chapter
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setShowAddChapter(false)}
+                        className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            )}
+
+            {loading.chapters ? (
+              <div className="text-center py-12">
+                <div className="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-600"></div>
+                <p className="text-gray-600 mt-3">Loading chapters...</p>
+              </div>
+            ) : (
+              <div className="bg-white shadow overflow-hidden sm:rounded-lg">
+                <table className="min-w-full divide-y divide-gray-200">
+                  <thead className="bg-gray-50">
+                    <tr>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Module</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Chapter</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-gray-200">
+                    {chapters.map(chapter => (
+                      <tr key={chapter.id}>
+                        <td className="px-6 py-4 whitespace-nowrap">
+                          <div className="text-sm font-medium text-gray-900">{chapter.moduleName}</div>
+                          <div className="text-sm text-gray-500">ID: {chapter.moduleId}</div>
+                        </td>
+                        <td className="px-6 py-4">
+                          <div className="text-sm font-medium text-gray-900">{chapter.title}</div>
+                          <div className="text-sm text-gray-500 truncate max-w-xs">
+                            {chapter.description || 'No description'}
+                          </div>
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap">
+                          <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                            chapter.audioStatus === 'converted' ? 'bg-green-100 text-green-800' :
+                            chapter.audioStatus === 'processing' ? 'bg-yellow-100 text-yellow-800' :
+                            chapter.audioStatus === 'error' ? 'bg-red-100 text-red-800' :
+                            'bg-gray-100 text-gray-800'
+                          }`}>
+                            {chapter.audioStatus || 'pending'}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                          <div className="flex space-x-2">
+                            {chapter.audioStatus !== 'converted' && (
+                              <button
+                                onClick={() => handleConvertChapter(chapter.id, chapter.title)}
+                                disabled={converting[chapter.id]}
+                                className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50 text-xs"
+                              >
+                                {converting[chapter.id] ? 'Converting...' : 'Convert'}
+                              </button>
+                            )}
+                            {chapter.audioUrl && (
+                              <a
+                                href={chapter.audioUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 text-xs"
+                              >
+                                Play
+                              </a>
+                            )}
+                            <button
+                              onClick={() => handleDeleteChapter(chapter.id, chapter.title)}
+                              className="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 text-xs"
+                            >
+                              Delete
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
           </div>
-        </div>
-      </div>
+        )}
+
+        {/* Audio Tab */}
+        {activeTab === 'audio' && (
+          <div className="mt-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Audio Management</h2>
+            <div className="bg-white shadow rounded-lg p-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="text-lg font-medium mb-4">TTS Service Status</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-center">
+                      <div className={`h-3 w-3 rounded-full mr-3 ${
+                        adminToken ? 'bg-green-500' : 'bg-red-500'
+                      }`}></div>
+                      <span>Authentication: {adminToken ? 'Connected' : 'Not connected'}</span>
+                    </div>
+                    <div className="flex items-center">
+                      <div className={`h-3 w-3 rounded-full mr-3 ${
+                        API_URL ? 'bg-green-500' : 'bg-red-500'
+                      }`}></div>
+                      <span>API Server: {API_URL}</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium mb-4">Quick Actions</h3>
+                  <div className="space-y-3">
+                    <button
+                      onClick={handleBulkConvert}
+                      className="w-full px-4 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 text-left"
+                    >
+                      Convert All Pending Chapters
+                    </button>
+                    <button
+                      onClick={() => window.open(`${API_URL}/health`, '_blank')}
+                      className="w-full px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-left"
+                    >
+                      Check Server Health
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </main>
     </div>
   );
 }

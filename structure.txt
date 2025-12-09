@@ -1,0 +1,22 @@
+.
+├── backend
+│   ├── db
+│   │   └── chapters.json
+│   ├── index.js
+│   ├── package.json
+│   ├── README.md
+│   ├── routes
+│   │   └── admin.js
+│   └── services
+│       └── tts.js
+├── frontend
+│   └── src
+│       ├── App.jsx
+│       ├── components
+│       │   └── ModulesCard.jsx
+│       └── pages
+│           ├── AdminPage.jsx
+│           └── ModulesPage.jsx
+└── structure.txt
+
+9 directories, 11 files

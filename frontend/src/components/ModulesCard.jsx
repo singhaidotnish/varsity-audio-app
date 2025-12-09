@@ -1,118 +1,56 @@
-// frontend/src/components/ModuleCard.jsx
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
-export default function ModuleCard({ module }) {
-  const [showAll, setShowAll] = useState(false);
-  
-  const audioCount = module.chapters.filter(ch => ch.hasAudio).length;
-  const totalChapters = module.chapters.length;
-  
-  // Show first 5 chapters, or all if showAll is true
-  const displayChapters = showAll 
-    ? module.chapters 
-    : module.chapters.slice(0, 5);
-
+const ModulesCard = ({ module, onClick }) => {
   return (
-    <div className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="p-6">
-        <div className="flex justify-between items-start mb-4">
-          <div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">
-              {module.name}
-            </h3>
-            {module.description && (
-              <p className="text-gray-600 text-sm">{module.description}</p>
+    <div 
+      className="bg-white rounded-lg shadow-md p-6 cursor-pointer hover:shadow-lg transition-shadow duration-200"
+      onClick={onClick}
+    >
+      <div className="flex items-start justify-between">
+        <div className="flex-1">
+          <div className="flex items-center mb-2">
+            <div 
+              className="w-4 h-4 rounded-full mr-2"
+              style={{ backgroundColor: module.color || '#4CAF50' }}
+            ></div>
+            <h3 className="text-xl font-bold text-gray-900">{module.name}</h3>
+          </div>
+          
+          <p className="text-gray-600 text-sm mb-4">{module.description}</p>
+          
+          <div className="flex items-center justify-between text-sm">
+            <div className="flex items-center space-x-4">
+              <span className="text-gray-500">
+                📚 {module.chapterCount || module.chapters?.length || 0} chapters
+              </span>
+              
+              {module.convertedChapters !== undefined && (
+                <span className="text-gray-500">
+                  🎵 {module.convertedChapters} with audio
+                </span>
+              )}
+            </div>
+            
+            {module.conversionPercentage !== undefined && (
+              <div className={`px-3 py-1 rounded-full text-xs font-medium ${
+                module.conversionPercentage === 100 
+                  ? 'bg-green-100 text-green-800' 
+                  : module.conversionPercentage > 50 
+                  ? 'bg-yellow-100 text-yellow-800' 
+                  : 'bg-red-100 text-red-800'
+              }`}>
+                {module.conversionPercentage}% audio
+              </div>
             )}
           </div>
-          <div className="bg-blue-50 text-blue-700 text-xs font-medium px-3 py-1 rounded-full">
-            {audioCount}/{totalChapters} audio
-          </div>
         </div>
         
-        {/* Chapters List */}
-        <div className="space-y-3 mb-4">
-          {displayChapters.map(chapter => (
-            <div 
-              key={chapter.id} 
-              className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100"
-            >
-              <div className="flex items-center">
-                <div className="mr-3">
-                  {chapter.hasAudio ? (
-                    <span className="text-green-600" title="Audio available">🎧</span>
-                  ) : (
-                    <span className="text-gray-400" title="No audio yet">📖</span>
-                  )}
-                </div>
-                <div>
-                  <h4 className="font-medium text-gray-900 text-sm">
-                    {chapter.title}
-                  </h4>
-                  {chapter.description && (
-                    <p className="text-gray-500 text-xs mt-1 line-clamp-1">
-                      {chapter.description}
-                    </p>
-                  )}
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-2">
-                {chapter.hasAudio ? (
-                  <button
-                    onClick={() => window.open(chapter.audioUrl, '_blank')}
-                    className="px-3 py-1 bg-green-500 text-white text-xs rounded hover:bg-green-600"
-                  >
-                    Play
-                  </button>
-                ) : (
-                  <a
-                    href={`https://wa.me/919999999999?text=Hi,%20I%20want%20to%20request%20audio%20for:%20${encodeURIComponent(chapter.title)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3 py-1 bg-gray-200 text-gray-700 text-xs rounded hover:bg-gray-300"
-                  >
-                    Request
-                  </a>
-                )}
-                
-                <a
-                  href={chapter.pageUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 text-xs"
-                  title="View on Zerodha Varsity"
-                >
-                  ↗
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-        
-        {/* Show More/Less */}
-        {module.chapters.length > 5 && (
-          <button
-            onClick={() => setShowAll(!showAll)}
-            className="text-blue-600 hover:text-blue-800 text-sm font-medium w-full text-center py-2 border-t border-gray-100"
-          >
-            {showAll ? 'Show Less' : `Show All (${module.chapters.length} chapters)`}
-          </button>
-        )}
-        
-        {/* Module Actions */}
-        <div className="flex justify-between items-center mt-6 pt-4 border-t border-gray-100">
-          <div className="text-gray-500 text-xs">
-            {audioCount} audio files available
-          </div>
-          <Link
-            to={`/module/${module.id}`}
-            className="text-blue-600 hover:text-blue-800 text-sm font-medium"
-          >
-            View Details →
-          </Link>
+        <div className="ml-4 text-right">
+          <span className="text-2xl font-bold text-gray-300">#{module.id}</span>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default ModulesCard;

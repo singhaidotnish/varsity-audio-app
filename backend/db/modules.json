@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Getting Started with Stocks",
+    "description": "Begin your stock market journey with fundamental concepts",
+    "color": "#4CAF50",
+    "chapterCount": 0,
+    "createdAt": "2024-12-09T15:50:00.000Z",
+    "updatedAt": "2024-12-09T15:50:00.000Z"
+  },
+  {
+    "id": "4",
+    "name": "Technical Analysis",
+    "description": "Learn to read charts and identify trading opportunities using technical analysis",
+    "color": "#2196F3",
+    "chapterCount": 0,
+    "createdAt": "2024-12-09T15:50:00.000Z",
+    "updatedAt": "2024-12-09T15:50:00.000Z"
+  },
+  {
+    "id": "9",
+    "name": "Options Trading",
+    "description": "Master options trading strategies and risk management",
+    "color": "#9C27B0",
+    "chapterCount": 0,
+    "createdAt": "2024-12-09T15:50:00.000Z",
+    "updatedAt": "2024-12-09T15:50:00.000Z"
+  },
+  {
+    "id": "12",
+    "name": "Trading Psychology",
+    "description": "Master the psychological aspects of trading for consistent success",
+    "color": "#FF9800",
+    "chapterCount": 0,
+    "createdAt": "2024-12-09T15:50:00.000Z",
+    "updatedAt": "2024-12-09T15:50:00.000Z"
+  }
+]

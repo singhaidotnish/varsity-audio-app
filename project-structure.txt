@@ -1,0 +1,19 @@
+├── backend/
+│   ├── db/
+│   │   └── chapters.json      # JSON database
+│   ├── index.js               # Main server file
+│   ├── package.json           # Backend dependencies
+│   ├── README.md              # Backend documentation
+│   ├── routes/
+│   │   └── admin.js           # Admin API routes
+│   └── services/
+│       └── tts.js             # Text-to-speech service
+├── frontend/
+│   └── src/
+│       ├── App.jsx            # Main React component
+│       ├── components/
+│       │   └── ModulesCard.jsx # Reusable component
+│       └── pages/
+│           ├── AdminPage.jsx  # Admin page component
+│           └── ModulesPage.jsx # Modules page component
+└── structure.txt              # This file

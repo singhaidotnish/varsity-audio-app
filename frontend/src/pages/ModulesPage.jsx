@@ -1,6 +1,6 @@
 // frontend/src/pages/ModulesPage.jsx
 import React, { useState, useEffect } from 'react';
-import ModuleCard from '../components/ModuleCard';
+import ModulesCard from '../components/ModulesCard';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5010';
 
@@ -76,7 +76,7 @@ export default function ModulesPage() {
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Modules</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {modules.map(module => (
-            <ModuleCard key={module.id} module={module} />
+            <ModulesCard key={module.id} module={module} />
           ))}
         </div>
       </div>
