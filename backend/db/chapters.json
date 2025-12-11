@@ -16,7 +16,11 @@
     "convertedAt": "2024-12-08T07:30:00.000Z",
     "audioUpdatedAt": "2024-12-08T07:30:00.000Z",
     "pageUrl": "https://zerodha.com/varsity/chapters/test-line",
-    "tags": ["module-12", "test", "psychology"],
+    "tags": [
+      "module-12",
+      "test",
+      "psychology"
+    ],
     "createdAt": "2024-12-01T00:00:00.000Z",
     "updatedAt": "2024-12-08T07:30:00.000Z"
   },
@@ -37,7 +41,11 @@
     "convertedAt": "2024-12-08T07:32:00.000Z",
     "audioUpdatedAt": "2024-12-08T07:32:00.000Z",
     "pageUrl": "https://zerodha.com/varsity/chapters/intrinsic-rewards-trading",
-    "tags": ["module-12", "psychology", "mindset"],
+    "tags": [
+      "module-12",
+      "psychology",
+      "mindset"
+    ],
     "createdAt": "2024-12-01T00:00:00.000Z",
     "updatedAt": "2024-12-08T07:32:00.000Z"
   },
@@ -50,15 +58,19 @@
     "moduleName": "Trading Psychology",
     "moduleDescription": "Master the psychological aspects of trading for consistent success",
     "audioUrl": null,
-    "audioStatus": "pending",
+    "audioStatus": "error",
     "hasAudio": false,
     "audioGenerated": false,
-    "audioDuration": null,
     "lastUpdated": null,
     "convertedAt": null,
-    "audioUpdatedAt": null,
+    "audioUpdatedAt": "2025-12-11T13:39:26.340Z",
     "pageUrl": "https://zerodha.com/varsity/chapters/thinking-optimistically",
-    "tags": ["module-12", "psychology", "mindset", "optimism"],
+    "tags": [
+      "module-12",
+      "psychology",
+      "mindset",
+      "optimism"
+    ],
     "createdAt": "2024-12-02T00:00:00.000Z",
     "updatedAt": "2024-12-02T00:00:00.000Z"
   },
@@ -79,7 +91,12 @@
     "convertedAt": null,
     "audioUpdatedAt": null,
     "pageUrl": "https://zerodha.com/varsity/chapters/third-eye-view",
-    "tags": ["module-12", "psychology", "awareness", "meta-cognition"],
+    "tags": [
+      "module-12",
+      "psychology",
+      "awareness",
+      "meta-cognition"
+    ],
     "createdAt": "2024-12-02T00:00:00.000Z",
     "updatedAt": "2024-12-02T00:00:00.000Z"
   },
@@ -100,7 +117,12 @@
     "convertedAt": null,
     "audioUpdatedAt": null,
     "pageUrl": "https://zerodha.com/varsity/chapters/tale-three-traders",
-    "tags": ["module-12", "psychology", "case-study", "approaches"],
+    "tags": [
+      "module-12",
+      "psychology",
+      "case-study",
+      "approaches"
+    ],
     "createdAt": "2024-12-03T00:00:00.000Z",
     "updatedAt": "2024-12-03T00:00:00.000Z"
   },
@@ -121,7 +143,12 @@
     "convertedAt": "2024-12-07T10:15:00.000Z",
     "audioUpdatedAt": "2024-12-07T10:15:00.000Z",
     "pageUrl": "https://zerodha.com/varsity/chapters/intro-technical-analysis",
-    "tags": ["module-4", "technical-analysis", "basics", "foundation"],
+    "tags": [
+      "module-4",
+      "technical-analysis",
+      "basics",
+      "foundation"
+    ],
     "createdAt": "2024-11-15T00:00:00.000Z",
     "updatedAt": "2024-12-07T10:15:00.000Z"
   },
@@ -142,7 +169,12 @@
     "convertedAt": null,
     "audioUpdatedAt": null,
     "pageUrl": "https://zerodha.com/varsity/chapters/support-resistance",
-    "tags": ["module-4", "technical-analysis", "key-levels", "foundation"],
+    "tags": [
+      "module-4",
+      "technical-analysis",
+      "key-levels",
+      "foundation"
+    ],
     "createdAt": "2024-11-16T00:00:00.000Z",
     "updatedAt": "2024-11-16T00:00:00.000Z"
   },
@@ -163,7 +195,12 @@
     "convertedAt": "2024-12-06T14:20:00.000Z",
     "audioUpdatedAt": "2024-12-06T14:20:00.000Z",
     "pageUrl": "https://zerodha.com/varsity/chapters/trends-trendlines",
-    "tags": ["module-4", "technical-analysis", "trends", "trendlines"],
+    "tags": [
+      "module-4",
+      "technical-analysis",
+      "trends",
+      "trendlines"
+    ],
     "createdAt": "2024-11-17T00:00:00.000Z",
     "updatedAt": "2024-12-06T14:20:00.000Z"
   },
@@ -184,7 +221,12 @@
     "convertedAt": null,
     "audioUpdatedAt": null,
     "pageUrl": "https://zerodha.com/varsity/chapters/moving-averages",
-    "tags": ["module-4", "technical-analysis", "indicators", "trend-following"],
+    "tags": [
+      "module-4",
+      "technical-analysis",
+      "indicators",
+      "trend-following"
+    ],
     "createdAt": "2024-11-18T00:00:00.000Z",
     "updatedAt": "2024-11-18T00:00:00.000Z"
   },
@@ -205,7 +247,12 @@
     "convertedAt": "2024-12-05T09:45:00.000Z",
     "audioUpdatedAt": "2024-12-05T09:45:00.000Z",
     "pageUrl": "https://zerodha.com/varsity/chapters/candlestick-patterns",
-    "tags": ["module-4", "technical-analysis", "candlesticks", "patterns"],
+    "tags": [
+      "module-4",
+      "technical-analysis",
+      "candlesticks",
+      "patterns"
+    ],
     "createdAt": "2024-11-19T00:00:00.000Z",
     "updatedAt": "2024-12-05T09:45:00.000Z"
   },
@@ -226,7 +273,12 @@
     "convertedAt": null,
     "audioUpdatedAt": null,
     "pageUrl": "https://zerodha.com/varsity/chapters/options-basics",
-    "tags": ["module-9", "options", "derivatives", "basics"],
+    "tags": [
+      "module-9",
+      "options",
+      "derivatives",
+      "basics"
+    ],
     "createdAt": "2024-11-20T00:00:00.000Z",
     "updatedAt": "2024-11-20T00:00:00.000Z"
   },
@@ -247,7 +299,13 @@
     "convertedAt": "2024-12-04T16:30:00.000Z",
     "audioUpdatedAt": "2024-12-04T16:30:00.000Z",
     "pageUrl": "https://zerodha.com/varsity/chapters/greeks-options",
-    "tags": ["module-9", "options", "greeks", "advanced", "risk-management"],
+    "tags": [
+      "module-9",
+      "options",
+      "greeks",
+      "advanced",
+      "risk-management"
+    ],
     "createdAt": "2024-11-21T00:00:00.000Z",
     "updatedAt": "2024-12-04T16:30:00.000Z"
   },
@@ -268,7 +326,12 @@
     "convertedAt": null,
     "audioUpdatedAt": null,
     "pageUrl": "https://zerodha.com/varsity/chapters/option-strategies",
-    "tags": ["module-9", "options", "strategies", "advanced"],
+    "tags": [
+      "module-9",
+      "options",
+      "strategies",
+      "advanced"
+    ],
     "createdAt": "2024-11-22T00:00:00.000Z",
     "updatedAt": "2024-11-22T00:00:00.000Z"
   },
@@ -289,7 +352,12 @@
     "convertedAt": null,
     "audioUpdatedAt": null,
     "pageUrl": "https://zerodha.com/varsity/chapters/intro-stock-markets",
-    "tags": ["module-1", "basics", "beginner", "foundation"],
+    "tags": [
+      "module-1",
+      "basics",
+      "beginner",
+      "foundation"
+    ],
     "createdAt": "2024-11-10T00:00:00.000Z",
     "updatedAt": "2024-11-10T00:00:00.000Z"
   },
@@ -310,7 +378,12 @@
     "convertedAt": null,
     "audioUpdatedAt": null,
     "pageUrl": "https://zerodha.com/varsity/chapters/fundamental-analysis-basics",
-    "tags": ["module-2", "fundamental-analysis", "valuation", "financials"],
+    "tags": [
+      "module-2",
+      "fundamental-analysis",
+      "valuation",
+      "financials"
+    ],
     "createdAt": "2024-11-12T00:00:00.000Z",
     "updatedAt": "2024-11-12T00:00:00.000Z"
   },
@@ -331,7 +404,12 @@
     "convertedAt": null,
     "audioUpdatedAt": null,
     "pageUrl": "https://zerodha.com/varsity/chapters/futures-trading",
-    "tags": ["module-8", "futures", "derivatives", "leverage"],
+    "tags": [
+      "module-8",
+      "futures",
+      "derivatives",
+      "leverage"
+    ],
     "createdAt": "2024-11-25T00:00:00.000Z",
     "updatedAt": "2024-11-25T00:00:00.000Z"
   },
@@ -352,7 +430,12 @@
     "convertedAt": "2024-12-03T11:20:00.000Z",
     "audioUpdatedAt": "2024-12-03T11:20:00.000Z",
     "pageUrl": "https://zerodha.com/varsity/chapters/risk-management",
-    "tags": ["module-10", "risk-management", "essential", "capital-preservation"],
+    "tags": [
+      "module-10",
+      "risk-management",
+      "essential",
+      "capital-preservation"
+    ],
     "createdAt": "2024-11-28T00:00:00.000Z",
     "updatedAt": "2024-12-03T11:20:00.000Z"
   },
@@ -373,7 +456,12 @@
     "convertedAt": null,
     "audioUpdatedAt": null,
     "pageUrl": "https://zerodha.com/varsity/chapters/trading-psychology-advanced",
-    "tags": ["module-12", "psychology", "advanced", "mindset"],
+    "tags": [
+      "module-12",
+      "psychology",
+      "advanced",
+      "mindset"
+    ],
     "createdAt": "2024-12-04T00:00:00.000Z",
     "updatedAt": "2024-12-04T00:00:00.000Z"
   },
@@ -394,7 +482,12 @@
     "convertedAt": null,
     "audioUpdatedAt": null,
     "pageUrl": "https://zerodha.com/varsity/chapters/market-microstructure",
-    "tags": ["module-11", "advanced", "market-mechanics", "microstructure"],
+    "tags": [
+      "module-11",
+      "advanced",
+      "market-mechanics",
+      "microstructure"
+    ],
     "createdAt": "2024-11-30T00:00:00.000Z",
     "updatedAt": "2024-11-30T00:00:00.000Z"
   },
@@ -415,7 +508,12 @@
     "convertedAt": "2024-12-02T09:15:00.000Z",
     "audioUpdatedAt": "2024-12-02T09:15:00.000Z",
     "pageUrl": "https://zerodha.com/varsity/chapters/portfolio-management",
-    "tags": ["module-7", "portfolio", "diversification", "asset-allocation"],
+    "tags": [
+      "module-7",
+      "portfolio",
+      "diversification",
+      "asset-allocation"
+    ],
     "createdAt": "2024-11-24T00:00:00.000Z",
     "updatedAt": "2024-12-02T09:15:00.000Z"
   }
