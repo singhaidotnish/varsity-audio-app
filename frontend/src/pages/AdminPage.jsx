@@ -296,19 +296,21 @@ export default function AdminPage() {
   // Admin Dashboard
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-white shadow">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <div>
-            <h1 className="text-3xl font-bold text-gray-900">Admin Dashboard</h1>
-            <p className="text-gray-600">Manage modules, chapters, and audio conversions</p>
+      {/* Replace the existing header section with this */}
+      <header className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center">
+            <div>
+              <h1 className="text-3xl font-bold text-zerodha-blue">Admin Dashboard</h1>
+              <p className="text-gray-600 mt-1">Manage modules, chapters, and audio conversions</p>
+            </div>
+            <button
+              onClick={handleLogout}
+              className="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 text-sm font-medium transition-colors"
+            >
+              Logout
+            </button>
           </div>
-          <button
-            onClick={handleLogout}
-            className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 text-sm font-medium"
-          >
-            Logout
-          </button>
         </div>
       </header>
 
@@ -328,14 +330,14 @@ export default function AdminPage() {
       <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         {/* Tabs */}
         <div className="border-b border-gray-200">
-          <nav className="-mb-px flex space-x-8">
+          <nav className="flex space-x-8">
             {['dashboard', 'modules', 'chapters', 'audio'].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`py-4 px-1 border-b-2 font-medium text-sm capitalize ${
+                className={`py-4 px-1 border-b-2 font-medium text-sm capitalize transition-colors ${
                   activeTab === tab
-                    ? 'border-blue-500 text-blue-600'
+                    ? 'border-zerodha-orange text-zerodha-orange'
                     : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                 }`}
               >
@@ -347,77 +349,61 @@ export default function AdminPage() {
 
         {/* Dashboard Tab */}
         {activeTab === 'dashboard' && stats && (
-          <div className="mt-8">
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="bg-white overflow-hidden shadow rounded-lg">
-                <div className="p-5">
-                  <div className="flex items-center">
-                    <div className="flex-shrink-0">
-                      <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
-                        <span className="text-blue-600 text-xl">📚</span>
-                      </div>
-                    </div>
-                    <div className="ml-5 w-0 flex-1">
-                      <dl>
-                        <dt className="text-sm font-medium text-gray-500 truncate">Total Modules</dt>
-                        <dd className="text-3xl font-bold text-gray-900">{stats.totalModules}</dd>
-                      </dl>
-                    </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 mt-8">
+            {/* Total Modules Card */}
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-sm transition-shadow">
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <div className="h-12 w-12 rounded-full bg-zerodha-gray flex items-center justify-center">
+                    <span className="text-zerodha-blue text-xl">📚</span>
                   </div>
                 </div>
-              </div>
-
-              <div className="bg-white overflow-hidden shadow rounded-lg">
-                <div className="p-5">
-                  <div className="flex items-center">
-                    <div className="flex-shrink-0">
-                      <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center">
-                        <span className="text-green-600 text-xl">📖</span>
-                      </div>
-                    </div>
-                    <div className="ml-5 w-0 flex-1">
-                      <dl>
-                        <dt className="text-sm font-medium text-gray-500 truncate">Total Chapters</dt>
-                        <dd className="text-3xl font-bold text-gray-900">{stats.totalChapters}</dd>
-                      </dl>
-                    </div>
-                  </div>
+                <div className="ml-5">
+                  <dt className="text-sm font-medium text-gray-500">Total Modules</dt>
+                  <dd className="text-3xl font-bold text-gray-900">{stats.totalModules}</dd>
                 </div>
               </div>
-
-              <div className="bg-white overflow-hidden shadow rounded-lg">
-                <div className="p-5">
-                  <div className="flex items-center">
-                    <div className="flex-shrink-0">
-                      <div className="h-12 w-12 rounded-full bg-yellow-100 flex items-center justify-center">
-                        <span className="text-yellow-600 text-xl">🎵</span>
-                      </div>
-                    </div>
-                    <div className="ml-5 w-0 flex-1">
-                      <dl>
-                        <dt className="text-sm font-medium text-gray-500 truncate">Converted Audio</dt>
-                        <dd className="text-3xl font-bold text-gray-900">{stats.convertedChapters}</dd>
-                      </dl>
-                    </div>
+            </div>
+                      
+            {/* Total Chapters Card */}
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-sm transition-shadow">
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <div className="h-12 w-12 rounded-full bg-zerodha-gray flex items-center justify-center">
+                    <span className="text-zerodha-blue text-xl">📖</span>
                   </div>
                 </div>
+                <div className="ml-5">
+                  <dt className="text-sm font-medium text-gray-500">Total Chapters</dt>
+                  <dd className="text-3xl font-bold text-gray-900">{stats.totalChapters}</dd>
+                </div>
               </div>
-
-              <div className="bg-white overflow-hidden shadow rounded-lg">
-                <div className="p-5">
-                  <div className="flex items-center">
-                    <div className="flex-shrink-0">
-                      <div className="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center">
-                        <span className="text-red-600 text-xl">⏳</span>
-                      </div>
-                    </div>
-                    <div className="ml-5 w-0 flex-1">
-                      <dl>
-                        <dt className="text-sm font-medium text-gray-500 truncate">Pending</dt>
-                        <dd className="text-3xl font-bold text-gray-900">{stats.pendingChapters}</dd>
-                      </dl>
-                    </div>
+            </div>
+            
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-sm transition-shadow">
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <div className="h-12 w-12 rounded-full bg-zerodha-gray flex items-center justify-center">
+                    <span className="text-zerodha-blue text-xl">🎵</span>
                   </div>
+                </div>
+                <div className="ml-5">
+                  <dt className="text-sm font-medium text-gray-500">Converted Audio</dt>
+                  <dd className="text-3xl font-bold text-gray-900">{stats.convertedChapters}</dd>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-sm transition-shadow">
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <div className="h-12 w-12 rounded-full bg-zerodha-gray flex items-center justify-center">
+                    <span className="text-zerodha-blue text-xl">⏳</span>
+                  </div>
+                </div>
+                <div className="ml-5">
+                  <dt className="text-sm font-medium text-gray-500">Pending</dt>
+                  <dd className="text-3xl font-bold text-gray-900">{stats.pendingChapters}</dd>
                 </div>
               </div>
             </div>
@@ -496,23 +482,27 @@ export default function AdminPage() {
                 <p className="text-gray-600 mt-3">Loading modules...</p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="space-y-6">
                 {modules.map(module => (
-                  <div key={module.id} className="bg-white rounded-lg shadow p-6">
-                    <div className="flex items-start justify-between">
-                      <div>
-                        <h3 className="text-lg font-medium text-gray-900">{module.name}</h3>
-                        <p className="text-sm text-gray-600 mt-1">{module.description}</p>
-                        <div className="mt-4 flex items-center text-sm text-gray-500">
-                          <span className="mr-4">📚 {module.chapterCount} chapters</span>
-                          <span 
-                            className="w-3 h-3 rounded-full inline-block mr-1"
-                            style={{ backgroundColor: module.color }}
-                          ></span>
-                          <span>Module {module.id}</span>
-                        </div>
+                  <div key={module.id} className="bg-white border border-gray-200 rounded-lg p-6 hover:border-zerodha-blue/50 transition-colors">
+                    <div className="flex items-baseline">
+                      <span className="text-xl font-bold text-zerodha-orange mr-3">#{module.id}</span>
+                      <h3 className="text-lg font-medium text-gray-900 flex-grow">{module.name}</h3>
+                      <div className="flex items-center space-x-3">
+                        <span className="px-3 py-1 bg-zerodha-gray text-gray-700 rounded-full text-xs">
+                          {module.chapterCount} chapters
+                        </span>
+                        <div 
+                          className="w-3 h-3 rounded-full"
+                          style={{ backgroundColor: module.color || '#4CAF50' }}
+                        ></div>
                       </div>
                     </div>
+                    {module.description && (
+                      <p className="text-gray-600 mt-3 ml-8 text-sm leading-relaxed">
+                        {module.description}
+                      </p>
+                    )}
                   </div>
                 ))}
               </div>
@@ -639,12 +629,12 @@ export default function AdminPage() {
             ) : (
               <div className="bg-white shadow overflow-hidden sm:rounded-lg">
                 <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
+                  <thead className="bg-zerodha-gray">
                     <tr>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Module</th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Chapter</th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-zerodha-blue uppercase tracking-wider">Module</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-zerodha-blue uppercase tracking-wider">Chapter</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-zerodha-blue uppercase tracking-wider">Status</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-zerodha-blue uppercase tracking-wider">Actions</th>
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">

@@ -1,379 +1,200 @@
-// backend/index.js
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const fs = require('fs').promises;
 const path = require('path');
-const cloudinary = require('cloudinary').v2;
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 5010;
-
-// Cloudinary configuration - IMPORTANT!
-if (process.env.CLOUDINARY_URL) {
-  // Parse CLOUDINARY_URL or use separate env variables
-  cloudinary.config({
-    cloud_name: process.env.CLOUDINARY_CLOUD_NAME || 
-                process.env.CLOUDINARY_URL?.split('@')[1] ||
-                'your-cloud-name',
-    api_key: process.env.CLOUDINARY_API_KEY || 
-             process.env.CLOUDINARY_URL?.split('://')[1]?.split(':')[0] ||
-             'your-api-key',
-    api_secret: process.env.CLOUDINARY_API_SECRET || 
-                process.env.CLOUDINARY_URL?.split(':')[2]?.split('@')[0] ||
-                'your-api-secret',
-    secure: true
-  });
-  console.log('☁️  Cloudinary configured');
-} else {
-  console.warn('⚠️  CLOUDINARY_URL not set. Audio uploads will fail.');
-}
-
-// CORS - configure properly for production
-app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  credentials: true
-}));
-
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-// Data paths
+const PUBLIC_DIR = path.join(__dirname, 'public');
 const CHAPTERS_PATH = path.join(__dirname, 'db', 'chapters.json');
 
-// Helper: Read chapters
-async function readChapters() {
-  try {
-    const data = await fs.readFile(CHAPTERS_PATH, 'utf-8');
-    return JSON.parse(data);
-  } catch (error) {
-    console.error('Error reading chapters:', error);
-    return [];
-  }
-}
-
-// Helper: Write chapters
-async function writeChapters(chapters) {
-  try {
-    await fs.writeFile(CHAPTERS_PATH, JSON.stringify(chapters, null, 2));
-    return true;
-  } catch (error) {
-    console.error('Error writing chapters:', error);
-    return false;
-  }
-}
-
-// Helper: Check audio status and get audio URL if exists
-async function checkAudioStatus(chapterId, chapterTitle) {
-  try {
-    if (!process.env.CLOUDINARY_URL) {
-      return { hasAudio: false, audioUrl: null, status: 'cloudinary_not_configured' };
-    }
-
-    // Search for audio in Cloudinary folder
-    const folder = process.env.CLOUDINARY_FOLDER || 'varsity-audio';
-    const searchQuery = `resource_type:audio AND folder:${folder} AND filename:${chapterId}`;
+// ========== FIXED CORS CONFIGURATION ==========
+const corsOptions = {
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
     
-    const result = await cloudinary.search
-      .expression(searchQuery)
-      .execute();
+    const allowedOrigins = [
+      'http://localhost:5173',
+      'http://localhost:3000',
+      'http://127.0.0.1:5173',
+      'http://localhost:5010',
+      'https://varsity-audio-monorepo-cjpj.onrender.com',
+    ];
     
-    if (result.resources && result.resources.length > 0) {
-      const audioResource = result.resources[0];
-      return {
-        hasAudio: true,
-        audioUrl: audioResource.secure_url,
-        duration: audioResource.duration,
-        format: audioResource.format,
-        size: audioResource.bytes,
-        publicId: audioResource.public_id,
-        uploadedAt: audioResource.created_at,
-        status: 'converted'
-      };
-    }
-    
-    return { hasAudio: false, audioUrl: null, status: 'pending' };
-  } catch (error) {
-    console.error(`Error checking audio status for ${chapterId}:`, error);
-    return { hasAudio: false, audioUrl: null, status: 'error', error: error.message };
-  }
-}
-
-// Helper: Update chapter with audio status
-async function updateChapterAudioStatus(chapterId, audioData) {
-  try {
-    const chapters = await readChapters();
-    const chapterIndex = chapters.findIndex(ch => ch.id === chapterId);
-    
-    if (chapterIndex !== -1) {
-      chapters[chapterIndex].audioStatus = audioData.status;
-      chapters[chapterIndex].audioUrl = audioData.audioUrl || null;
-      chapters[chapterIndex].audioDuration = audioData.duration;
-      chapters[chapterIndex].audioUpdatedAt = new Date().toISOString();
-      
-      if (audioData.hasAudio) {
-        chapters[chapterIndex].convertedAt = audioData.uploadedAt || new Date().toISOString();
-      }
-      
-      await writeChapters(chapters);
-      return true;
-    }
-    return false;
-  } catch (error) {
-    console.error(`Error updating audio status for ${chapterId}:`, error);
-    return false;
-  }
-}
-
-// API Routes
-
-// Get all modules with chapters - WITH AUDIO STATUS CHECK
-app.get('/api/modules', async (req, res) => {
-  try {
-    const chapters = await readChapters();
-    const isAdmin = req.headers.authorization === `Bearer ${process.env.ADMIN_TOKEN}`;
-    
-    // Group by module
-    const modulesMap = {};
-    
-    // Process chapters in batches to avoid overwhelming Cloudinary API
-    for (const chapter of chapters) {
-      const moduleId = chapter.moduleId || 'general';
-      const moduleName = chapter.moduleName || `Module ${moduleId}`;
-      
-      if (!modulesMap[moduleId]) {
-        modulesMap[moduleId] = {
-          id: moduleId,
-          name: moduleName,
-          description: chapter.moduleDescription || '',
-          totalChapters: 0,
-          convertedChapters: 0,
-          chapters: []
-        };
-      }
-      
-      // Check audio status (only for non-admin users if not already cached)
-      let audioStatus = chapter.audioStatus || 'pending';
-      let audioUrl = chapter.audioUrl || null;
-      
-      if (!isAdmin && (!chapter.audioStatus || chapter.audioStatus === 'pending')) {
-        // For regular users, check if audio exists
-        const audioCheck = await checkAudioStatus(chapter.id, chapter.title);
-        audioStatus = audioCheck.status;
-        audioUrl = audioCheck.audioUrl;
-        
-        // Update cache in database
-        if (audioStatus !== chapter.audioStatus) {
-          await updateChapterAudioStatus(chapter.id, audioCheck);
-        }
-      }
-      
-      modulesMap[moduleId].chapters.push({
-        id: chapter.id,
-        title: chapter.title,
-        description: chapter.description || '',
-        audioUrl: audioUrl,
-        hasAudio: audioStatus === 'converted',
-        audioStatus: audioStatus, // 'pending', 'converted', 'processing', 'error'
-        audioDuration: chapter.audioDuration,
-        pageUrl: chapter.pageUrl || `https://zerodha.com/varsity/chapters/${chapter.id}`,
-        tags: chapter.tags || [],
-        createdAt: chapter.createdAt,
-        updatedAt: chapter.updatedAt,
-        convertedAt: chapter.convertedAt,
-        // Show different buttons based on user type
-        showRequestButton: !isAdmin && audioStatus !== 'converted',
-        showConvertButton: isAdmin && audioStatus !== 'converted'
-      });
-      
-      modulesMap[moduleId].totalChapters++;
-      if (audioStatus === 'converted') {
-        modulesMap[moduleId].convertedChapters++;
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      // Allow all origins in development
+      if (process.env.NODE_ENV === 'development') {
+        console.log(`⚠️ Allowing non-whitelisted origin in dev: ${origin}`);
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
       }
     }
-    
-    const modules = Object.values(modulesMap);
-    
-    // Calculate conversion percentage for each module
-    modules.forEach(module => {
-      module.conversionPercentage = module.totalChapters > 0 
-        ? Math.round((module.convertedChapters / module.totalChapters) * 100) 
-        : 0;
-    });
-    
-    res.json({ 
-      success: true, 
-      modules,
-      stats: {
-        totalModules: modules.length,
-        totalChapters: chapters.length,
-        totalConverted: modules.reduce((sum, mod) => sum + mod.convertedChapters, 0),
-        overallPercentage: chapters.length > 0 
-          ? Math.round((modules.reduce((sum, mod) => sum + mod.convertedChapters, 0) / chapters.length) * 100)
-          : 0
-      }
-    });
-  } catch (error) {
-    console.error('Error getting modules:', error);
-    res.status(500).json({ success: false, error: error.message });
-  }
-});
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+  optionsSuccessStatus: 200,
+  maxAge: 86400 // 24 hours
+};
 
-// Get chapters for a specific module - WITH AUDIO STATUS
-app.get('/api/modules/:moduleId/chapters', async (req, res) => {
-  try {
-    const { moduleId } = req.params;
-    const isAdmin = req.headers.authorization === `Bearer ${process.env.ADMIN_TOKEN}`;
-    const chapters = await readChapters();
-    
-    const filteredChapters = [];
-    
-    for (const chapter of chapters.filter(ch => ch.moduleId == moduleId)) {
-      // Check audio status if not cached or if admin
-      let audioStatus = chapter.audioStatus || 'pending';
-      let audioUrl = chapter.audioUrl || null;
-      
-      if (!chapter.audioStatus || chapter.audioStatus === 'pending' || isAdmin) {
-        const audioCheck = await checkAudioStatus(chapter.id, chapter.title);
-        audioStatus = audioCheck.status;
-        audioUrl = audioCheck.audioUrl;
-        
-        // Update cache
-        await updateChapterAudioStatus(chapter.id, audioCheck);
-      }
-      
-      filteredChapters.push({
-        id: chapter.id,
-        title: chapter.title,
-        description: chapter.description || '',
-        content: chapter.content || '',
-        audioUrl: audioUrl,
-        hasAudio: audioStatus === 'converted',
-        audioStatus: audioStatus,
-        audioDuration: chapter.audioDuration,
-        pageUrl: chapter.pageUrl || `https://zerodha.com/varsity/chapters/${chapter.id}`,
-        tags: chapter.tags || [],
-        createdAt: chapter.createdAt,
-        updatedAt: chapter.updatedAt,
-        convertedAt: chapter.convertedAt,
-        showRequestButton: !isAdmin && audioStatus !== 'converted',
-        showConvertButton: isAdmin && audioStatus !== 'converted'
-      });
-    }
-    
-    res.json({ success: true, chapters: filteredChapters });
-  } catch (error) {
-    console.error('Error getting module chapters:', error);
-    res.status(500).json({ success: false, error: error.message });
-  }
-});
+// Apply CORS middleware
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions)); // Handle preflight for all routes
 
-// Quick audio status check endpoint (for polling)
-app.get('/api/chapters/:chapterId/audio-status', async (req, res) => {
-  try {
-    const { chapterId } = req.params;
-    const chapters = await readChapters();
-    const chapter = chapters.find(ch => ch.id === chapterId);
-    
-    if (!chapter) {
-      return res.status(404).json({ success: false, error: 'Chapter not found' });
-    }
-    
-    const audioCheck = await checkAudioStatus(chapterId, chapter.title);
-    
-    // Update cache
-    await updateChapterAudioStatus(chapterId, audioCheck);
-    
-    res.json({
-      success: true,
-      chapterId,
-      hasAudio: audioCheck.hasAudio,
-      audioUrl: audioCheck.audioUrl,
-      status: audioCheck.status,
-      duration: audioCheck.duration
-    });
-  } catch (error) {
-    console.error('Error checking audio status:', error);
-    res.status(500).json({ success: false, error: error.message });
-  }
-});
+// ========== REST OF YOUR CONFIG ==========
+app.use(express.json({ limit: '10mb' }));
+app.use('/public', express.static(PUBLIC_DIR));
 
-// Bulk audio status check
-app.post('/api/chapters/bulk-audio-status', async (req, res) => {
-  try {
-    const { chapterIds } = req.body;
-    const results = {};
-    
-    // Check status for multiple chapters (limited to 10 at a time)
-    const idsToCheck = chapterIds.slice(0, 10);
-    
-    for (const chapterId of idsToCheck) {
-      const audioCheck = await checkAudioStatus(chapterId, '');
-      results[chapterId] = {
-        hasAudio: audioCheck.hasAudio,
-        status: audioCheck.status,
-        audioUrl: audioCheck.audioUrl
-      };
-      
-      // Update cache
-      const chapters = await readChapters();
-      const chapter = chapters.find(ch => ch.id === chapterId);
-      if (chapter) {
-        await updateChapterAudioStatus(chapterId, audioCheck);
-      }
-    }
-    
-    res.json({ success: true, results });
-  } catch (error) {
-    console.error('Error in bulk audio status check:', error);
-    res.status(500).json({ success: false, error: error.message });
-  }
-});
-
-// Admin routes
+// Import admin routes
 const adminRoutes = require('./routes/admin');
 app.use('/api/admin', adminRoutes);
 
-// Health check with Cloudinary status
-app.get('/health', async (req, res) => {
+// Helper function
+function readJsonSafe(filePath, fallback = []) {
   try {
-    const cloudinaryStatus = process.env.CLOUDINARY_URL ? 'configured' : 'not_configured';
+    if (!fs.existsSync(filePath)) return fallback;
+    const raw = fs.readFileSync(filePath, 'utf8');
+    return JSON.parse(raw);
+  } catch (err) {
+    console.error('Failed to read JSON:', filePath, err);
+    return fallback;
+  }
+}
+
+// GET /api/chapters
+app.get('/api/chapters', (req, res) => {
+  const data = readJsonSafe(CHAPTERS_PATH, []);
+  res.json({ ok: true, chapters: data });
+});
+
+// GET /api/modules
+app.get('/api/modules', (req, res) => {
+  const chapters = readJsonSafe(CHAPTERS_PATH, []);
+  
+  // Group by module
+  const modulesMap = {};
+  
+  chapters.forEach(chapter => {
+    const moduleId = chapter.moduleId || 'general';
+    const moduleName = chapter.moduleName || `Module ${moduleId}`;
     
-    // Test Cloudinary connection
-    let cloudinaryTest = { status: 'not_tested' };
-    if (process.env.CLOUDINARY_URL) {
-      try {
-        await cloudinary.api.ping();
-        cloudinaryTest.status = 'connected';
-      } catch (error) {
-        cloudinaryTest.status = 'error';
-        cloudinaryTest.error = error.message;
-      }
+    if (!modulesMap[moduleId]) {
+      modulesMap[moduleId] = {
+        id: moduleId,
+        name: moduleName,
+        description: chapter.moduleDescription || '',
+        chapters: []
+      };
     }
     
-    res.json({ 
-      status: 'ok', 
-      service: 'varsity-audio-api',
-      timestamp: new Date().toISOString(),
-      cloudinary: cloudinaryStatus,
-      cloudinaryTest,
-      chaptersCount: (await readChapters()).length
+    modulesMap[moduleId].chapters.push({
+      id: chapter.id,
+      title: chapter.title,
+      description: chapter.description || '',
+      audioUrl: chapter.audioUrl || null,
+      hasAudio: !!chapter.audioUrl,
+      pageUrl: chapter.pageUrl || `https://zerodha.com/varsity/chapters/${chapter.id}`,
+      tags: chapter.tags || []
     });
-  } catch (error) {
-    res.status(500).json({ 
-      status: 'error', 
-      error: error.message 
+  });
+  
+  const modules = Object.values(modulesMap);
+  res.json({ success: true, modules });
+});
+
+// GET /api/audios
+app.get('/api/audios', async (req, res) => {
+  try {
+    const chapters = readJsonSafe(CHAPTERS_PATH, []);
+    const moduleFilter = req.query.module;
+    
+    let filteredChapters = chapters;
+    if (moduleFilter) {
+      filteredChapters = chapters.filter(ch => ch.moduleId == moduleFilter);
+    }
+    
+    const items = filteredChapters.map((ch, i) => ({
+      id: ch.id,
+      filename: `${ch.id}.mp3`,
+      title: ch.title || `Chapter ${ch.id}`,
+      audioUrl: ch.audioUrl,
+      hasAudio: !!ch.audioUrl,
+      tags: ch.tags || [],
+      description: ch.description || ''
+    }));
+    
+    res.json({ ok: true, source: 'local', items });
+  } catch (err) {
+    console.error('Failed to list audios:', err);
+    res.status(500).json({ ok: false, error: 'Failed to list audios' });
+  }
+});
+
+// Admin login endpoint
+app.post('/api/admin/login', (req, res) => {
+  const { email, password } = req.body;
+  
+  if (email === process.env.ADMIN_EMAIL && password === process.env.ADMIN_PASSWORD) {
+    return res.json({ 
+      ok: true, 
+      isAdmin: true,
+      message: 'Admin authenticated',
+      token: process.env.ADMIN_TOKEN || 'test-admin-secret-123'
     });
   }
+  
+  return res.status(401).json({ 
+    ok: false, 
+    message: 'Invalid credentials' 
+  });
+});
+
+// Health check
+app.get('/health', (req, res) => {
+  res.json({
+    ok: true,
+    service: 'varsity-audio-backend',
+    version: '1.0.0',
+    timestamp: new Date().toISOString(),
+    cors: 'enabled',
+    allowedOrigins: ['http://localhost:5173', 'https://varsity-audio-monorepo-cjpj.onrender.com']
+  });
+});
+
+// 404 handler
+app.use('*', (req, res) => {
+  res.status(404).json({
+    ok: false,
+    error: 'Route not found',
+    path: req.originalUrl
+  });
+});
+
+// Error handler
+app.use((err, req, res, next) => {
+  console.error('Server error:', err);
+  res.status(500).json({
+    ok: false,
+    error: 'Internal server error',
+    message: process.env.NODE_ENV === 'development' ? err.message : undefined
+  });
 });
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
-  console.log(`📚 API: http://localhost:${PORT}/api/modules`);
-  console.log(`🔐 Admin: http://localhost:${PORT}/api/admin/`);
-  console.log(`☁️  Cloudinary: ${process.env.CLOUDINARY_URL ? 'Configured' : 'Not configured'}`);
-  console.log(`📊 Health: http://localhost:${PORT}/health`);
+  console.log(`✅ Backend running at http://localhost:${PORT}`);
+  console.log(`🌐 CORS enabled for:`);
+  console.log(`   • http://localhost:5173 (Vite)`);
+  console.log(`   • https://varsity-audio-monorepo-cjpj.onrender.com`);
+  console.log(`📚 API Endpoints:`);
+  console.log(`   • GET  /health`);
+  console.log(`   • GET  /api/chapters`);
+  console.log(`   • GET  /api/modules`);
+  console.log(`   • GET  /api/audios?module=12`);
+  console.log(`   • POST /api/admin/login`);
 });

@@ -1,20 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ModulesPage from './pages/ModulesPage';
-import AdminPage from './pages/AdminPage';
-
-// Import Tailwind directly
-import 'tailwindcss/tailwind.css';
+import ModuleDetailPage from './pages/ModuleDetailPage';
+import ChapterPage from './pages/ChapterPage'; // Import the new page
+import './index.css';
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50">
-        <Routes>
-          <Route path="/" element={<ModulesPage />} />
-          <Route path="/admin" element={<AdminPage />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<ModulesPage />} />
+        <Route path="/module/:id" element={<ModuleDetailPage />} />
+        {/* NEW ROUTE: Matches /module/7/chapter/1 */}
+        <Route path="/module/:moduleId/chapter/:chapterId" element={<ChapterPage />} />
+      </Routes>
     </Router>
   );
 }

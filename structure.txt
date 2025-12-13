@@ -1,22 +1,44 @@
 .
 ├── backend
+│   ├── controllers
+│   │   └── adminController.js
 │   ├── db
-│   │   └── chapters.json
+│   │   ├── chapters.json
+│   │   └── modules.json
 │   ├── index.js
+│   ├── index.js.backup
+│   ├── middleware
+│   │   └── auth.js
 │   ├── package.json
+│   ├── package-lock.json
 │   ├── README.md
 │   ├── routes
 │   │   └── admin.js
+│   ├── seed.js
 │   └── services
 │       └── tts.js
 ├── frontend
-│   └── src
-│       ├── App.jsx
-│       ├── components
-│       │   └── ModulesCard.jsx
-│       └── pages
-│           ├── AdminPage.jsx
-│           └── ModulesPage.jsx
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── public
+│   │   └── vite.svg
+│   ├── src
+│   │   ├── App.jsx
+│   │   ├── components
+│   │   │   └── ModulesCard.jsx
+│   │   ├── globals.css
+│   │   ├── index.css
+│   │   ├── main.jsx
+│   │   ├── pages
+│   │   │   ├── AdminPage.css
+│   │   │   ├── AdminPage.jsx
+│   │   │   └── ModulesPage.jsx
+│   │   └── styles
+│   │       └── zerodha.css
+│   ├── tailwind.config.js
+│   └── vite.config.js
+├── project-structure.txt
 └── structure.txt
 
-9 directories, 11 files
+13 directories, 29 files
