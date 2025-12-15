@@ -1,0 +1,225 @@
+{
+  "https://zerodha.com/varsity/chapter/the-need-to-invest/": {
+    "id": "chap-1",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "1. The Need to Invest",
+    "content": [
+      {
+        "type": "h2",
+        "text": "1.1 – Why should I invest?"
+      },
+      {
+        "type": "p",
+        "text": "Before we address the above question, let us understand what would happen if one chooses not to invest. Assume you earn Rs.50,000/- per month, and you spend Rs.30,000/-towards your day-to-day living; this can include expenses like housing, food, transport, shopping, medical, etc. The balance of Rs.20,000/- is your monthly surplus."
+      },
+      {
+        "type": "p",
+        "text": "For the sake of simplicity, let us ignore the tax effect in this discussion."
+      },
+      {
+        "type": "p",
+        "text": "To drive the point across, let us make a few simple assumptions –"
+      },
+      {
+        "type": "ol",
+        "text": "The employer is kind enough to give you a 10% salary hike every year.\nThe cost of living is likely to go up by 8% yearly.\nYou are 30 years old and plan to retire at 50, this translates to 20 working years.\nYou don’t intend to work after you retire.\nYour expenses are fixed, and you don’t foresee any other expenses.\n The balance cash of Rs.20,000/- per month is retained as hard cash."
+      },
+      {
+        "type": "ol",
+        "text": "The employer is kind enough to give you a 10% salary hike every year.\nThe cost of living is likely to go up by 8% yearly.\nYou are 30 years old and plan to retire at 50, this translates to 20 working years.\nYou don’t intend to work after you retire.\nYour expenses are fixed, and you don’t foresee any other expenses.\n The balance cash of Rs.20,000/- per month is retained as hard cash."
+      },
+      {
+        "type": "p",
+        "text": "Going by these assumptions, here is what the cash balance will look like in 20 years."
+      },
+      {
+        "type": "table",
+        "text": "Years\tYearly Income\tYearly Expense\tCash Retained\n1\t600,000\t360,000\t240,000\n2\t6,60,000\t3,88,800\t2,71,200\n3\t7,26,000\t4,19,904\t3,06,096\n4\t7,98,600\t4,53,496\t3,45,104\n5\t8,78,460\t4,89,776\t3,88,684\n6\t9,66,306\t5,28,958\t4,37,348\n7\t10,62,937\t5,71,275\t4,91,662\n8\t11,69,230\t6,16,977\t5,52,254\n9\t12,86,153\t6,66,335\t6,19,818\n10\t14,14,769\t7,19,642\t6,95,127\n11\t15,56,245\t7,77,213\t7,79,032\n12\t17,11,870\t8,39,390\t8,72,480\n13\t18,83,057\t9,06,541\t9,76,516\n14\t20,71,363\t9,79,065\t10,92,298\n15\t22,78,499\t10,57,390\t12,21,109\n16\t25,06,349\t11,41,981\t13,64,368\n17\t27,56,984\t12,33,339\t15,23,644\n18\t30,32,682\t13,32,006\t17,00,676\n19\t33,35,950\t14,38,567\t18,97,383\n20\t36,69,545\t15,53,652\t21,15,893\nTotal Income\t17,890,693"
+      },
+      {
+        "type": "p",
+        "text": "If one were to analyze these numbers, one would soon realize this is a scary situation. A few things are quite obvious –"
+      },
+      {
+        "type": "ol",
+        "text": "After 20 years of hard work, you have accumulated Rs.1.7Crs.\nSince your expenses are fixed, your lifestyle has not changed over the years, and you probably even suppressed your lifelong aspirations – a better home, car, vacations, etc.\nAfter you retire, assuming the expenses will continue to grow at 8%, the retirement corpus of Rs.1.7Crs is good enough to sail you through roughly 8 years of post-retirement life. 8th year onwards, you will be in a tight spot with literally no savings left to back you up."
+      },
+      {
+        "type": "ol",
+        "text": "After 20 years of hard work, you have accumulated Rs.1.7Crs.\nSince your expenses are fixed, your lifestyle has not changed over the years, and you probably even suppressed your lifelong aspirations – a better home, car, vacations, etc.\nAfter you retire, assuming the expenses will continue to grow at 8%, the retirement corpus of Rs.1.7Crs is good enough to sail you through roughly 8 years of post-retirement life. 8th year onwards, you will be in a tight spot with literally no savings left to back you up."
+      },
+      {
+        "type": "p",
+        "text": "What would you do after you run out of money in 8 years? How do you fund your life? Is there a way to ensure that you collect a more considerable sum at the end of 20 years?"
+      },
+      {
+        "type": "p",
+        "text": "At this point, you may think that the assumptions are simple and that real life does not work like this. I agree, and I won’t dispute that fact. However, the point to note in the above calculation is that no investments are made, hence the cash retained has a flat or zero growth."
+      },
+      {
+        "type": "p",
+        "text": "Let’s consider another scenario where instead of keeping the cash idle, you choose to invest the cash in an investment option that grows at, let’s say, 12% per annum. For example – in the first year, you retained Rs.240,000/- which, when invested at 12% per annum for 20 years (19 years assuming you invest at the end of 1st year), yields Rs.2,067,063/- at the end of the 20th year. For those interested in math, here is how that works –"
+      },
+      {
+        "type": "p",
+        "text": "= 240000*(1+12%)^(19)"
+      },
+      {
+        "type": "p",
+        "text": "= 2067063"
+      },
+      {
+        "type": "p",
+        "text": "Dont worry about the math at this point. We will explain that later in this module (and several other modules in Varsity). Here is how the table looks if you choose to invest."
+      },
+      {
+        "type": "table",
+        "text": "Years\tYearly Income\tYearly Expense\tCash Retained\tRetained Cash Invested @12%\n1\t600,000\t360,000\t240,000\t 20,67,063\n2\t6,60,000\t3,88,800\t2,71,200\t 20,85,519\n3\t7,26,000\t4,19,904\t3,06,096\t 21,01,668\n4\t7,98,600\t4,53,496\t3,45,104\t 21,15,621\n5\t8,78,460\t4,89,776\t3,88,684\t 21,27,487\n6\t9,66,306\t5,28,958\t4,37,348\t 21,37,368\n7\t10,62,937\t5,71,275\t4,91,662\t 21,45,363\n8\t11,69,230\t6,16,977\t5,52,254\t 21,51,566\n9\t12,86,153\t6,66,335\t6,19,818\t 21,56,069\n10\t14,14,769\t7,19,642\t6,95,127\t 21,58,959\n11\t15,56,245\t7,77,213\t7,79,032\t 21,60,318\n12\t17,11,870\t8,39,390\t8,72,480\t 21,60,228\n13\t18,83,057\t9,06,541\t9,76,516\t 21,58,765\n14\t20,71,363\t9,79,065\t10,92,298\t 21,56,003\n15\t22,78,499\t10,57,390\t12,21,109\t 21,52,012\n16\t25,06,349\t11,41,981\t13,64,368\t 21,46,859\n17\t27,56,984\t12,33,339\t15,23,644\t 21,40,611\n18\t30,32,682\t13,32,006\t17,00,676\t 21,33,328\n19\t33,35,950\t14,38,567\t18,97,383\t 21,25,069\n20\t36,69,545\t15,53,652\t21,15,893\t 21,15,893\nTotal cash after 20 years\t 4,26,95,771"
+      },
+      {
+        "type": "p",
+        "text": "Your cash balance has increased significantly with the decision to invest surplus cash. The cash balance has grown to Rs.4.26Crs from Rs.1.7Crs,  a staggering 2.4x more than earlier (when you choose not to invest). Clearly, with the decision to invest, you are in a much better situation to deal with your post-retirement life."
+      },
+      {
+        "type": "p",
+        "text": "Now, going back to the initial question of why invest? There are a few compelling reasons –"
+      },
+      {
+        "type": "ol",
+        "text": "Fight Inflation – By investing, one can deal better with the inevitable reality of life – the growing cost of living – generally referred to as Inflation.\nCreate Wealth – By investing, one can build a bigger corpus by the end of the target period. In the above example, the period was up to retirement, but it can be anything – children’s education, marriage, house purchase, retirement holidays, etc\nBetter life – To meet life’s financial aspirations."
+      },
+      {
+        "type": "ol",
+        "text": "Fight Inflation – By investing, one can deal better with the inevitable reality of life – the growing cost of living – generally referred to as Inflation.\nCreate Wealth – By investing, one can build a bigger corpus by the end of the target period. In the above example, the period was up to retirement, but it can be anything – children’s education, marriage, house purchase, retirement holidays, etc\nBetter life – To meet life’s financial aspirations."
+      },
+      {
+        "type": "h2",
+        "text": "1.2 – Where to invest?"
+      },
+      {
+        "type": "p",
+        "text": "Having figured out the reasons to invest, the next obvious question is – where would one invest, and what return can one expect with investing? When investing, one has to choose an asset class that suits the individual’s risk and returns profile. For example, one individual will be open to taking a lot of risk with his or her money, while another may want to take moderate risk, while another would want zero risk."
+      },
+      {
+        "type": "p",
+        "text": "Think of an asset class as an investment vehicle defined by its risk and return characteristics.  The following are some of the popular asset classes."
+      },
+      {
+        "type": "ol",
+        "text": "Fixed income instruments\nEquity\nReal estate\nCommodities (precious metals)"
+      },
+      {
+        "type": "ol",
+        "text": "Fixed income instruments\nEquity\nReal estate\nCommodities (precious metals)"
+      },
+      {
+        "type": "h3",
+        "text": "Fixed Income Instruments"
+      },
+      {
+        "type": "p",
+        "text": "Fixed-income instruments are investment avenues where your principal amount (the money you invest) is perceived to be safe. The entity pays an interest amount on the principal you invest. The bank’s fixed deposit scheme is the simplest example of a fixed investment instrument.  The interest paid could be quarterly, semi-annual or annual. The capital is returned to the investor at the end of the investment period, also known as the maturity period."
+      },
+      {
+        "type": "p",
+        "text": "A few examples for fixed-income instruments are –"
+      },
+      {
+        "type": "ol",
+        "text": "Bank’s Fixed deposits\nBonds issued by the Government of India (also called G Sec bonds and T Bills)\nBonds issued by Government related agencies such as GAIL, HUDCO, NHAI, etc\nBonds issued by corporate’s (Tata, Bajaj, Reliance, Adani)"
+      },
+      {
+        "type": "p",
+        "text": "As of October 2022, the typical return from a fixed-income instrument (bank’s FD) varies between 5 – 6%. Government bonds offer about 5.5%, and a few corporate bonds offer nearly 9 or 10%. The rates across different instruments vary because of the risk varies. The Govt bonds are considered the safest investment, with zero risk to your investment, because, well, the govt can’t cheat and run away with your money. Corporate bonds are risky, though; investment in corporate bonds can go to zero, and we have seen plenty of such examples in the past."
+      },
+      {
+        "type": "h3",
+        "text": "Equity"
+      },
+      {
+        "type": "p",
+        "text": "Investment in Equities involves buying shares of publicly listed companies. The shares are traded on the Bombay Stock Exchange (BSE) and the National Stock Exchange (NSE)."
+      },
+      {
+        "type": "p",
+        "text": "When an investor invests in equity, unlike a fixed-income instrument, there is no capital guarantee. However, as a trade-off, the returns from equity investment can be much better. Indian Equities have generated upwards of 12% CAGR (compound annual growth rate) over the past 10 to 15 years."
+      },
+      {
+        "type": "p",
+        "text": "Investing in some of the best and most well-run Indian companies has yielded over 20% CAGR in the long term. Identifying such investment opportunities requires skill, hard work, and patience."
+      },
+      {
+        "type": "h3",
+        "text": "Real Estate"
+      },
+      {
+        "type": "p",
+        "text": "Real Estate Investment involves transacting (buying and selling) commercial and non-commercial land. Typical examples include transacting in vacant plots, apartments, and commercial buildings. There are two income sources from real estate investments: Rental income and Capital appreciation of the investment amount. The rental yield typically varies between 2-3%, which is not so attractive, in my opinion. The appreciation in land prices is in select pockets and is not uniform."
+      },
+      {
+        "type": "p",
+        "text": "The transaction procedure can be quite complex involving legal verification of documents. The cash outlay in real estate investment is usually quite large. There is no official metric to measure the returns generated by real estate. Hence it would be hard to comment on this."
+      },
+      {
+        "type": "h3",
+        "text": "Commodity – Bullion"
+      },
+      {
+        "type": "p",
+        "text": "Gold and silver are considered one of the most popular investment options.  Gold and silver, over the long term, have appreciated. Investments in these metals have yielded a CAGR return of approximately 5-8% over the last 20 years. There are several ways to invest in gold and silver. One can invest in jewelry, Exchange Traded Funds (ETF), or Sovereign Gold bonds, popularly called as SGBs."
+      },
+      {
+        "type": "p",
+        "text": "Going back to our initial example of investing the surplus cash, it would be interesting to see how much one would have saved by the end of 20 years, considering he can invest in any one – fixed income, equity, or bullion."
+      },
+      {
+        "type": "ol",
+        "text": "By investing in fixed income at an average rate of 9% per annum (good corporate bond), the corpus would have grown to Rs.3.3Crs.\nInvesting in equities at an average rate of 15% per annum, the corpus would have grown to Rs.5.4Crs.\nInvesting in bullion at an average rate of 8% per annum, the corpus would have grown to Rs.3.09Crs."
+      },
+      {
+        "type": "p",
+        "text": "Equities tend to give you the best returns, especially when you have a multi-year investment perspective."
+      },
+      {
+        "type": "p",
+        "text": "Many of you reading this may wonder why I’ve not considered Cryptocurrencies as an asset class. When you invest your hard-earned money, you need to ensure enough checks, balances, and regulatory frameworks to protect you as an investor. Crypto, lacks all these; hence I’d suggest you stay away from crypto (or any other fancy investment option) till there is a regulatory framework."
+      },
+      {
+        "type": "p",
+        "text": "It is best if your investments have a mix of all asset classes. It is wise to diversify your investment among the various asset classes. The technique of allocating money across asset classes is termed ‘Asset Allocation’, and we will discuss asset allocation later in Varsity."
+      },
+      {
+        "type": "p",
+        "text": "For instance, a young professional may take a higher risk given the age and years of investment available. Typically investors should allocate at least 60% of their investable amount in equity, 20% in precious metals, and 20% in fixed-income investments. The percentage mix changes based on risk profile and age. For example, a retired person could invest 80% in fixed income (Govt bonds maybe), 10% in equity markets, and 10% in precious metals."
+      },
+      {
+        "type": "h2",
+        "text": "1.3 – Things to note before investing"
+      },
+      {
+        "type": "p",
+        "text": "Investing is an integral part of financial planning, but before you start your investment journey, it is good to be aware of the following –"
+      },
+      {
+        "type": "ol",
+        "text": "Risk and Return go hand in hand. Higher the risk, the higher the return. The lower the risk, the lower the return.\nInvestment in fixed income is a good option if you want to protect your principal amount. It is relatively less risky. However, you have the risk of losing money when you adjust the inflation return. Example – A fixed deposit that gives you 9% when the inflation is 10% means you lose a net of 1% per annum. Alternatively, the risk increases if you invest in a corporate fixed-income instrument.\nInvestment in Equities is a great option. It is known to beat inflation over a long period. Historically equity investment has generated returns close to 14-15%. However, equity investments can be risky.\nReal Estate investment requires a significant outlay of cash and cannot be done with smaller amounts. Liquidity is another issue with real estate investment – you cannot buy or sell whenever you want.\nGold and silver are relatively safer, but the historical return on such investment has not been very encouraging."
+      },
+      {
+        "type": "ol",
+        "text": "Risk and Return go hand in hand. Higher the risk, the higher the return. The lower the risk, the lower the return.\nInvestment in fixed income is a good option if you want to protect your principal amount. It is relatively less risky. However, you have the risk of losing money when you adjust the inflation return. Example – A fixed deposit that gives you 9% when the inflation is 10% means you lose a net of 1% per annum. Alternatively, the risk increases if you invest in a corporate fixed-income instrument.\nInvestment in Equities is a great option. It is known to beat inflation over a long period. Historically equity investment has generated returns close to 14-15%. However, equity investments can be risky.\nReal Estate investment requires a significant outlay of cash and cannot be done with smaller amounts. Liquidity is another issue with real estate investment – you cannot buy or sell whenever you want.\nGold and silver are relatively safer, but the historical return on such investment has not been very encouraging."
+      },
+      {
+        "type": "p",
+        "text": "You can download the excel sheet used in the chapter to generate the two tables."
+      },
+      {
+        "type": "h3",
+        "text": "Key takeaways from this chapter"
+      },
+      {
+        "type": "ol",
+        "text": "One has to invest, to secure his or her’s financial future.\nThe corpus you build at the end of the investment period is sensitive to the return percentage. A slight variation in the rate can significantly impact the corpus.\nChoose an instrument that best suits your risk and return appetite.\nEquity should be a part of your investment if you want to beat inflation in the long run.\nA good investment practice is to build a portfolio that mixes all asset classes."
+      }
+    ]
+  }
+}

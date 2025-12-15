@@ -1,0 +1,2660 @@
+[
+  {
+    "id": "chap-1",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "1. The Need to Invest",
+    "url": "https://zerodha.com/varsity/chapter/the-need-to-invest/"
+  },
+  {
+    "id": "chap-2",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "2. Regulators, the guardians of capital markets",
+    "url": "https://zerodha.com/varsity/chapter/regulators/"
+  },
+  {
+    "id": "chap-3",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "3. Market Intermediaries in Stock Markets explained",
+    "url": "https://zerodha.com/varsity/chapter/financial-intermediaries/"
+  },
+  {
+    "id": "chap-4",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "4. The IPO Markets (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/the-ipo-markets-part-1/"
+  },
+  {
+    "id": "chap-5",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "5. The IPO Markets (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/the-ipo-markets-part-2/"
+  },
+  {
+    "id": "chap-6",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "6. The Stock Markets",
+    "url": "https://zerodha.com/varsity/chapter/the-stock-markets/"
+  },
+  {
+    "id": "chap-7",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "7. Stock market index explained: Sensex, Nifty & how they work",
+    "url": "https://zerodha.com/varsity/chapter/the-stock-markets-index/"
+  },
+  {
+    "id": "chap-8",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "8. Commonly Used Jargons",
+    "url": "https://zerodha.com/varsity/chapter/commonly-used-jargons/"
+  },
+  {
+    "id": "chap-9",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "9. The Trading Terminal",
+    "url": "https://zerodha.com/varsity/chapter/the-trading-terminal/"
+  },
+  {
+    "id": "chap-10",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "10. Clearing and Settlement Process",
+    "url": "https://zerodha.com/varsity/chapter/clearing-and-settlement-process/"
+  },
+  {
+    "id": "chap-11",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "11. Corporate actions and impact on stock prices",
+    "url": "https://zerodha.com/varsity/chapter/five-corporate-actions-and-its-impact-on-stock-prices/"
+  },
+  {
+    "id": "chap-12",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "12. Key Events and Their Impact on Markets",
+    "url": "https://zerodha.com/varsity/chapter/key-events-and-their-impact-on-markets/"
+  },
+  {
+    "id": "chap-13",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "13. Getting started",
+    "url": "https://zerodha.com/varsity/chapter/getting-started/"
+  },
+  {
+    "id": "chap-14",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "14. Supplementary note – Rights, OFS, FPO",
+    "url": "https://zerodha.com/varsity/chapter/supplementary-note-ipo-ofs-fpo/"
+  },
+  {
+    "id": "chap-15",
+    "moduleUrl": "https://zerodha.com/varsity/module/introduction-to-stock-markets/",
+    "title": "15. Supplementary note – The 20 market depth or level 3 data",
+    "url": "https://zerodha.com/varsity/chapter/supplementary-note-the-20-market-depth/"
+  },
+  {
+    "id": "chap-16",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "1. निवेश की ज़रूरत",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a8%e0%a4%bf%e0%a4%b5%e0%a5%87%e0%a4%b6-%e0%a4%95%e0%a5%80-%e0%a4%9c%e0%a4%bc%e0%a4%b0%e0%a5%82%e0%a4%b0%e0%a4%a4/"
+  },
+  {
+    "id": "chap-17",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "2. रेगुलेटर्स – नियामक",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b0%e0%a5%87%e0%a4%97%e0%a5%81%e0%a4%b2%e0%a5%87%e0%a4%9f%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%a8%e0%a4%bf%e0%a4%af%e0%a4%be%e0%a4%ae%e0%a4%95/"
+  },
+  {
+    "id": "chap-18",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "3. फाइनेंशियल इन्टरमीडियरीज",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b6%e0%a4%bf%e0%a4%af%e0%a4%b2-%e0%a4%87%e0%a4%a8%e0%a5%8d%e0%a4%9f%e0%a4%b0%e0%a4%ae%e0%a5%80%e0%a4%a1%e0%a4%bf%e0%a4%af%e0%a4%b0%e0%a5%80/"
+  },
+  {
+    "id": "chap-19",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "4. आईपीओ (IPO) बाज़ार- भाग 1",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%86%e0%a4%88%e0%a4%aa%e0%a5%80%e0%a4%93-ipo-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%bc%e0%a4%be%e0%a4%b0-%e0%a4%ad%e0%a4%be%e0%a4%97-1/"
+  },
+  {
+    "id": "chap-20",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "5. आई पी ओ बाजार (IPO Market)- भाग 2",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%86%e0%a4%88-%e0%a4%aa%e0%a5%80-%e0%a4%93-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-ipo-market-%e0%a4%ad%e0%a4%be%e0%a4%97-2/"
+  },
+  {
+    "id": "chap-21",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "6. शेयर बाज़ार",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%bc%e0%a4%be%e0%a4%b0/"
+  },
+  {
+    "id": "chap-22",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "7. स्टॉक मार्केट इंडेक्स",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%89%e0%a4%95-%e0%a4%ae%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%95%e0%a5%87%e0%a4%9f-%e0%a4%87%e0%a4%82%e0%a4%a1%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%b8/"
+  },
+  {
+    "id": "chap-23",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "8. शेयर बाज़ार में प्रयोग होने वाले शब्द",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%bc%e0%a4%be%e0%a4%b0-%e0%a4%ae%e0%a5%87%e0%a4%82-%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a4%af%e0%a5%8b%e0%a4%97-%e0%a4%b9%e0%a5%8b/"
+  },
+  {
+    "id": "chap-24",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "9. ट्रेडिंग टर्मिनल",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%9f%e0%a4%b0%e0%a5%8d%e0%a4%ae%e0%a4%bf%e0%a4%a8%e0%a4%b2/"
+  },
+  {
+    "id": "chap-25",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "10. क्लियरिंग और सेटलमेंट की प्रक्रिया",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%8d%e0%a4%b2%e0%a4%bf%e0%a4%af%e0%a4%b0%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a5%87%e0%a4%9f%e0%a4%b2%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%95%e0%a5%80/"
+  },
+  {
+    "id": "chap-26",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "11. कंपनियों के पाँच फैसले और शेयर कीमतों पर उनका असर",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a4%82%e0%a4%aa%e0%a4%a8%e0%a4%bf%e0%a4%af%e0%a5%8b%e0%a4%82-%e0%a4%95%e0%a5%87-%e0%a4%aa%e0%a4%be%e0%a4%81%e0%a4%9a-%e0%a4%ab%e0%a5%88%e0%a4%b8%e0%a4%b2%e0%a5%87-%e0%a4%94%e0%a4%b0/"
+  },
+  {
+    "id": "chap-27",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "12. कुछ आर्थिक घटनाएं और बाजार पर उनका असर",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%81%e0%a4%9b-%e0%a4%86%e0%a4%b0%e0%a5%8d%e0%a4%a5%e0%a4%bf%e0%a4%95-%e0%a4%98%e0%a4%9f%e0%a4%a8%e0%a4%be%e0%a4%8f%e0%a4%82-%e0%a4%94%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be/"
+  },
+  {
+    "id": "chap-28",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "13. शुरू कैसे करें!",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b6%e0%a5%81%e0%a4%b0%e0%a5%82-%e0%a4%95%e0%a5%88%e0%a4%b8%e0%a5%87-%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82/"
+  },
+  {
+    "id": "chap-29",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "14. कुछ बची बातें",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%81%e0%a4%9b-%e0%a4%ac%e0%a4%9a%e0%a5%80-%e0%a4%ac%e0%a4%be%e0%a4%a4%e0%a5%87%e0%a4%82/"
+  },
+  {
+    "id": "chap-30",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b6%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/",
+    "title": "15. अतिरिक्त जानकारी- 20 मार्केट डेप्थ या लेवल 3 डेटा",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%85%e0%a4%a4%e0%a4%bf%e0%a4%b0%e0%a4%bf%e0%a4%95%e0%a5%8d%e0%a4%a4-%e0%a4%9c%e0%a4%be%e0%a4%a8%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80-20-%e0%a4%a1%e0%a5%87%e0%a4%aa%e0%a5%8d%e0%a4%a5/"
+  },
+  {
+    "id": "chap-31",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "1. Background",
+    "url": "https://zerodha.com/varsity/chapter/background/"
+  },
+  {
+    "id": "chap-32",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "2. Introducing Technical Analysis",
+    "url": "https://zerodha.com/varsity/chapter/introducing-technical-analysis/"
+  },
+  {
+    "id": "chap-33",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "3. The Chart Types",
+    "url": "https://zerodha.com/varsity/chapter/chart-types/"
+  },
+  {
+    "id": "chap-34",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "4. Getting Started with Candlesticks",
+    "url": "https://zerodha.com/varsity/chapter/getting-started-candlesticks/"
+  },
+  {
+    "id": "chap-35",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "5. Single Candlestick patterns (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/single-candlestick-patterns-part-1/"
+  },
+  {
+    "id": "chap-36",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "6. Single Candlestick patterns (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/single-candlestick-patterns-part-2/"
+  },
+  {
+    "id": "chap-37",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "7. Single Candlestick patterns (Part 3)",
+    "url": "https://zerodha.com/varsity/chapter/single-candlestick-patterns-part-3/"
+  },
+  {
+    "id": "chap-38",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "8. Multiple candlestick patterns (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/multiple-candlestick-patterns-part-1/"
+  },
+  {
+    "id": "chap-39",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "9. Multiple Candlestick Patterns (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/multiple-candlestick-patterns-part-2/"
+  },
+  {
+    "id": "chap-40",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "10. Multiple Candlestick Patterns (Part 3)",
+    "url": "https://zerodha.com/varsity/chapter/multiple-candlestick-patterns-part-3/"
+  },
+  {
+    "id": "chap-41",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "11. The Support and Resistance",
+    "url": "https://zerodha.com/varsity/chapter/support-resistance/"
+  },
+  {
+    "id": "chap-42",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "12. Volumes",
+    "url": "https://zerodha.com/varsity/chapter/volumes/"
+  },
+  {
+    "id": "chap-43",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "13. Moving Averages",
+    "url": "https://zerodha.com/varsity/chapter/moving-averages/"
+  },
+  {
+    "id": "chap-44",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "14. Indicators (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/indicators-part-1/"
+  },
+  {
+    "id": "chap-45",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "15. Indicators (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/indicators-part-2/"
+  },
+  {
+    "id": "chap-46",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "16. The Fibonacci Retracements",
+    "url": "https://zerodha.com/varsity/chapter/fibonacci-retracements/"
+  },
+  {
+    "id": "chap-47",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "17. The Dow Theory (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/dow-theory-part-1/"
+  },
+  {
+    "id": "chap-48",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "18. The Dow Theory (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/dow-theory-part-2/"
+  },
+  {
+    "id": "chap-49",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "19. The Finale – Helping you get started",
+    "url": "https://zerodha.com/varsity/chapter/finale-helping-get-started/"
+  },
+  {
+    "id": "chap-50",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "20. Other indicators",
+    "url": "https://zerodha.com/varsity/chapter/supplementary-notes-1/"
+  },
+  {
+    "id": "chap-51",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "21. Interesting features on TradingView",
+    "url": "https://zerodha.com/varsity/chapter/interesting-features-on-tradingview/"
+  },
+  {
+    "id": "chap-52",
+    "moduleUrl": "https://zerodha.com/varsity/module/technical-analysis/",
+    "title": "22. The Central Pivot Range",
+    "url": "https://zerodha.com/varsity/chapter/the-central-pivot-range/"
+  },
+  {
+    "id": "chap-53",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "1. परिप्रेक्ष्य",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%b7%e0%a5%8d%e0%a4%af/"
+  },
+  {
+    "id": "chap-54",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "2. टेक्निकल एनालिसिस से परिचय",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf/"
+  },
+  {
+    "id": "chap-55",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "3. चार्ट के प्रकार",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%9a%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%9f-%e0%a4%95%e0%a5%87-%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0/"
+  },
+  {
+    "id": "chap-56",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "4. कैंडलस्टिक को समझने की शुरुवात",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%88%e0%a4%82%e0%a4%a1%e0%a4%b2%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%bf%e0%a4%95-%e0%a4%95%e0%a5%8b-%e0%a4%b8%e0%a4%ae%e0%a4%9d%e0%a4%a8%e0%a5%87-%e0%a4%95%e0%a5%80-%e0%a4%b6%e0%a5%81/"
+  },
+  {
+    "id": "chap-57",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "5. सिंगल कैंडलस्टिक पैटर्न (भाग 1)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b8%e0%a4%bf%e0%a4%82%e0%a4%97%e0%a4%b2-%e0%a4%95%e0%a5%88%e0%a4%82%e0%a4%a1%e0%a4%b2%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%bf%e0%a4%95-%e0%a4%aa%e0%a5%88%e0%a4%9f%e0%a4%b0%e0%a5%8d%e0%a4%a8/"
+  },
+  {
+    "id": "chap-58",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "6. सिंगल कैंडलस्टिक पैटर्न्स (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b8%e0%a4%bf%e0%a4%82%e0%a4%97%e0%a4%b2-%e0%a4%95%e0%a5%88%e0%a4%82%e0%a4%a1%e0%a4%b2%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%bf%e0%a4%95-%e0%a4%aa%e0%a5%88%e0%a4%9f%e0%a4%b0%e0%a5%8d%e0%a4%a8-2/"
+  },
+  {
+    "id": "chap-59",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "7. सिंगल कैंडलस्टिक पैटर्न्स ( भाग 3)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b8%e0%a4%bf%e0%a4%82%e0%a4%97%e0%a4%b2-%e0%a4%95%e0%a5%88%e0%a4%82%e0%a4%a1%e0%a4%b2%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%bf%e0%a4%95-%e0%a4%aa%e0%a5%88%e0%a4%9f%e0%a4%b0%e0%a5%8d%e0%a4%a8%e0%a5%8d/"
+  },
+  {
+    "id": "chap-60",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "8. मल्टीपल कैंडलस्टिक पैटर्न (भाग 1)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a4%b2%e0%a5%8d%e0%a4%9f%e0%a5%80%e0%a4%aa%e0%a4%b2-%e0%a4%95%e0%a5%88%e0%a4%82%e0%a4%a1%e0%a4%b2%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%bf%e0%a4%95-%e0%a4%aa%e0%a5%88%e0%a4%9f%e0%a4%b0%e0%a5%8d/"
+  },
+  {
+    "id": "chap-61",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "9. मल्टीपल कैंडलस्टिक पैटर्न (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a4%b2%e0%a5%8d%e0%a4%9f%e0%a5%80%e0%a4%aa%e0%a4%b2-%e0%a4%95%e0%a5%88%e0%a4%82%e0%a4%a1%e0%a4%b2%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%bf%e0%a4%95-%e0%a4%aa%e0%a5%88%e0%a4%9f%e0%a4%b0-3/"
+  },
+  {
+    "id": "chap-62",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "10. मल्टीपल कैंडलस्टिक पैटर्न (भाग 3)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a4%b2%e0%a5%8d%e0%a4%9f%e0%a5%80%e0%a4%aa%e0%a4%b2-%e0%a4%95%e0%a5%88%e0%a4%82%e0%a4%a1%e0%a4%b2%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%bf%e0%a4%95-%e0%a4%aa%e0%a5%88%e0%a4%9f%e0%a4%b0-2/"
+  },
+  {
+    "id": "chap-63",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "11. सपोर्ट और रेजिस्टेंस",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b8%e0%a4%aa%e0%a5%8b%e0%a4%b0%e0%a5%8d%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%b0%e0%a5%87%e0%a4%9c%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%87%e0%a4%82%e0%a4%b8-the-support-resistance/"
+  },
+  {
+    "id": "chap-64",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "12. वॉल्यूम",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b5%e0%a5%89%e0%a4%b2%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%ae-volumes/"
+  },
+  {
+    "id": "chap-65",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "13. मूविंग एवरेज",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a5%82%e0%a4%b5%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%8f%e0%a4%b5%e0%a4%b0%e0%a5%87%e0%a4%9c-moving-averages/"
+  },
+  {
+    "id": "chap-66",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "14. इंडिकेटर्स -भाग 1",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%87%e0%a4%82%e0%a4%a1%e0%a4%bf%e0%a4%95%e0%a5%87%e0%a4%9f%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%ad%e0%a4%be%e0%a4%97-1/"
+  },
+  {
+    "id": "chap-67",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "15. इंडिकेटर्स -भाग 2",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%87%e0%a4%82%e0%a4%a1%e0%a4%bf%e0%a4%95%e0%a5%87%e0%a4%9f%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%ad%e0%a4%be%e0%a4%97-2-indicators-part-2/"
+  },
+  {
+    "id": "chap-68",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "16. फिबोनाची रीट्रेसमेंट्स",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ab%e0%a4%bf%e0%a4%ac%e0%a5%8b%e0%a4%a8%e0%a4%be%e0%a4%9a%e0%a5%80-%e0%a4%b0%e0%a5%80%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%b8%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a5%8d%e0%a4%b8-fibonacc/"
+  },
+  {
+    "id": "chap-69",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "17. डॉउ थ्योरी – भाग 1",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a1%e0%a5%89%e0%a4%89-%e0%a4%a5%e0%a5%8d%e0%a4%af%e0%a5%8b%e0%a4%b0%e0%a5%80-%e0%a4%ad%e0%a4%be%e0%a4%97-1/"
+  },
+  {
+    "id": "chap-70",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "18. डॉउ थ्योरी – भाग 2",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a1%e0%a5%89%e0%a4%89-%e0%a4%a5%e0%a5%8d%e0%a4%af%e0%a5%8b%e0%a4%b0%e0%a5%80-%e0%a4%ad%e0%a4%be%e0%a4%97-2-the-dow-theory-part-2/"
+  },
+  {
+    "id": "chap-71",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "19. शुरू करने से पहले कुछ ज़रूरी जानकारी",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b6%e0%a5%81%e0%a4%b0%e0%a5%82-%e0%a4%95%e0%a4%b0%e0%a4%a8%e0%a5%87-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b9%e0%a4%b2%e0%a5%87-%e0%a4%95%e0%a5%81%e0%a4%9b-%e0%a4%9c%e0%a4%bc%e0%a4%b0%e0%a5%82/"
+  },
+  {
+    "id": "chap-72",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "20. कुछ ज़रूरी नोट्स – 1",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%81%e0%a4%9b-%e0%a4%9c%e0%a4%bc%e0%a4%b0%e0%a5%82%e0%a4%b0%e0%a5%80-%e0%a4%a8%e0%a5%8b%e0%a4%9f%e0%a5%8d%e0%a4%b8-1/"
+  },
+  {
+    "id": "chap-73",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "21. ट्रेडिंगव्यू के उपयोगी फीचर",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97%e0%a4%b5%e0%a5%8d%e0%a4%af%e0%a5%82-%e0%a4%95%e0%a5%87-%e0%a4%89%e0%a4%aa%e0%a4%af%e0%a5%8b%e0%a4%97%e0%a5%80-%e0%a4%ab/"
+  },
+  {
+    "id": "chap-74",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "1. Introduction to Fundamental Analysis",
+    "url": "https://zerodha.com/varsity/chapter/introduction-fundamental-analysis/"
+  },
+  {
+    "id": "chap-75",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "2. Mindset of an Investor",
+    "url": "https://zerodha.com/varsity/chapter/mindset-investor/"
+  },
+  {
+    "id": "chap-76",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "3. How to Read the Annual Report of a Company",
+    "url": "https://zerodha.com/varsity/chapter/read-annual-report-company/"
+  },
+  {
+    "id": "chap-77",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "4. Understanding the P&L Statement (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/understanding-pl-statement-part1/"
+  },
+  {
+    "id": "chap-78",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "5. Understanding P&L Statement (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/understanding-pl-statement-part2/"
+  },
+  {
+    "id": "chap-79",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "6. Understanding Balance Sheet Statement (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/understanding-balance-sheet-statement-part-1/"
+  },
+  {
+    "id": "chap-80",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "7. Understanding the Balance Sheet Statement (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/understanding-balance-sheet-statement-part-2/"
+  },
+  {
+    "id": "chap-81",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "8. The Cash Flow statement",
+    "url": "https://zerodha.com/varsity/chapter/cash-flow-statement/"
+  },
+  {
+    "id": "chap-82",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "9. The Financial Ratio Analysis (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/financial-ratio-analysis/"
+  },
+  {
+    "id": "chap-83",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "10. The Financial Ratio Analysis (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/financial-ratios-part-2/"
+  },
+  {
+    "id": "chap-84",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "11. The Financial Ratio Analysis (Part 3)",
+    "url": "https://zerodha.com/varsity/chapter/financial-ratios-part-3/"
+  },
+  {
+    "id": "chap-85",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "12. The Investment Due Diligence",
+    "url": "https://zerodha.com/varsity/chapter/investment-due-diligence/"
+  },
+  {
+    "id": "chap-86",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "13. Equity Research (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/equity-research-part-1/"
+  },
+  {
+    "id": "chap-87",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "14. DCF Primer",
+    "url": "https://zerodha.com/varsity/chapter/dcf-primer/"
+  },
+  {
+    "id": "chap-88",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "15. Equity Research (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/equity-research-part-2/"
+  },
+  {
+    "id": "chap-89",
+    "moduleUrl": "https://zerodha.com/varsity/module/fundamental-analysis/",
+    "title": "16. The Finale",
+    "url": "https://zerodha.com/varsity/chapter/finale/"
+  },
+  {
+    "id": "chap-90",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "1. फंडामेंटल एनालिसिस का परिचय",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8-%e0%a4%95%e0%a4%be-%e0%a4%aa%e0%a4%b0/"
+  },
+  {
+    "id": "chap-91",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "2. निवेशक की सोच",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a8%e0%a4%bf%e0%a4%b5%e0%a5%87%e0%a4%b6%e0%a4%95-%e0%a4%95%e0%a5%80-%e0%a4%b8%e0%a5%8b%e0%a4%9a/"
+  },
+  {
+    "id": "chap-92",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "3. कंपनी की वार्षिक रिपोर्ट (Annual Report) कैसे पढ़ते हैं?",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a4%82%e0%a4%aa%e0%a4%a8%e0%a5%80-%e0%a4%95%e0%a5%80-%e0%a4%b5%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%b7%e0%a4%bf%e0%a4%95-%e0%a4%b0%e0%a4%bf%e0%a4%aa%e0%a5%8b%e0%a4%b0%e0%a5%8d%e0%a4%9f-annual/"
+  },
+  {
+    "id": "chap-93",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "4. P&L स्टेटमेंट को कैसे समझें? (भाग 1)",
+    "url": "https://zerodha.com/varsity/chapter/pl-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%87%e0%a4%9f%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%95%e0%a5%8b-%e0%a4%b8%e0%a4%ae%e0%a4%9d%e0%a5%87%e0%a4%82-%e0%a4%ad%e0%a4%be%e0%a4%97-1/"
+  },
+  {
+    "id": "chap-94",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "5. P&L स्टेटमेंट को समझें- भाग 2",
+    "url": "https://zerodha.com/varsity/chapter/pl-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%87%e0%a4%9f%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%95%e0%a5%8b-%e0%a4%b8%e0%a4%ae%e0%a4%9d%e0%a5%87%e0%a4%82-%e0%a4%ad%e0%a4%be%e0%a4%97-2/"
+  },
+  {
+    "id": "chap-95",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "6. बैलेंस शीट को कैसे समझें (भाग 1)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ac%e0%a5%88%e0%a4%b2%e0%a5%87%e0%a4%82%e0%a4%b8-%e0%a4%b6%e0%a5%80%e0%a4%9f-%e0%a4%95%e0%a5%8b-%e0%a4%95%e0%a5%88%e0%a4%b8%e0%a5%87-%e0%a4%b8%e0%a4%ae%e0%a4%9d%e0%a5%87%e0%a4%82-%e0%a4%ad/"
+  },
+  {
+    "id": "chap-96",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "7. बैलेंस शीट स्टेटमेंट को कैसे समझें (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ac%e0%a5%88%e0%a4%b2%e0%a5%87%e0%a4%82%e0%a4%b8-%e0%a4%b6%e0%a5%80%e0%a4%9f-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%87%e0%a4%9f%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-2/"
+  },
+  {
+    "id": "chap-97",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "8. कैश फ्लो स्टेटमेंट",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%88%e0%a4%b6-%e0%a4%ab%e0%a5%8d%e0%a4%b2%e0%a5%8b-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%87%e0%a4%9f%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f/"
+  },
+  {
+    "id": "chap-98",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "9. फाइनेंशियल रेश्यो की एनालिसिस (भाग 1)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b6%e0%a4%bf%e0%a4%af%e0%a4%b2-%e0%a4%b0%e0%a5%87%e0%a4%b6%e0%a5%8d%e0%a4%af%e0%a5%8b-%e0%a4%95%e0%a5%80-%e0%a4%8f%e0%a4%a8%e0%a4%be/"
+  },
+  {
+    "id": "chap-99",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "10. फाइनेंशियल रेश्यो एनालिसिस (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b6%e0%a4%bf%e0%a4%af%e0%a4%b2-%e0%a4%b0%e0%a5%87%e0%a4%b6%e0%a5%8d%e0%a4%af%e0%a5%8b-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8/"
+  },
+  {
+    "id": "chap-100",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "11. फाइनेंशियल रेश्यो एनालिसिस (भाग 3)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b6%e0%a4%bf%e0%a4%af%e0%a4%b2-%e0%a4%b0%e0%a5%87%e0%a4%b6%e0%a5%8d%e0%a4%af%e0%a5%8b-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf-3/"
+  },
+  {
+    "id": "chap-101",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "12. निवेश के पहले के जरूरी काम (The Investment Due Diligence)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a8%e0%a4%bf%e0%a4%b5%e0%a5%87%e0%a4%b6-%e0%a4%95%e0%a5%87-%e0%a4%aa%e0%a4%b9%e0%a4%b2%e0%a5%87-%e0%a4%95%e0%a5%87-%e0%a4%9c%e0%a4%b0%e0%a5%82%e0%a4%b0%e0%a5%80-%e0%a4%95%e0%a4%be%e0%a4%ae/"
+  },
+  {
+    "id": "chap-102",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "13. इक्विटी रिसर्च (भाग 1)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%87%e0%a4%95%e0%a5%8d%e0%a4%b5%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a4%b0%e0%a5%8d%e0%a4%9a-%e0%a4%ad%e0%a4%be%e0%a4%97-1/"
+  },
+  {
+    "id": "chap-103",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "14. DCF का सिद्धांत",
+    "url": "https://zerodha.com/varsity/chapter/dcf-%e0%a4%95%e0%a4%be-%e0%a4%b8%e0%a4%bf%e0%a4%a6%e0%a5%8d%e0%a4%a7%e0%a4%be%e0%a4%82%e0%a4%a4/"
+  },
+  {
+    "id": "chap-104",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "15. इक्विटी रिसर्च (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%87%e0%a4%95%e0%a5%8d%e0%a4%b5%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a4%b0%e0%a5%8d%e0%a4%9a-%e0%a4%ad%e0%a4%be%e0%a4%97-2/"
+  },
+  {
+    "id": "chap-105",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a4%82%e0%a4%a1%e0%a4%be%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%b2-%e0%a4%8f%e0%a4%a8%e0%a4%be%e0%a4%b2%e0%a4%bf%e0%a4%b8%e0%a4%bf%e0%a4%b8/",
+    "title": "16. अंतिम हिस्सा",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%85%e0%a4%82%e0%a4%a4%e0%a4%bf%e0%a4%ae-%e0%a4%b9%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%b8%e0%a4%be/"
+  },
+  {
+    "id": "chap-106",
+    "moduleUrl": "https://zerodha.com/varsity/module/futures-trading/",
+    "title": "1. Background – Forwards Market",
+    "url": "https://zerodha.com/varsity/chapter/background-forwards-market/"
+  },
+  {
+    "id": "chap-107",
+    "moduleUrl": "https://zerodha.com/varsity/module/futures-trading/",
+    "title": "2. Introducing Futures Contract",
+    "url": "https://zerodha.com/varsity/chapter/introducing-futures-contract/"
+  },
+  {
+    "id": "chap-108",
+    "moduleUrl": "https://zerodha.com/varsity/module/futures-trading/",
+    "title": "3. The Futures Trade",
+    "url": "https://zerodha.com/varsity/chapter/futures-trade/"
+  },
+  {
+    "id": "chap-109",
+    "moduleUrl": "https://zerodha.com/varsity/module/futures-trading/",
+    "title": "4. Leverage & Payoff",
+    "url": "https://zerodha.com/varsity/chapter/leverage-payoff/"
+  },
+  {
+    "id": "chap-110",
+    "moduleUrl": "https://zerodha.com/varsity/module/futures-trading/",
+    "title": "5. Margin & M2M",
+    "url": "https://zerodha.com/varsity/chapter/margin-m2m/"
+  },
+  {
+    "id": "chap-111",
+    "moduleUrl": "https://zerodha.com/varsity/module/futures-trading/",
+    "title": "6. Margin Calculator (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/margin-calculator-part-1/"
+  },
+  {
+    "id": "chap-112",
+    "moduleUrl": "https://zerodha.com/varsity/module/futures-trading/",
+    "title": "7. Margin Calculator (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/margin-calculator-part-2/"
+  },
+  {
+    "id": "chap-113",
+    "moduleUrl": "https://zerodha.com/varsity/module/futures-trading/",
+    "title": "8. All about Shorting",
+    "url": "https://zerodha.com/varsity/chapter/shorting/"
+  },
+  {
+    "id": "chap-114",
+    "moduleUrl": "https://zerodha.com/varsity/module/futures-trading/",
+    "title": "9. The Nifty Futures",
+    "url": "https://zerodha.com/varsity/chapter/nifty-futures/"
+  },
+  {
+    "id": "chap-115",
+    "moduleUrl": "https://zerodha.com/varsity/module/futures-trading/",
+    "title": "10. The Futures Pricing",
+    "url": "https://zerodha.com/varsity/chapter/futures-pricing/"
+  },
+  {
+    "id": "chap-116",
+    "moduleUrl": "https://zerodha.com/varsity/module/futures-trading/",
+    "title": "11. Hedging with Futures",
+    "url": "https://zerodha.com/varsity/chapter/hedging-futures/"
+  },
+  {
+    "id": "chap-117",
+    "moduleUrl": "https://zerodha.com/varsity/module/futures-trading/",
+    "title": "12. Open Interest",
+    "url": "https://zerodha.com/varsity/chapter/open-interest/"
+  },
+  {
+    "id": "chap-118",
+    "moduleUrl": "https://zerodha.com/varsity/module/futures-trading/",
+    "title": "13. Quick Note on Physical Settlement",
+    "url": "https://zerodha.com/varsity/chapter/quick-note-on-physical-settlement/"
+  },
+  {
+    "id": "chap-119",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97/",
+    "title": "1. पृष्ठभूमि – वायदा बाज़ार – फॉरवर्ड्स मार्केट (Forwards Market)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%aa%e0%a5%83%e0%a4%b7%e0%a5%8d%e0%a4%a0%e0%a4%ad%e0%a5%82%e0%a4%ae%e0%a4%bf-%e0%a4%b5%e0%a4%be%e0%a4%af%e0%a4%a6%e0%a4%be-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%bc%e0%a4%be%e0%a4%b0/"
+  },
+  {
+    "id": "chap-120",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97/",
+    "title": "2. फ्यूचर्स कॉन्ट्रैक्ट (Futures Contract)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%95%e0%a5%89%e0%a4%a8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%9f-futures-contract/"
+  },
+  {
+    "id": "chap-121",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97/",
+    "title": "3. फ्यूचर्स ट्रेड (The Futures Trade)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1-the-futures-trade/"
+  },
+  {
+    "id": "chap-122",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97/",
+    "title": "4. लेवरेज और पे-ऑफ (Leverage & Payoff)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b2%e0%a5%87%e0%a4%b5%e0%a4%b0%e0%a5%87%e0%a4%9c-%e0%a4%94%e0%a4%b0-%e0%a4%aa%e0%a5%87-%e0%a4%91%e0%a4%ab-leverage-payoff/"
+  },
+  {
+    "id": "chap-123",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97/",
+    "title": "5. मार्जिन और M2M (मार्क टू मार्केट – Mark to Market)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%9c%e0%a4%bf%e0%a4%a8-%e0%a4%94%e0%a4%b0-m2m-%e0%a4%ae%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%95-%e0%a4%9f%e0%a5%82-%e0%a4%ae%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%95/"
+  },
+  {
+    "id": "chap-124",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97/",
+    "title": "6. मार्जिन कैलकुलेटर (भाग 1)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%9c%e0%a4%bf%e0%a4%a8-%e0%a4%95%e0%a5%88%e0%a4%b2%e0%a4%95%e0%a5%81%e0%a4%b2%e0%a5%87%e0%a4%9f%e0%a4%b0-%e0%a4%ad%e0%a4%be%e0%a4%97-1/"
+  },
+  {
+    "id": "chap-125",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97/",
+    "title": "7. मार्जिन कैलकुलेटर (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%9c%e0%a4%bf%e0%a4%a8-%e0%a4%95%e0%a5%88%e0%a4%b2%e0%a4%95%e0%a5%81%e0%a4%b2%e0%a5%87%e0%a4%9f%e0%a4%b0-%e0%a4%ad%e0%a4%be%e0%a4%97-2/"
+  },
+  {
+    "id": "chap-126",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97/",
+    "title": "8. शॉर्टिंग क्या है",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b6%e0%a5%89%e0%a4%b0%e0%a5%8d%e0%a4%9f%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%8d%e0%a4%af%e0%a4%be-%e0%a4%b9%e0%a5%88/"
+  },
+  {
+    "id": "chap-127",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97/",
+    "title": "9. निफ्टी फ्यूचर्स",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a8%e0%a4%bf%e0%a4%ab%e0%a5%8d%e0%a4%9f%e0%a5%80-%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8/"
+  },
+  {
+    "id": "chap-128",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97/",
+    "title": "10. फ्यूचर्स की कीमतें",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%95%e0%a5%80-%e0%a4%95%e0%a5%80%e0%a4%ae%e0%a4%a4%e0%a5%87%e0%a4%82/"
+  },
+  {
+    "id": "chap-129",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97/",
+    "title": "11. फ्यूचर्स से/के ज़रिये हेजिंग (Hedging) करना",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%b8%e0%a5%87-%e0%a4%95%e0%a5%87-%e0%a4%9c%e0%a4%bc%e0%a4%b0%e0%a4%bf%e0%a4%af%e0%a5%87-%e0%a4%b9%e0%a5%87%e0%a4%9c/"
+  },
+  {
+    "id": "chap-130",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97/",
+    "title": "12. ओपन इंटरेस्ट",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%93%e0%a4%aa%e0%a4%a8-%e0%a4%87%e0%a4%82%e0%a4%9f%e0%a4%b0%e0%a5%87%e0%a4%b8%e0%a5%8d%e0%a4%9f/"
+  },
+  {
+    "id": "chap-131",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ab%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a4%b0%e0%a5%8d%e0%a4%b8-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97/",
+    "title": "13. फिजिकल सेटेलमेंट पर जानकारी",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ab%e0%a4%bf%e0%a4%9c%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%b8%e0%a5%87%e0%a4%9f%e0%a5%87%e0%a4%b2%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%aa%e0%a4%b0-%e0%a4%9c%e0%a4%be%e0%a4%a8%e0%a4%95/"
+  },
+  {
+    "id": "chap-132",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "1. Call Option Basics",
+    "url": "https://zerodha.com/varsity/chapter/call-option-basics/"
+  },
+  {
+    "id": "chap-133",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "2. Basic Option Jargons",
+    "url": "https://zerodha.com/varsity/chapter/basic-option-jargons/"
+  },
+  {
+    "id": "chap-134",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "3. Buying a Call Option",
+    "url": "https://zerodha.com/varsity/chapter/buying-a-call-option/"
+  },
+  {
+    "id": "chap-135",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "4. Selling/Writing a Call Option",
+    "url": "https://zerodha.com/varsity/chapter/sellingwriting-a-call-option/"
+  },
+  {
+    "id": "chap-136",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "5. The Put Option Buying",
+    "url": "https://zerodha.com/varsity/chapter/the-put-option-buying/"
+  },
+  {
+    "id": "chap-137",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "6. The Put Option selling",
+    "url": "https://zerodha.com/varsity/chapter/the-put-option-selling/"
+  },
+  {
+    "id": "chap-138",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "7. Summarizing Call & Put Options",
+    "url": "https://zerodha.com/varsity/chapter/summarizing-call-put-options/"
+  },
+  {
+    "id": "chap-139",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "8. Moneyness of an Option Contract",
+    "url": "https://zerodha.com/varsity/chapter/moneyness-of-an-option-contract/"
+  },
+  {
+    "id": "chap-140",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "9. The Option Greeks (Delta) Part 1",
+    "url": "https://zerodha.com/varsity/chapter/the-option-greeks-delta-part-1/"
+  },
+  {
+    "id": "chap-141",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "10. Delta (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/delta-part-2/"
+  },
+  {
+    "id": "chap-142",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "11. Delta (Part 3)",
+    "url": "https://zerodha.com/varsity/chapter/delta-part-3/"
+  },
+  {
+    "id": "chap-143",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "12. Gamma (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/gamma-part-1/"
+  },
+  {
+    "id": "chap-144",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "13. Gamma (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/gamma-part-2/"
+  },
+  {
+    "id": "chap-145",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "14. Theta",
+    "url": "https://zerodha.com/varsity/chapter/theta/"
+  },
+  {
+    "id": "chap-146",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "15. Volatility Basics",
+    "url": "https://zerodha.com/varsity/chapter/understanding-volatility-part-1/"
+  },
+  {
+    "id": "chap-147",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "16. Volatility Calculation (Historical)",
+    "url": "https://zerodha.com/varsity/chapter/volatility-calculation-historical/"
+  },
+  {
+    "id": "chap-148",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "17. Volatility & Normal Distribution",
+    "url": "https://zerodha.com/varsity/chapter/volatility-normal-distribution/"
+  },
+  {
+    "id": "chap-149",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "18. Volatility Applications",
+    "url": "https://zerodha.com/varsity/chapter/volatility-applications/"
+  },
+  {
+    "id": "chap-150",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "19. Vega",
+    "url": "https://zerodha.com/varsity/chapter/vega/"
+  },
+  {
+    "id": "chap-151",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "20. Greek Interactions",
+    "url": "https://zerodha.com/varsity/chapter/greek-interactions/"
+  },
+  {
+    "id": "chap-152",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "21. Greek Calculator",
+    "url": "https://zerodha.com/varsity/chapter/greek-calculator/"
+  },
+  {
+    "id": "chap-153",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "22. Re-introducing Call & Put Options",
+    "url": "https://zerodha.com/varsity/chapter/re-introducing-call-put-options/"
+  },
+  {
+    "id": "chap-154",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "23. Case studies – wrapping it all up!",
+    "url": "https://zerodha.com/varsity/chapter/case-studies-wrapping-it-all-up/"
+  },
+  {
+    "id": "chap-155",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "24. Quick note on Physical Settlement",
+    "url": "https://zerodha.com/varsity/chapter/quick-note-on-physical-settlement-2/"
+  },
+  {
+    "id": "chap-156",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-theory/",
+    "title": "25. Options M2M and P&L calculation",
+    "url": "https://zerodha.com/varsity/chapter/options-m2m-and-pl/"
+  },
+  {
+    "id": "chap-157",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "1. कॉल ऑप्शन की भूमिका",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%89%e0%a4%b2-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%95%e0%a5%80-%e0%a4%ad%e0%a5%82%e0%a4%ae%e0%a4%bf%e0%a4%95%e0%a4%be/"
+  },
+  {
+    "id": "chap-158",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "2. ऑप्शन की शब्दावली",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%95%e0%a5%80-%e0%a4%b6%e0%a4%ac%e0%a5%8d%e0%a4%a6%e0%a4%be%e0%a4%b5%e0%a4%b2%e0%a5%80/"
+  },
+  {
+    "id": "chap-159",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "3. कॉल ऑप्शन की खरीदारी",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%89%e0%a4%b2-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%95%e0%a5%80-%e0%a4%96%e0%a4%b0%e0%a5%80%e0%a4%a6%e0%a4%be%e0%a4%b0%e0%a5%80/"
+  },
+  {
+    "id": "chap-160",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "4. कॉल ऑप्शन को राइट करना/ बेचना",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%89%e0%a4%b2-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%95%e0%a5%8b-%e0%a4%b0%e0%a4%be%e0%a4%87%e0%a4%9f-%e0%a4%95%e0%a4%b0%e0%a4%a8%e0%a4%be-%e0%a4%ac%e0%a5%87%e0%a4%9a/"
+  },
+  {
+    "id": "chap-161",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "5. पुट आप्शन की खरीदारी",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%aa%e0%a5%81%e0%a4%9f-%e0%a4%86%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%95%e0%a5%80-%e0%a4%96%e0%a4%b0%e0%a5%80%e0%a4%a6%e0%a4%be%e0%a4%b0%e0%a5%80/"
+  },
+  {
+    "id": "chap-162",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "6. पुट ऑप्शन को बेचना",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%aa%e0%a5%81%e0%a4%9f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%95%e0%a5%8b-%e0%a4%ac%e0%a5%87%e0%a4%9a%e0%a4%a8%e0%a4%be/"
+  },
+  {
+    "id": "chap-163",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "7. कॉल और पुट ऑप्शन का संक्षेप",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%89%e0%a4%b2-%e0%a4%94%e0%a4%b0-%e0%a4%aa%e0%a5%81%e0%a4%9f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%95%e0%a4%be-%e0%a4%b8%e0%a4%82%e0%a4%95%e0%a5%8d%e0%a4%b7%e0%a5%87/"
+  },
+  {
+    "id": "chap-164",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "8. ऑप्शन कॉन्ट्रैक्ट का मनीनेस",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%95%e0%a5%89%e0%a4%a8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%9f-%e0%a4%95%e0%a4%be-%e0%a4%ae%e0%a4%a8%e0%a5%80/"
+  },
+  {
+    "id": "chap-165",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "9. ऑप्शन ग्रीक्स (डेल्टा) भाग 1",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%97%e0%a5%8d%e0%a4%b0%e0%a5%80%e0%a4%95%e0%a5%8d%e0%a4%b8-%e0%a4%a1%e0%a5%87%e0%a4%b2%e0%a5%8d%e0%a4%9f%e0%a4%be-%e0%a4%ad%e0%a4%be%e0%a4%97-1/"
+  },
+  {
+    "id": "chap-166",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "10. डेल्टा (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a1%e0%a5%87%e0%a4%b2%e0%a5%8d%e0%a4%9f%e0%a4%be-%e0%a4%ad%e0%a4%be%e0%a4%97-2/"
+  },
+  {
+    "id": "chap-167",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "11. डेल्टा (भाग 3)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a1%e0%a5%87%e0%a4%b2%e0%a5%8d%e0%a4%9f%e0%a4%be-%e0%a4%ad%e0%a4%be%e0%a4%97-3/"
+  },
+  {
+    "id": "chap-168",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "12. गामा (भाग 1)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%97%e0%a4%be%e0%a4%ae%e0%a4%be-gamma-%e0%a4%ad%e0%a4%be%e0%a4%97-1/"
+  },
+  {
+    "id": "chap-169",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "13. गामा (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%97%e0%a4%be%e0%a4%ae%e0%a4%be-%e0%a4%ad%e0%a4%be%e0%a4%97-2/"
+  },
+  {
+    "id": "chap-170",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "14. थीटा",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a5%e0%a5%80%e0%a4%9f%e0%a4%be/"
+  },
+  {
+    "id": "chap-171",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "15. वोलैटिलिटी- शुरुआत",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b5%e0%a5%8b%e0%a4%b2%e0%a5%88%e0%a4%9f%e0%a4%bf%e0%a4%b2%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%b6%e0%a5%81%e0%a4%b0%e0%a5%81%e0%a4%86%e0%a4%a4-volatility-basics/"
+  },
+  {
+    "id": "chap-172",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "16. वोलैटिलिटी की गणना (हिस्टॉरिकल-ऐतिहासिक)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b5%e0%a5%8b%e0%a4%b2%e0%a5%88%e0%a4%9f%e0%a4%bf%e0%a4%b2%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%95%e0%a5%80-%e0%a4%97%e0%a4%a3%e0%a4%a8%e0%a4%be-%e0%a4%b9%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f/"
+  },
+  {
+    "id": "chap-173",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "17. वोलैटिलिटी और नॉर्मल डिस्ट्रीब्यूशन",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b5%e0%a5%8b%e0%a4%b2%e0%a5%88%e0%a4%9f%e0%a4%bf%e0%a4%b2%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%a8%e0%a5%89%e0%a4%b0%e0%a5%8d%e0%a4%ae%e0%a4%b2-%e0%a4%a1%e0%a4%bf%e0%a4%b8/"
+  },
+  {
+    "id": "chap-174",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "18. वोलैटिलिटी का इस्तेमाल",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b5%e0%a5%8b%e0%a4%b2%e0%a5%88%e0%a4%9f%e0%a4%bf%e0%a4%b2%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%95%e0%a4%be-%e0%a4%87%e0%a4%b8%e0%a5%8d%e0%a4%a4%e0%a5%87%e0%a4%ae%e0%a4%be%e0%a4%b2-volatility-appli/"
+  },
+  {
+    "id": "chap-175",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "19. वेगा",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b5%e0%a5%87%e0%a4%97%e0%a4%be-vega/"
+  },
+  {
+    "id": "chap-176",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "20. ग्रीक का आपसी मिलन",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%97%e0%a5%8d%e0%a4%b0%e0%a5%80%e0%a4%95-%e0%a4%95%e0%a4%be-%e0%a4%86%e0%a4%aa%e0%a4%b8%e0%a5%80-%e0%a4%ae%e0%a4%bf%e0%a4%b2%e0%a4%a8-greek-interactions/"
+  },
+  {
+    "id": "chap-177",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "21. ग्रीक कैलकुलेटर",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%97%e0%a5%8d%e0%a4%b0%e0%a5%80%e0%a4%95-%e0%a4%95%e0%a5%88%e0%a4%b2%e0%a4%95%e0%a5%81%e0%a4%b2%e0%a5%87%e0%a4%9f%e0%a4%b0-greek-calculator/"
+  },
+  {
+    "id": "chap-178",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "22. कॉल और पुट ऑप्शन से फिर परिचय",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%89%e0%a4%b2-%e0%a4%94%e0%a4%b0-%e0%a4%aa%e0%a5%81%e0%a4%9f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%87-%e0%a4%ab%e0%a4%bf%e0%a4%b0-%e0%a4%aa%e0%a4%b0%e0%a4%bf/"
+  },
+  {
+    "id": "chap-179",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "23. केस स्टडी और समापन (मॉड्यूल समाप्ति)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%87%e0%a4%b8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%a1%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%ae%e0%a4%be%e0%a4%aa%e0%a4%a8-%e0%a4%ae%e0%a5%89%e0%a4%a1%e0%a5%8d%e0%a4%af%e0%a5%82/"
+  },
+  {
+    "id": "chap-180",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%a5%e0%a5%8d%e0%a4%af/",
+    "title": "24. फिजिकल सेटेलमेंट पर जानकारी",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ab%e0%a4%bf%e0%a4%9c%e0%a4%bf%e0%a4%95%e0%a4%b2-%e0%a4%b8%e0%a5%87%e0%a4%9f%e0%a5%87%e0%a4%b2%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%aa%e0%a4%b0-%e0%a4%9c%e0%a4%be%e0%a4%a8%e0%a4%95-2/"
+  },
+  {
+    "id": "chap-181",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-strategies/",
+    "title": "1. Orientation",
+    "url": "https://zerodha.com/varsity/chapter/orientation/"
+  },
+  {
+    "id": "chap-182",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-strategies/",
+    "title": "2. Bull Call Spread",
+    "url": "https://zerodha.com/varsity/chapter/bull-call-spread/"
+  },
+  {
+    "id": "chap-183",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-strategies/",
+    "title": "3. Bull Put Spread",
+    "url": "https://zerodha.com/varsity/chapter/bull-put-spread/"
+  },
+  {
+    "id": "chap-184",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-strategies/",
+    "title": "4. Call Ratio Back Spread",
+    "url": "https://zerodha.com/varsity/chapter/call-ratio-back-spread/"
+  },
+  {
+    "id": "chap-185",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-strategies/",
+    "title": "5. Bear Call Ladder",
+    "url": "https://zerodha.com/varsity/chapter/bear-call-ladder/"
+  },
+  {
+    "id": "chap-186",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-strategies/",
+    "title": "6. Synthetic Long & Arbitrage",
+    "url": "https://zerodha.com/varsity/chapter/synthetic-long-arbitrage/"
+  },
+  {
+    "id": "chap-187",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-strategies/",
+    "title": "7. Bear Put Spread",
+    "url": "https://zerodha.com/varsity/chapter/bear-put-spread/"
+  },
+  {
+    "id": "chap-188",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-strategies/",
+    "title": "8. Bear Call Spread",
+    "url": "https://zerodha.com/varsity/chapter/bear-call-spread/"
+  },
+  {
+    "id": "chap-189",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-strategies/",
+    "title": "9. Put Ratio Back spread",
+    "url": "https://zerodha.com/varsity/chapter/put-ratio-back-spread/"
+  },
+  {
+    "id": "chap-190",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-strategies/",
+    "title": "10. The Long Straddle",
+    "url": "https://zerodha.com/varsity/chapter/the-long-straddle/"
+  },
+  {
+    "id": "chap-191",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-strategies/",
+    "title": "11. The Short Straddle",
+    "url": "https://zerodha.com/varsity/chapter/the-short-straddle/"
+  },
+  {
+    "id": "chap-192",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-strategies/",
+    "title": "12. The Long & Short Strangle",
+    "url": "https://zerodha.com/varsity/chapter/the-long-short-strangle/"
+  },
+  {
+    "id": "chap-193",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-strategies/",
+    "title": "13. Max Pain & PCR Ratio",
+    "url": "https://zerodha.com/varsity/chapter/max-pain-pcr-ratio/"
+  },
+  {
+    "id": "chap-194",
+    "moduleUrl": "https://zerodha.com/varsity/module/option-strategies/",
+    "title": "14. Iron Condor",
+    "url": "https://zerodha.com/varsity/chapter/iron-condor/"
+  },
+  {
+    "id": "chap-195",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%9f%e0%a5%87%e0%a4%9c%e0%a5%80/",
+    "title": "1. दिशा निर्धारण",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a6%e0%a4%bf%e0%a4%b6%e0%a4%be-%e0%a4%a8%e0%a4%bf%e0%a4%b0%e0%a5%8d%e0%a4%a7%e0%a4%be%e0%a4%b0%e0%a4%a3/"
+  },
+  {
+    "id": "chap-196",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%9f%e0%a5%87%e0%a4%9c%e0%a5%80/",
+    "title": "2. बुल कॉल स्प्रेड",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ac%e0%a5%81%e0%a4%b2-%e0%a4%95%e0%a5%89%e0%a4%b2-%e0%a4%b8%e0%a5%8d%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/"
+  },
+  {
+    "id": "chap-197",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%9f%e0%a5%87%e0%a4%9c%e0%a5%80/",
+    "title": "3. बुल पुट स्प्रेड",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ac%e0%a5%81%e0%a4%b2-%e0%a4%aa%e0%a5%81%e0%a4%9f-%e0%a4%b8%e0%a5%8d%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/"
+  },
+  {
+    "id": "chap-198",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%9f%e0%a5%87%e0%a4%9c%e0%a5%80/",
+    "title": "4. कॉल रेश्यो बैक स्प्रेड",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%89%e0%a4%b2-%e0%a4%b0%e0%a5%87%e0%a4%b6%e0%a5%8d%e0%a4%af%e0%a5%8b-%e0%a4%ac%e0%a5%88%e0%a4%95-%e0%a4%b8%e0%a5%8d%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/"
+  },
+  {
+    "id": "chap-199",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%9f%e0%a5%87%e0%a4%9c%e0%a5%80/",
+    "title": "5. बेयर कॉल लैडर",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ac%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%95%e0%a5%89%e0%a4%b2-%e0%a4%b2%e0%a5%88%e0%a4%a1%e0%a4%b0/"
+  },
+  {
+    "id": "chap-200",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%9f%e0%a5%87%e0%a4%9c%e0%a5%80/",
+    "title": "6. सिंथेटिक लॉन्ग और आर्बिट्राज",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b8%e0%a4%bf%e0%a4%82%e0%a4%a5%e0%a5%87%e0%a4%9f%e0%a4%bf%e0%a4%95-%e0%a4%b2%e0%a5%89%e0%a4%a8%e0%a5%8d%e0%a4%97-%e0%a4%94%e0%a4%b0-%e0%a4%86%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%bf%e0%a4%9f/"
+  },
+  {
+    "id": "chap-201",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%9f%e0%a5%87%e0%a4%9c%e0%a5%80/",
+    "title": "7. बेयर पुट स्प्रेड",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ac%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%aa%e0%a5%81%e0%a4%9f-%e0%a4%b8%e0%a5%8d%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/"
+  },
+  {
+    "id": "chap-202",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%9f%e0%a5%87%e0%a4%9c%e0%a5%80/",
+    "title": "8. बेयर कॉल स्प्रेड",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ac%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%95%e0%a5%89%e0%a4%b2-%e0%a4%b8%e0%a5%8d%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/"
+  },
+  {
+    "id": "chap-203",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%9f%e0%a5%87%e0%a4%9c%e0%a5%80/",
+    "title": "9. पुट रेश्यो बैक स्प्रेड",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%aa%e0%a5%81%e0%a4%9f-%e0%a4%b0%e0%a5%87%e0%a4%b6%e0%a5%8d%e0%a4%af%e0%a5%8b-%e0%a4%ac%e0%a5%88%e0%a4%95-%e0%a4%b8%e0%a5%8d%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/"
+  },
+  {
+    "id": "chap-204",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%9f%e0%a5%87%e0%a4%9c%e0%a5%80/",
+    "title": "10. लॉन्ग स्ट्रैडल",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b2%e0%a5%89%e0%a4%a8%e0%a5%8d%e0%a4%97-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%a1%e0%a4%b2/"
+  },
+  {
+    "id": "chap-205",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%9f%e0%a5%87%e0%a4%9c%e0%a5%80/",
+    "title": "11. शॉर्ट स्ट्रैडल",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b6%e0%a5%89%e0%a4%b0%e0%a5%8d%e0%a4%9f-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%a1%e0%a4%b2/"
+  },
+  {
+    "id": "chap-206",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%9f%e0%a5%87%e0%a4%9c%e0%a5%80/",
+    "title": "12. लॉन्ग और शार्ट स्ट्रैंगल",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b2%e0%a5%89%e0%a4%a8%e0%a5%8d%e0%a4%97-%e0%a4%94%e0%a4%b0-%e0%a4%b6%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%9f-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%82%e0%a4%97%e0%a4%b2/"
+  },
+  {
+    "id": "chap-207",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%9f%e0%a5%87%e0%a4%9c%e0%a5%80/",
+    "title": "13. मैक्स पेन और PCR रेश्यो",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%b8-%e0%a4%aa%e0%a5%87%e0%a4%a8-%e0%a4%94%e0%a4%b0-pcr-%e0%a4%b0%e0%a5%87%e0%a4%b6%e0%a5%8d%e0%a4%af%e0%a5%8b/"
+  },
+  {
+    "id": "chap-208",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%88%e0%a4%9f%e0%a5%87%e0%a4%9c%e0%a5%80/",
+    "title": "14. आयरन कॉन्डॉर",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%86%e0%a4%af%e0%a4%b0%e0%a4%a8-%e0%a4%95%e0%a5%89%e0%a4%a8%e0%a5%8d%e0%a4%a1%e0%a5%89%e0%a4%b0/"
+  },
+  {
+    "id": "chap-209",
+    "moduleUrl": "https://zerodha.com/varsity/module/markets-and-taxation/",
+    "title": "1. Introduction (Setting the Context)",
+    "url": "https://zerodha.com/varsity/chapter/introduction-setting-the-context/"
+  },
+  {
+    "id": "chap-210",
+    "moduleUrl": "https://zerodha.com/varsity/module/markets-and-taxation/",
+    "title": "2. Basics",
+    "url": "https://zerodha.com/varsity/chapter/basics/"
+  },
+  {
+    "id": "chap-211",
+    "moduleUrl": "https://zerodha.com/varsity/module/markets-and-taxation/",
+    "title": "3. Classifying Your Market Activity",
+    "url": "https://zerodha.com/varsity/chapter/classifying-your-market-activity/"
+  },
+  {
+    "id": "chap-212",
+    "moduleUrl": "https://zerodha.com/varsity/module/markets-and-taxation/",
+    "title": "4. Taxation for Investors",
+    "url": "https://zerodha.com/varsity/chapter/taxation-for-investors/"
+  },
+  {
+    "id": "chap-213",
+    "moduleUrl": "https://zerodha.com/varsity/module/markets-and-taxation/",
+    "title": "5. Taxation for Traders",
+    "url": "https://zerodha.com/varsity/chapter/taxation-for-traders/"
+  },
+  {
+    "id": "chap-214",
+    "moduleUrl": "https://zerodha.com/varsity/module/markets-and-taxation/",
+    "title": "6. Turnover, Balance Sheet, and P&L",
+    "url": "https://zerodha.com/varsity/chapter/turnover-balance-sheet-and-pl/"
+  },
+  {
+    "id": "chap-215",
+    "moduleUrl": "https://zerodha.com/varsity/module/markets-and-taxation/",
+    "title": "7. ITR Forms (The Finale)",
+    "url": "https://zerodha.com/varsity/chapter/itr-forms/"
+  },
+  {
+    "id": "chap-216",
+    "moduleUrl": "https://zerodha.com/varsity/module/markets-and-taxation/",
+    "title": "8. Foreign Stocks and Taxation",
+    "url": "https://zerodha.com/varsity/chapter/foreign-stocks-and-taxation/"
+  },
+  {
+    "id": "chap-217",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%b8%e0%a5%87%e0%a4%b6%e0%a4%a8/",
+    "title": "1. प्रस्तावना (संदर्भ को समझना)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a4%b8%e0%a5%8d%e0%a4%a4%e0%a4%be%e0%a4%b5%e0%a4%a8%e0%a4%be-%e0%a4%b8%e0%a4%82%e0%a4%a6%e0%a4%b0%e0%a5%8d%e0%a4%ad-%e0%a4%95%e0%a5%8b-%e0%a4%b8%e0%a4%ae%e0%a4%9d/"
+  },
+  {
+    "id": "chap-218",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%b8%e0%a5%87%e0%a4%b6%e0%a4%a8/",
+    "title": "2. मूलभूत/बुनियादी बातें",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a5%82%e0%a4%b2%e0%a4%ad%e0%a5%82%e0%a4%a4-%e0%a4%ac%e0%a5%81%e0%a4%a8%e0%a4%bf%e0%a4%af%e0%a4%be%e0%a4%a6%e0%a5%80-%e0%a4%ac%e0%a4%be%e0%a4%a4%e0%a5%87%e0%a4%82/"
+  },
+  {
+    "id": "chap-219",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%b8%e0%a5%87%e0%a4%b6%e0%a4%a8/",
+    "title": "3. बाज़ार की गतिविधियों का वर्गीकरण",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%bc%e0%a4%be%e0%a4%b0-%e0%a4%95%e0%a5%80-%e0%a4%97%e0%a4%a4%e0%a4%bf%e0%a4%b5%e0%a4%bf%e0%a4%a7%e0%a4%bf%e0%a4%af%e0%a5%8b%e0%a4%82-%e0%a4%95%e0%a4%be-%e0%a4%b5/"
+  },
+  {
+    "id": "chap-220",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%b8%e0%a5%87%e0%a4%b6%e0%a4%a8/",
+    "title": "4. निवेशक के लिए टैक्स",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a8%e0%a4%bf%e0%a4%b5%e0%a5%87%e0%a4%b6%e0%a4%95-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%9f%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%b8/"
+  },
+  {
+    "id": "chap-221",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%b8%e0%a5%87%e0%a4%b6%e0%a4%a8/",
+    "title": "5. ट्रेडर के लिए टैक्स",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%b0-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%9f%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%b8/"
+  },
+  {
+    "id": "chap-222",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%b8%e0%a5%87%e0%a4%b6%e0%a4%a8/",
+    "title": "6. टर्नओवर, बैलेंस शीट और P&L",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%9f%e0%a4%b0%e0%a5%8d%e0%a4%a8%e0%a4%93%e0%a4%b5%e0%a4%b0-%e0%a4%ac%e0%a5%88%e0%a4%b2%e0%a5%87%e0%a4%82%e0%a4%b8-%e0%a4%b6%e0%a5%80%e0%a4%9f-%e0%a4%94%e0%a4%b0-pl/"
+  },
+  {
+    "id": "chap-223",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%b8%e0%a5%87%e0%a4%b6%e0%a4%a8/",
+    "title": "7. ITR फॉर्म (अंतिम हिस्सा)",
+    "url": "https://zerodha.com/varsity/chapter/itr-%e0%a4%ab%e0%a5%89%e0%a4%b0%e0%a5%8d%e0%a4%ae-%e0%a4%85%e0%a4%82%e0%a4%a4%e0%a4%bf%e0%a4%ae-%e0%a4%b9%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%b8%e0%a4%be/"
+  },
+  {
+    "id": "chap-224",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "1. Currency Basics",
+    "url": "https://zerodha.com/varsity/chapter/currency-basics/"
+  },
+  {
+    "id": "chap-225",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "2. Reference Rates & Impact of events",
+    "url": "https://zerodha.com/varsity/chapter/reference-rates-impact-of-events/"
+  },
+  {
+    "id": "chap-226",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "3. Impact of events (Brexit) & Interest Rate Parity",
+    "url": "https://zerodha.com/varsity/chapter/impact-of-events-brexit-interest-rate-parity/"
+  },
+  {
+    "id": "chap-227",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "4. The USD INR Pair (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/the-usd-inr-pair/"
+  },
+  {
+    "id": "chap-228",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "5. The USD INR Pair (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/the-usd-inr-pair-part-2/"
+  },
+  {
+    "id": "chap-229",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "6. EUR, GBP, and JPY",
+    "url": "https://zerodha.com/varsity/chapter/eur-gbp-and-jpy/"
+  },
+  {
+    "id": "chap-230",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "7. Gold (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/gold-part-1/"
+  },
+  {
+    "id": "chap-231",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "8. Gold (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/gold-part-2/"
+  },
+  {
+    "id": "chap-232",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "9. Silver",
+    "url": "https://zerodha.com/varsity/chapter/silver/"
+  },
+  {
+    "id": "chap-233",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "10. Crude Oil (Part 1), digging the past",
+    "url": "https://zerodha.com/varsity/chapter/crude-oil-part-1-digging-the-past/"
+  },
+  {
+    "id": "chap-234",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "11. Crude Oil (Part 2), the crude oil eco system",
+    "url": "https://zerodha.com/varsity/chapter/crude-oil-part-2-the-crude-oil-eco-system/"
+  },
+  {
+    "id": "chap-235",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "12. Crude Oil (Part 3), the crude oil contract",
+    "url": "https://zerodha.com/varsity/chapter/crude-oil-part-3-the-crude-oil-contract/"
+  },
+  {
+    "id": "chap-236",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "13. Copper & Aluminium",
+    "url": "https://zerodha.com/varsity/chapter/copper-aluminium/"
+  },
+  {
+    "id": "chap-237",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "14. Lead & Nickel",
+    "url": "https://zerodha.com/varsity/chapter/lead-nickel/"
+  },
+  {
+    "id": "chap-238",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "15. Cardamom & Mentha Oil",
+    "url": "https://zerodha.com/varsity/chapter/cardamom-mentha-oil/"
+  },
+  {
+    "id": "chap-239",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "16. Natural Gas",
+    "url": "https://zerodha.com/varsity/chapter/natural-gas/"
+  },
+  {
+    "id": "chap-240",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "17. Commodity Options",
+    "url": "https://zerodha.com/varsity/chapter/commodity-options/"
+  },
+  {
+    "id": "chap-241",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "18. Cross Currency Pairs",
+    "url": "https://zerodha.com/varsity/chapter/cross-currency-pairs/"
+  },
+  {
+    "id": "chap-242",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "19. Government Securities",
+    "url": "https://zerodha.com/varsity/chapter/government-securities/"
+  },
+  {
+    "id": "chap-243",
+    "moduleUrl": "https://zerodha.com/varsity/module/commodities-currency-government-securities/",
+    "title": "20. Electricity Derivatives",
+    "url": "https://zerodha.com/varsity/chapter/electricity-derivatives/"
+  },
+  {
+    "id": "chap-244",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "1. मुद्रा बाजार का आधार",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a5%81%e0%a4%a6%e0%a5%8d%e0%a4%b0%e0%a4%be-%e0%a4%ac%e0%a4%be%e0%a4%9c%e0%a4%be%e0%a4%b0-%e0%a4%95%e0%a4%be-%e0%a4%86%e0%a4%a7%e0%a4%be%e0%a4%b0/"
+  },
+  {
+    "id": "chap-245",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "2. रेफरेंस रेट और घटनाओं का असर",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b0%e0%a5%87%e0%a4%ab%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8-%e0%a4%b0%e0%a5%87%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%98%e0%a4%9f%e0%a4%a8%e0%a4%be%e0%a4%93%e0%a4%82-%e0%a4%95%e0%a4%be-%e0%a4%85/"
+  },
+  {
+    "id": "chap-246",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "3. घटनाओं का असर (ब्रेक्सिट) और इंटरेस्ट रेट पैरिटी",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%98%e0%a4%9f%e0%a4%a8%e0%a4%be%e0%a4%93%e0%a4%82-%e0%a4%95%e0%a4%be-%e0%a4%85%e0%a4%b8%e0%a4%b0-%e0%a4%ac%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%b8%e0%a4%bf%e0%a4%9f-%e0%a4%94/"
+  },
+  {
+    "id": "chap-247",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "4. डॉलर-रूपया पेयर भाग 1",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a1%e0%a5%89%e0%a4%b2%e0%a4%b0-%e0%a4%b0%e0%a5%82%e0%a4%aa%e0%a4%af%e0%a4%be-%e0%a4%aa%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ad%e0%a4%be%e0%a4%97-1/"
+  },
+  {
+    "id": "chap-248",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "5. डॉलर-रूपया पेयर – भाग 2",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a1%e0%a5%89%e0%a4%b2%e0%a4%b0-%e0%a4%b0%e0%a5%82%e0%a4%aa%e0%a4%af%e0%a4%be-%e0%a4%aa%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%ad%e0%a4%be%e0%a4%97-2/"
+  },
+  {
+    "id": "chap-249",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "6. EUR, GBP और JPY",
+    "url": "https://zerodha.com/varsity/chapter/eur-gbp-%e0%a4%94%e0%a4%b0-jpy/"
+  },
+  {
+    "id": "chap-250",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "7. सोना (भाग 1)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b8%e0%a5%8b%e0%a4%a8%e0%a4%be-%e0%a4%ad%e0%a4%be%e0%a4%97-1/"
+  },
+  {
+    "id": "chap-251",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "8. सोना (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b8%e0%a5%8b%e0%a4%a8%e0%a4%be-%e0%a4%ad%e0%a4%be%e0%a4%97-2/"
+  },
+  {
+    "id": "chap-252",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "9. चाँदी",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%9a%e0%a4%be%e0%a4%81%e0%a4%a6%e0%a5%80/"
+  },
+  {
+    "id": "chap-253",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "10. कच्चा तेल (भाग 1), इतिहास",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a4%9a%e0%a5%8d%e0%a4%9a%e0%a4%be-%e0%a4%a4%e0%a5%87%e0%a4%b2-%e0%a4%ad%e0%a4%be%e0%a4%97-1-%e0%a4%87%e0%a4%a4%e0%a4%bf%e0%a4%b9%e0%a4%be%e0%a4%b8/"
+  },
+  {
+    "id": "chap-254",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "11. कच्चा तेल (भाग 2), कच्चे तेल का परितंत्र",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a4%9a%e0%a5%8d%e0%a4%9a%e0%a4%be-%e0%a4%a4%e0%a5%87%e0%a4%b2-%e0%a4%ad%e0%a4%be%e0%a4%97-2-%e0%a4%95%e0%a4%9a%e0%a5%8d%e0%a4%9a%e0%a5%87-%e0%a4%a4%e0%a5%87%e0%a4%b2-%e0%a4%95%e0%a4%be/"
+  },
+  {
+    "id": "chap-255",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "12. कच्चा तेल (भाग 3), कच्चे तेल का कॉन्ट्रैक्ट",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a4%9a%e0%a5%8d%e0%a4%9a%e0%a4%be-%e0%a4%a4%e0%a5%87%e0%a4%b2-%e0%a4%ad%e0%a4%be%e0%a4%97-3-%e0%a4%95%e0%a4%9a%e0%a5%8d%e0%a4%9a%e0%a5%87-%e0%a4%a4%e0%a5%87%e0%a4%b2-%e0%a4%95%e0%a4%be/"
+  },
+  {
+    "id": "chap-256",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "13. कॉपर और एल्युमिनियम",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%89%e0%a4%aa%e0%a4%b0-%e0%a4%94%e0%a4%b0-%e0%a4%8f%e0%a4%b2%e0%a5%8d%e0%a4%af%e0%a5%81%e0%a4%ae%e0%a4%bf%e0%a4%a8%e0%a4%bf%e0%a4%af%e0%a4%ae/"
+  },
+  {
+    "id": "chap-257",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "14. लेड और निकल",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b2%e0%a5%87%e0%a4%a1-%e0%a4%94%e0%a4%b0-%e0%a4%a8%e0%a4%bf%e0%a4%95%e0%a4%b2/"
+  },
+  {
+    "id": "chap-258",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "15. इलायची और मेंथा ऑयल",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%87%e0%a4%b2%e0%a4%be%e0%a4%af%e0%a4%9a%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%a5%e0%a4%be-%e0%a4%91%e0%a4%af%e0%a4%b2/"
+  },
+  {
+    "id": "chap-259",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "16. नैचुरल गैस",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a8%e0%a5%88%e0%a4%9a%e0%a5%81%e0%a4%b0%e0%a4%b2-%e0%a4%97%e0%a5%88%e0%a4%b8/"
+  },
+  {
+    "id": "chap-260",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "17. कमोडिटी ऑप्शन",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%b6%e0%a4%a8/"
+  },
+  {
+    "id": "chap-261",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "18. क्रॉस करेंसी पेयर",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%8d%e0%a4%b0%e0%a5%89%e0%a4%b8-%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%aa%e0%a5%87%e0%a4%af%e0%a4%b0/"
+  },
+  {
+    "id": "chap-262",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%95%e0%a4%b0%e0%a5%87%e0%a4%82%e0%a4%b8%e0%a5%80-%e0%a4%95%e0%a4%ae%e0%a5%8b%e0%a4%a1%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%94%e0%a4%b0-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80/",
+    "title": "19. सरकारी/गवर्नमेंट सिक्योरिटीज",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80-%e0%a4%97%e0%a4%b5%e0%a4%b0%e0%a5%8d%e0%a4%a8%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%b8%e0%a4%bf%e0%a4%95%e0%a5%8d%e0%a4%af%e0%a5%8b%e0%a4%b0/"
+  },
+  {
+    "id": "chap-263",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "1. Orientation note",
+    "url": "https://zerodha.com/varsity/chapter/orientation-note/"
+  },
+  {
+    "id": "chap-264",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "2. Risk (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/risk-part-1/"
+  },
+  {
+    "id": "chap-265",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "3. Risk (Part 2) – Variance & Covariance",
+    "url": "https://zerodha.com/varsity/chapter/risk-part-2-variance-covariance/"
+  },
+  {
+    "id": "chap-266",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "4. Risk (Part 3) – Variance & Covariance Matrix",
+    "url": "https://zerodha.com/varsity/chapter/risk-part-3-_variance-covariance-matrix/"
+  },
+  {
+    "id": "chap-267",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "5. Risk (Part 4) – Correlation Matrix & Portfolio Variance",
+    "url": "https://zerodha.com/varsity/chapter/risk-part-4-correlation-matrix-portfolio-variance/"
+  },
+  {
+    "id": "chap-268",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "6. Equity Curve",
+    "url": "https://zerodha.com/varsity/chapter/equity-curve/"
+  },
+  {
+    "id": "chap-269",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "7. Expected Returns",
+    "url": "https://zerodha.com/varsity/chapter/expected-returns/"
+  },
+  {
+    "id": "chap-270",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "8. Portfolio Optimization (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/port-opt/"
+  },
+  {
+    "id": "chap-271",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "9. Portfolio Optimization (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/po2/"
+  },
+  {
+    "id": "chap-272",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "10. Value at Risk",
+    "url": "https://zerodha.com/varsity/chapter/var/"
+  },
+  {
+    "id": "chap-273",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "11. Position Sizing for active trader",
+    "url": "https://zerodha.com/varsity/chapter/position-sizing/"
+  },
+  {
+    "id": "chap-274",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "12. Position Sizing for active traders (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/position-sizing-active-traders-part-2/"
+  },
+  {
+    "id": "chap-275",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "13. Position Sizing for active traders (Part 3)",
+    "url": "https://zerodha.com/varsity/chapter/position-sizing-active-traders-part-3/"
+  },
+  {
+    "id": "chap-276",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "14. Kelly’s Criterion",
+    "url": "https://zerodha.com/varsity/chapter/kellys-criterion/"
+  },
+  {
+    "id": "chap-277",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "15. Trading Biases",
+    "url": "https://zerodha.com/varsity/chapter/trading-biases/"
+  },
+  {
+    "id": "chap-278",
+    "moduleUrl": "https://zerodha.com/varsity/module/risk-management/",
+    "title": "16. Trading Biases (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/tradingbiases-p2/"
+  },
+  {
+    "id": "chap-279",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "1. भूमिका",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ad%e0%a5%82%e0%a4%ae%e0%a4%bf%e0%a4%95%e0%a4%be/"
+  },
+  {
+    "id": "chap-280",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "2. रिस्क (भाग 1)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ad%e0%a4%be%e0%a4%97-1/"
+  },
+  {
+    "id": "chap-281",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "3. रिस्क (भाग 2) – वैरियंस और कोवैरियंस",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ad%e0%a4%be%e0%a4%97-2-%e0%a4%b5%e0%a5%88%e0%a4%b0%e0%a4%bf%e0%a4%af%e0%a4%82%e0%a4%b8-%e0%a4%94%e0%a4%b0-%e0%a4%95%e0%a5%8b%e0%a4%b5/"
+  },
+  {
+    "id": "chap-282",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "4. रिस्क (भाग 3) – वैरियंस और कोवैरियंस मैट्रिक्स",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ad%e0%a4%be%e0%a4%97-3-%e0%a4%b5%e0%a5%88%e0%a4%b0%e0%a4%bf%e0%a4%af%e0%a4%82%e0%a4%b8-%e0%a4%94%e0%a4%b0-%e0%a4%95%e0%a5%8b%e0%a4%b5/"
+  },
+  {
+    "id": "chap-283",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "5. रिस्क (भाग 4) – कोरिलेशन मैट्रिक्स और पोर्टफोलियो वैरियंस",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ad%e0%a4%be%e0%a4%97-4-%e0%a4%95%e0%a5%8b%e0%a4%b0%e0%a4%bf%e0%a4%b2%e0%a5%87%e0%a4%b6%e0%a4%a8-%e0%a4%ae%e0%a5%88%e0%a4%9f%e0%a5%8d/"
+  },
+  {
+    "id": "chap-284",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "6. इक्विटी कर्व",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%87%e0%a4%95%e0%a5%8d%e0%a4%b5%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%95%e0%a4%b0%e0%a5%8d%e0%a4%b5/"
+  },
+  {
+    "id": "chap-285",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "7. संभावित रिटर्न / एक्सपेक्टेड रिटर्न्स",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b8%e0%a4%82%e0%a4%ad%e0%a4%be%e0%a4%b5%e0%a4%bf%e0%a4%a4-%e0%a4%b0%e0%a4%bf%e0%a4%9f%e0%a4%b0%e0%a5%8d%e0%a4%a8-%e0%a4%8f%e0%a4%95%e0%a5%8d%e0%a4%b8%e0%a4%aa%e0%a5%87%e0%a4%95%e0%a5%8d/"
+  },
+  {
+    "id": "chap-286",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "8. पोर्टफोलियो ऑप्टिमाइजेशन (भाग 1)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%aa%e0%a5%8b%e0%a4%b0%e0%a5%8d%e0%a4%9f%e0%a4%ab%e0%a5%8b%e0%a4%b2%e0%a4%bf%e0%a4%af%e0%a5%8b-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%9f%e0%a4%bf%e0%a4%ae%e0%a4%be%e0%a4%87%e0%a4%9c%e0%a5%87%e0%a4%b6/"
+  },
+  {
+    "id": "chap-287",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "9. पोर्टफोलियो ऑप्टिमाइजेशन (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%aa%e0%a5%8b%e0%a4%b0%e0%a5%8d%e0%a4%9f%e0%a4%ab%e0%a5%8b%e0%a4%b2%e0%a4%bf%e0%a4%af%e0%a5%8b-%e0%a4%91%e0%a4%aa%e0%a5%8d%e0%a4%9f%e0%a4%bf%e0%a4%ae%e0%a4%be%e0%a4%87%e0%a4%9c%e0%a5%87-2/"
+  },
+  {
+    "id": "chap-288",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "10 . वैल्यू एट रिस्क",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b5%e0%a5%88%e0%a4%b2%e0%a5%8d%e0%a4%af%e0%a5%82-%e0%a4%8f%e0%a4%9f-%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95/"
+  },
+  {
+    "id": "chap-289",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "11. ट्रेडर के लिए पोजीशन साइजिंग",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%b0-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%aa%e0%a5%8b%e0%a4%9c%e0%a5%80%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a4%be%e0%a4%87%e0%a4%9c/"
+  },
+  {
+    "id": "chap-290",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "12. ट्रेडर के लिए पोजीशन साइजिंग (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%b0-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%aa%e0%a5%8b%e0%a4%9c%e0%a5%80%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a4%be%e0%a4%87%e0%a4%9c-2/"
+  },
+  {
+    "id": "chap-291",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "13. ट्रेडर के लिए पोजीशन साइजिंग (भाग 3)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%b0-%e0%a4%95%e0%a5%87-%e0%a4%b2%e0%a4%bf%e0%a4%8f-%e0%a4%aa%e0%a5%8b%e0%a4%9c%e0%a5%80%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a4%be%e0%a4%87%e0%a4%9c-3/"
+  },
+  {
+    "id": "chap-292",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "14. केली का क्राइटेरिया",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%87%e0%a4%b2%e0%a5%80-%e0%a4%95%e0%a4%be-%e0%a4%95%e0%a5%8d%e0%a4%b0%e0%a4%be%e0%a4%87%e0%a4%9f%e0%a5%87%e0%a4%b0%e0%a4%bf%e0%a4%af%e0%a4%be/"
+  },
+  {
+    "id": "chap-293",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "15. ट्रेडिंग पूर्वाग्रह",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%aa%e0%a5%82%e0%a4%b0%e0%a5%8d%e0%a4%b5%e0%a4%be%e0%a4%97%e0%a5%8d%e0%a4%b0%e0%a4%b9/"
+  },
+  {
+    "id": "chap-294",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%b0%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%95-%e0%a4%ae%e0%a5%88%e0%a4%a8%e0%a5%87%e0%a4%9c%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%94%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/",
+    "title": "16. ट्रेडिंग पूर्वाग्रह – भाग 2",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%aa%e0%a5%82%e0%a4%b0%e0%a5%8d%e0%a4%b5%e0%a4%be%e0%a4%97%e0%a5%8d%e0%a4%b0%e0%a4%b9-%e0%a4%ad%e0%a4%be%e0%a4%97-2/"
+  },
+  {
+    "id": "chap-295",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "1. What to expect?",
+    "url": "https://zerodha.com/varsity/chapter/what-to-expect/"
+  },
+  {
+    "id": "chap-296",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "2. Pair Trading logic",
+    "url": "https://zerodha.com/varsity/chapter/pair-trading-basics/"
+  },
+  {
+    "id": "chap-297",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "3. Pair Trading, Method 1, Chapter 1 (PTM1, C1) -Tracking Pairs",
+    "url": "https://zerodha.com/varsity/chapter/tracking-pairs/"
+  },
+  {
+    "id": "chap-298",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "4. PTM1, C2 – Pair stats",
+    "url": "https://zerodha.com/varsity/chapter/pair-stats/"
+  },
+  {
+    "id": "chap-299",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "5. PTM1, C3 – Pre trade setup",
+    "url": "https://zerodha.com/varsity/chapter/pre-trade-setup/"
+  },
+  {
+    "id": "chap-300",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "6. PTM1, C4 – The Density Curve",
+    "url": "https://zerodha.com/varsity/chapter/the-density-curve/"
+  },
+  {
+    "id": "chap-301",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "7. PTM1,C5 – The Pair Trade",
+    "url": "https://zerodha.com/varsity/chapter/the-pair-trade/"
+  },
+  {
+    "id": "chap-302",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "8. Pair trade Method 2, Chapter 1 (PTM2, C1) – Straight line Equation",
+    "url": "https://zerodha.com/varsity/chapter/straight-line-equation/"
+  },
+  {
+    "id": "chap-303",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "9. PTM2, C2 – Linear Regression",
+    "url": "https://zerodha.com/varsity/chapter/linear-regression/"
+  },
+  {
+    "id": "chap-304",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "10. PTM2, C3 – The Error Ratio",
+    "url": "https://zerodha.com/varsity/chapter/the-error-ratio/"
+  },
+  {
+    "id": "chap-305",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "11. PTM2, C4 – The ADF test",
+    "url": "https://zerodha.com/varsity/chapter/the-adf-test/"
+  },
+  {
+    "id": "chap-306",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "12. Trade Identification",
+    "url": "https://zerodha.com/varsity/chapter/trade-identification/"
+  },
+  {
+    "id": "chap-307",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "13. Live Example -1",
+    "url": "https://zerodha.com/varsity/chapter/live-example/"
+  },
+  {
+    "id": "chap-308",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "14. Live Example – 2",
+    "url": "https://zerodha.com/varsity/chapter/live-example-2/"
+  },
+  {
+    "id": "chap-309",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "15. Calendar Spreads",
+    "url": "https://zerodha.com/varsity/chapter/calendar-spreads/"
+  },
+  {
+    "id": "chap-310",
+    "moduleUrl": "https://zerodha.com/varsity/module/trading-systems/",
+    "title": "16. Momentum Portfolios",
+    "url": "https://zerodha.com/varsity/chapter/momentum-portfolios/"
+  },
+  {
+    "id": "chap-311",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "1. ट्रेडिंग सिस्टम क्या होता है?",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae-%e0%a4%95%e0%a5%8d%e0%a4%af%e0%a4%be-%e0%a4%b9%e0%a5%8b%e0%a4%a4/"
+  },
+  {
+    "id": "chap-312",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "2. पेयर ट्रेडिंग का आधार",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%aa%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%95%e0%a4%be-%e0%a4%86%e0%a4%a7%e0%a4%be%e0%a4%b0/"
+  },
+  {
+    "id": "chap-313",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "3. पेयर ट्रेडिंग, तरीका 1, अध्याय 1– पेयर को ट्रैक करना",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%aa%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%a4%e0%a4%b0%e0%a5%80%e0%a4%95%e0%a4%be-1-%e0%a4%85%e0%a4%a7%e0%a5%8d%e0%a4%af/"
+  },
+  {
+    "id": "chap-314",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "4. PTM 1, C2 -पेयर स्टैट्स",
+    "url": "https://zerodha.com/varsity/chapter/ptm-1-c2-%e0%a4%aa%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a5%88%e0%a4%9f%e0%a5%8d%e0%a4%b8/"
+  },
+  {
+    "id": "chap-315",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "5. PTM 1, C3 – ट्रेड के पहले का सेट-अप",
+    "url": "https://zerodha.com/varsity/chapter/ptm-1-c3-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1-%e0%a4%95%e0%a5%87-%e0%a4%aa%e0%a4%b9%e0%a4%b2%e0%a5%87-%e0%a4%95%e0%a4%be-%e0%a4%b8%e0%a5%87%e0%a4%9f-%e0%a4%85%e0%a4%aa/"
+  },
+  {
+    "id": "chap-316",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "6. PTM 1, C4 – डेन्सिटी कर्व",
+    "url": "https://zerodha.com/varsity/chapter/ptm-1-c4-%e0%a4%a1%e0%a5%87%e0%a4%a8%e0%a5%8d%e0%a4%b8%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%95%e0%a4%b0%e0%a5%8d%e0%a4%b5/"
+  },
+  {
+    "id": "chap-317",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "7. PTM 1, C5 – पेयर ट्रेड",
+    "url": "https://zerodha.com/varsity/chapter/ptm-1-c5-%e0%a4%aa%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1/"
+  },
+  {
+    "id": "chap-318",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "8. पेयर ट्रेड तरीका 2, अध्याय 1, (PTM 2, C 1) – स्ट्रेट लाइन इक्वेशन",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%aa%e0%a5%87%e0%a4%af%e0%a4%b0-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1-%e0%a4%a4%e0%a4%b0%e0%a5%80%e0%a4%95%e0%a4%be-2-%e0%a4%85%e0%a4%a7%e0%a5%8d%e0%a4%af%e0%a4%be%e0%a4%af-1-ptm-2-c/"
+  },
+  {
+    "id": "chap-319",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "9. PTM 2, C 2 – लीनियर रिग्रेसन",
+    "url": "https://zerodha.com/varsity/chapter/ptm-2-c-2-%e0%a4%b2%e0%a5%80%e0%a4%a8%e0%a4%bf%e0%a4%af%e0%a4%b0-%e0%a4%b0%e0%a4%bf%e0%a4%97%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%b8%e0%a4%a8/"
+  },
+  {
+    "id": "chap-320",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "10. PTM 2, C 3 – एरर रेश्यो",
+    "url": "https://zerodha.com/varsity/chapter/ptm-2-c-3-%e0%a4%8f%e0%a4%b0%e0%a4%b0-%e0%a4%b0%e0%a5%87%e0%a4%b6%e0%a5%8d%e0%a4%af%e0%a5%8b/"
+  },
+  {
+    "id": "chap-321",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "11. PTM 2, C 4 – एडीएफ टेस्ट",
+    "url": "https://zerodha.com/varsity/chapter/ptm-2-c-4-%e0%a4%8f%e0%a4%a1%e0%a5%80%e0%a4%8f%e0%a4%ab-%e0%a4%9f%e0%a5%87%e0%a4%b8%e0%a5%8d%e0%a4%9f/"
+  },
+  {
+    "id": "chap-322",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "12. ट्रेड की पहचान",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1-%e0%a4%95%e0%a5%80-%e0%a4%aa%e0%a4%b9%e0%a4%9a%e0%a4%be%e0%a4%a8/"
+  },
+  {
+    "id": "chap-323",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "13. लाइव उदाहरण-1",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b2%e0%a4%be%e0%a4%87%e0%a4%b5-%e0%a4%89%e0%a4%a6%e0%a4%be%e0%a4%b9%e0%a4%b0%e0%a4%a3-1/"
+  },
+  {
+    "id": "chap-324",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "14. लाइव उदाहरण – 2",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b2%e0%a4%be%e0%a4%87%e0%a4%b5-%e0%a4%89%e0%a4%a6%e0%a4%be%e0%a4%b9%e0%a4%b0%e0%a4%a3-2/"
+  },
+  {
+    "id": "chap-325",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "15. कैलेंडर स्प्रेड्स",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%95%e0%a5%88%e0%a4%b2%e0%a5%87%e0%a4%82%e0%a4%a1%e0%a4%b0-%e0%a4%b8%e0%a5%8d%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a5%8d%e0%a4%b8/"
+  },
+  {
+    "id": "chap-326",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b8%e0%a4%bf%e0%a4%b8%e0%a5%8d%e0%a4%9f%e0%a4%ae%e0%a5%8d%e0%a4%b8/",
+    "title": "16. गति/वेग/चाल (मोमेंटम) पोर्टफोलियो",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%97%e0%a4%a4%e0%a4%bf-%e0%a4%b5%e0%a5%87%e0%a4%97-%e0%a4%9a%e0%a4%be%e0%a4%b2-%e0%a4%ae%e0%a5%8b%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f%e0%a4%ae-%e0%a4%aa%e0%a5%8b%e0%a4%b0%e0%a5%8d%e0%a4%9f/"
+  },
+  {
+    "id": "chap-327",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "1. Background and Orientation",
+    "url": "https://zerodha.com/varsity/chapter/background-and-orientation/"
+  },
+  {
+    "id": "chap-328",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "2. Personal Finance Math (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/personal-finance-math-part-1/"
+  },
+  {
+    "id": "chap-329",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "3. Personal Finance Math (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/personal-finance-math-part-2/"
+  },
+  {
+    "id": "chap-330",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "4. The retirement problem (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/the-retirement-problem-part-1/"
+  },
+  {
+    "id": "chap-331",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "5. The retirement problem (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/the-retirement-problem-part-2/"
+  },
+  {
+    "id": "chap-332",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "6. Introduction to Mutual Funds",
+    "url": "https://zerodha.com/varsity/chapter/introduction-to-mutual-funds/"
+  },
+  {
+    "id": "chap-333",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "7. Concept of fund & NAV",
+    "url": "https://zerodha.com/varsity/chapter/concept-of-fund-nav/"
+  },
+  {
+    "id": "chap-334",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "8. The mutual fund fact-sheet",
+    "url": "https://zerodha.com/varsity/chapter/the-mutual-fund-fact-sheet/"
+  },
+  {
+    "id": "chap-335",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "9. The Equity scheme (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/the-equity-scheme-part-1/"
+  },
+  {
+    "id": "chap-336",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "10. Equity Scheme (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/equity-scheme-part-2/"
+  },
+  {
+    "id": "chap-337",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "11. The Debt funds (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/the-debt-funds-part-1/"
+  },
+  {
+    "id": "chap-338",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "12. The Debt funds (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/the-debt-funds-part-2/"
+  },
+  {
+    "id": "chap-339",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "13. The Debt funds (Part 3)",
+    "url": "https://zerodha.com/varsity/chapter/the-debt-funds-part-3/"
+  },
+  {
+    "id": "chap-340",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "14. The Debt Funds (Part 4)",
+    "url": "https://zerodha.com/varsity/chapter/the-debt-funds-part-4/"
+  },
+  {
+    "id": "chap-341",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "15. Investing in Bonds",
+    "url": "https://zerodha.com/varsity/chapter/investing-in-bonds/"
+  },
+  {
+    "id": "chap-342",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "16. Index Funds",
+    "url": "https://zerodha.com/varsity/chapter/introduction-to-index-funds/"
+  },
+  {
+    "id": "chap-343",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "17. Arbitrage Funds",
+    "url": "https://zerodha.com/varsity/chapter/arbitrage-funds/"
+  },
+  {
+    "id": "chap-344",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "18. Measuring Mutual fund Returns",
+    "url": "https://zerodha.com/varsity/chapter/measuring-mutual-fund-returns/"
+  },
+  {
+    "id": "chap-345",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "19. Rolling Returns",
+    "url": "https://zerodha.com/varsity/chapter/rolling-returns/"
+  },
+  {
+    "id": "chap-346",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "20. Mutual fund Expense Ratio, Direct, and Regular plans",
+    "url": "https://zerodha.com/varsity/chapter/mutual-fund-expense-ratio-direct-and-regular-plans/"
+  },
+  {
+    "id": "chap-347",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "21. Mutual Benchmarking",
+    "url": "https://zerodha.com/varsity/chapter/mutual-benchmarking/"
+  },
+  {
+    "id": "chap-348",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "22. Mutual Fund Beta, SD, and Sharpe Ratio",
+    "url": "https://zerodha.com/varsity/chapter/mutual-fund-risk-metrics/"
+  },
+  {
+    "id": "chap-349",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "23. Sortino and the Capture Ratios",
+    "url": "https://zerodha.com/varsity/chapter/sortino-and-the-capture-ratios/"
+  },
+  {
+    "id": "chap-350",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "24. How to analyse an Equity Mutual fund?",
+    "url": "https://zerodha.com/varsity/chapter/how-to-analyse-an-equity-mutual-fund/"
+  },
+  {
+    "id": "chap-351",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "25. How to analyze a debt mutual fund?",
+    "url": "https://zerodha.com/varsity/chapter/how-to-analyze-a-debt-mutual-fund/"
+  },
+  {
+    "id": "chap-352",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "26. The Mutual Fund Portfolio",
+    "url": "https://zerodha.com/varsity/chapter/the-mutual-fund-portfolio/"
+  },
+  {
+    "id": "chap-353",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "27. Smart-beta funds",
+    "url": "https://zerodha.com/varsity/chapter/smart-beta-funds/"
+  },
+  {
+    "id": "chap-354",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "28. Asset Allocation, An Introduction",
+    "url": "https://zerodha.com/varsity/chapter/asset-allocation-an-introduction/"
+  },
+  {
+    "id": "chap-355",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "29. Exchange-traded funds (ETF)",
+    "url": "https://zerodha.com/varsity/chapter/exchange-traded-funds-etf/"
+  },
+  {
+    "id": "chap-356",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "30. Basics of Macro Economics",
+    "url": "https://zerodha.com/varsity/chapter/basics-of-macro-economics/"
+  },
+  {
+    "id": "chap-357",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "31. Personal finance review (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/personal-finance-review-part-1/"
+  },
+  {
+    "id": "chap-358",
+    "moduleUrl": "https://zerodha.com/varsity/module/personalfinance/",
+    "title": "32. Personal finance review (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/personal-finance-review-part-2/"
+  },
+  {
+    "id": "chap-359",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "1. पृष्ठभूमि और भूमिका",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%aa%e0%a5%83%e0%a4%b7%e0%a5%8d%e0%a4%a0%e0%a4%ad%e0%a5%82%e0%a4%ae%e0%a4%bf-%e0%a4%94%e0%a4%b0-%e0%a4%ad%e0%a5%82%e0%a4%ae%e0%a4%bf%e0%a4%95%e0%a4%be/"
+  },
+  {
+    "id": "chap-360",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "2. पर्सनल फाइनेंस का गणित",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8-%e0%a4%95%e0%a4%be-%e0%a4%97%e0%a4%a3%e0%a4%bf%e0%a4%a4/"
+  },
+  {
+    "id": "chap-361",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "3. पर्सनल फाइनेंस का गणित (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8-%e0%a4%95%e0%a4%be-%e0%a4%97%e0%a4%a3%e0%a4%bf%e0%a4%a4-%e0%a4%ad%e0%a4%be/"
+  },
+  {
+    "id": "chap-362",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "4. रिटायरमेंट की समस्या (भाग 1)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b0%e0%a4%bf%e0%a4%9f%e0%a4%be%e0%a4%af%e0%a4%b0%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%95%e0%a5%80-%e0%a4%b8%e0%a4%ae%e0%a4%b8%e0%a5%8d%e0%a4%af%e0%a4%be-%e0%a4%ad%e0%a4%be%e0%a4%97-1/"
+  },
+  {
+    "id": "chap-363",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "5. रिटायरमेंट की समस्या (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b0%e0%a4%bf%e0%a4%9f%e0%a4%be%e0%a4%af%e0%a4%b0%e0%a4%ae%e0%a5%87%e0%a4%82%e0%a4%9f-%e0%a4%95%e0%a5%80-%e0%a4%b8%e0%a4%ae%e0%a4%b8%e0%a5%8d%e0%a4%af%e0%a4%be-%e0%a4%ad%e0%a4%be%e0%a4%97-2/"
+  },
+  {
+    "id": "chap-364",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "6. म्यूचुअल फंड का परिचय",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a5%81%e0%a4%85%e0%a4%b2-%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%95%e0%a4%be-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/"
+  },
+  {
+    "id": "chap-365",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "7. फंड और NAV का कॉन्सेप्ट (सिद्धांत/अवधारणा)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%94%e0%a4%b0-nav-%e0%a4%95%e0%a4%be-%e0%a4%95%e0%a5%89%e0%a4%a8%e0%a5%8d%e0%a4%b8%e0%a5%87%e0%a4%aa%e0%a5%8d%e0%a4%9f-%e0%a4%b8%e0%a4%bf%e0%a4%a6%e0%a5%8d%e0%a4%a7/"
+  },
+  {
+    "id": "chap-366",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "8. म्यूचुअल फंड फैक्टशीट",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a5%81%e0%a4%85%e0%a4%b2-%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%ab%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%9f%e0%a4%b6%e0%a5%80%e0%a4%9f/"
+  },
+  {
+    "id": "chap-367",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "9. इक्विटी स्कीम (भाग 1)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%87%e0%a4%95%e0%a5%8d%e0%a4%b5%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%b8%e0%a5%8d%e0%a4%95%e0%a5%80%e0%a4%ae-%e0%a4%ad%e0%a4%be%e0%a4%97-1/"
+  },
+  {
+    "id": "chap-368",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "10. इक्विटी स्कीम (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%87%e0%a4%95%e0%a5%8d%e0%a4%b5%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%b8%e0%a5%8d%e0%a4%95%e0%a5%80%e0%a4%ae-%e0%a4%ad%e0%a4%be%e0%a4%97-2/"
+  },
+  {
+    "id": "chap-369",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "11. डेट फंड (भाग 1)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a1%e0%a5%87%e0%a4%9f-%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%ad%e0%a4%be%e0%a4%97-1/"
+  },
+  {
+    "id": "chap-370",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "12. डेट फंड (भाग 2)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a1%e0%a5%87%e0%a4%9f-%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%ad%e0%a4%be%e0%a4%97-2/"
+  },
+  {
+    "id": "chap-371",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "13. डेट फंड (भाग 3)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%85%e0%a4%a7%e0%a5%8d%e0%a4%af%e0%a4%be%e0%a4%af-13-%e0%a4%a1%e0%a5%87%e0%a4%9f-%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%ad%e0%a4%be%e0%a4%97-3/"
+  },
+  {
+    "id": "chap-372",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "14. डेट फंड – भाग 4",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a1%e0%a5%87%e0%a4%9f-%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%ad%e0%a4%be%e0%a4%97-4/"
+  },
+  {
+    "id": "chap-373",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "15. बॉन्ड में निवेश",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ac%e0%a5%89%e0%a4%a8%e0%a5%8d%e0%a4%a1-%e0%a4%ae%e0%a5%87%e0%a4%82-%e0%a4%a8%e0%a4%bf%e0%a4%b5%e0%a5%87%e0%a4%b6/"
+  },
+  {
+    "id": "chap-374",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "16. इंडेक्स फंड",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%87%e0%a4%82%e0%a4%a1%e0%a5%87%e0%a4%95%e0%a5%8d%e0%a4%b8-%e0%a4%ab%e0%a4%82%e0%a4%a1/"
+  },
+  {
+    "id": "chap-375",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "17. आर्बिट्राज फंड",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%86%e0%a4%b0%e0%a5%8d%e0%a4%ac%e0%a4%bf%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a4%be%e0%a4%9c-%e0%a4%ab%e0%a4%82%e0%a4%a1/"
+  },
+  {
+    "id": "chap-376",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "18. म्यूचुअल फंड के रिटर्न को पता करना",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a5%81%e0%a4%85%e0%a4%b2-%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%95%e0%a5%87-%e0%a4%b0%e0%a4%bf%e0%a4%9f%e0%a4%b0%e0%a5%8d%e0%a4%a8-%e0%a4%95%e0%a5%8b/"
+  },
+  {
+    "id": "chap-377",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "19. रोलिंग रिटर्न",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b0%e0%a5%8b%e0%a4%b2%e0%a4%bf%e0%a4%82%e0%a4%97-%e0%a4%b0%e0%a4%bf%e0%a4%9f%e0%a4%b0%e0%a5%8d%e0%a4%a8/"
+  },
+  {
+    "id": "chap-378",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "20. म्यूचुअल फंड एक्सपेंस रेश्यो, डायरेक्ट और रेगुलर प्लान",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a5%81%e0%a4%85%e0%a4%b2-%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%8f%e0%a4%95%e0%a5%8d%e0%a4%b8%e0%a4%aa%e0%a5%87%e0%a4%82%e0%a4%b8-%e0%a4%b0%e0%a5%87/"
+  },
+  {
+    "id": "chap-379",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "21. म्यूचुअल फंड की बेंचमार्किंग",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a5%81%e0%a4%85%e0%a4%b2-%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%95%e0%a5%80-%e0%a4%ac%e0%a5%87%e0%a4%82%e0%a4%9a%e0%a4%ae%e0%a4%be%e0%a4%b0%e0%a5%8d/"
+  },
+  {
+    "id": "chap-380",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "22. म्यूचुअल फंड बीटा, SD और शार्पे रेश्यो",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a5%81%e0%a4%85%e0%a4%b2-%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%ac%e0%a5%80%e0%a4%9f%e0%a4%be-sd-%e0%a4%94%e0%a4%b0-%e0%a4%b6%e0%a4%be%e0%a4%b0%e0%a5%8d/"
+  },
+  {
+    "id": "chap-381",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "23. सॉर्टिनो और कैप्चर रेश्यो",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b8%e0%a5%89%e0%a4%b0%e0%a5%8d%e0%a4%9f%e0%a4%bf%e0%a4%a8%e0%a5%8b-%e0%a4%94%e0%a4%b0-%e0%a4%95%e0%a5%88%e0%a4%aa%e0%a5%8d%e0%a4%9a%e0%a4%b0-%e0%a4%b0%e0%a5%87%e0%a4%b6%e0%a5%8d%e0%a4%af/"
+  },
+  {
+    "id": "chap-382",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "24. इक्विटी म्यूचुअल फंड की एनालिसिस कैसे करें?",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%87%e0%a4%95%e0%a5%8d%e0%a4%b5%e0%a4%bf%e0%a4%9f%e0%a5%80-%e0%a4%ae%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a5%81%e0%a4%85%e0%a4%b2-%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%95%e0%a5%80-%e0%a4%8f/"
+  },
+  {
+    "id": "chap-383",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "25. डेट म्यूचुअल फंड की समीक्षा कैसे करें?",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%a1%e0%a5%87%e0%a4%9f-%e0%a4%ae%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a5%81%e0%a4%85%e0%a4%b2-%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%95%e0%a5%80-%e0%a4%b8%e0%a4%ae%e0%a5%80%e0%a4%95%e0%a5%8d/"
+  },
+  {
+    "id": "chap-384",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "26. म्यूचुअल फंड पोर्टफोलियो",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%ae%e0%a5%8d%e0%a4%af%e0%a5%82%e0%a4%9a%e0%a5%81%e0%a4%85%e0%a4%b2-%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%aa%e0%a5%8b%e0%a4%b0%e0%a5%8d%e0%a4%9f%e0%a4%ab%e0%a5%8b%e0%a4%b2%e0%a4%bf%e0%a4%af%e0%a5%8b/"
+  },
+  {
+    "id": "chap-385",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "27. स्मार्ट-बीटा फंड",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b8%e0%a5%8d%e0%a4%ae%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%9f-%e0%a4%ac%e0%a5%80%e0%a4%9f%e0%a4%be-%e0%a4%ab%e0%a4%82%e0%a4%a1/"
+  },
+  {
+    "id": "chap-386",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "28. एसेट एलोकेशन से परिचय",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%8f%e0%a4%b8%e0%a5%87%e0%a4%9f-%e0%a4%8f%e0%a4%b2%e0%a5%8b%e0%a4%95%e0%a5%87%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a5%87-%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%9a%e0%a4%af/"
+  },
+  {
+    "id": "chap-387",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "29. एक्सचेंज ट्रेडेड फंड (ईटीएफ/ ETF)",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%8f%e0%a4%95%e0%a5%8d%e0%a4%b8%e0%a4%9a%e0%a5%87%e0%a4%82%e0%a4%9c-%e0%a4%9f%e0%a5%8d%e0%a4%b0%e0%a5%87%e0%a4%a1%e0%a5%87%e0%a4%a1-%e0%a4%ab%e0%a4%82%e0%a4%a1-%e0%a4%88%e0%a4%9f%e0%a5%80/"
+  },
+  {
+    "id": "chap-388",
+    "moduleUrl": "https://zerodha.com/varsity/module/%e0%a4%aa%e0%a4%b0%e0%a5%8d%e0%a4%b8%e0%a4%a8%e0%a4%b2-%e0%a4%ab%e0%a4%be%e0%a4%87%e0%a4%a8%e0%a5%87%e0%a4%82%e0%a4%b8/",
+    "title": "30. समष्टि अर्थशास्त्र की बुनियादी बातें",
+    "url": "https://zerodha.com/varsity/chapter/%e0%a4%b8%e0%a4%ae%e0%a4%b7%e0%a5%8d%e0%a4%9f%e0%a4%bf-%e0%a4%85%e0%a4%b0%e0%a5%8d%e0%a4%a5%e0%a4%b6%e0%a4%be%e0%a4%b8%e0%a5%8d%e0%a4%a4%e0%a5%8d%e0%a4%b0-%e0%a4%95%e0%a5%80-%e0%a4%ac%e0%a5%81/"
+  },
+  {
+    "id": "chap-389",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "1. Introduction to Financial Modelling",
+    "url": "https://zerodha.com/varsity/chapter/introduction-to-financial-modelling/"
+  },
+  {
+    "id": "chap-390",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "2. Excel workbook setup",
+    "url": "https://zerodha.com/varsity/chapter/excel-workbook-setup/"
+  },
+  {
+    "id": "chap-391",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "3. Historical Data",
+    "url": "https://zerodha.com/varsity/chapter/historical-data/"
+  },
+  {
+    "id": "chap-392",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "4. Assumptions (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/assumptions-part-1/"
+  },
+  {
+    "id": "chap-393",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "5. Assumptions (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/assumptions-part-2/"
+  },
+  {
+    "id": "chap-394",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "6. Revenue model",
+    "url": "https://zerodha.com/varsity/chapter/revenue-model/"
+  },
+  {
+    "id": "chap-395",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "7. Asset Schedule (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/asset-schedule/"
+  },
+  {
+    "id": "chap-396",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "8. Asset Schedule (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/asset-schedule-part-2/"
+  },
+  {
+    "id": "chap-397",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "9. Debt Schedule",
+    "url": "https://zerodha.com/varsity/chapter/debt-schedule/"
+  },
+  {
+    "id": "chap-398",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "10. Reserves Schedule (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/reserves-schedule-part-1/"
+  },
+  {
+    "id": "chap-399",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "11. Reserves Schedule (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/reserves-schedule-part-2/"
+  },
+  {
+    "id": "chap-400",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "12. Projections",
+    "url": "https://zerodha.com/varsity/chapter/projections/"
+  },
+  {
+    "id": "chap-401",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "13. Cash flow statement",
+    "url": "https://zerodha.com/varsity/chapter/cash-flow-statement-2/"
+  },
+  {
+    "id": "chap-402",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "14. Valuation (Part 1) – Overview",
+    "url": "https://zerodha.com/varsity/chapter/valuation-part-1-overview/"
+  },
+  {
+    "id": "chap-403",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "15. Valuation (Part 2) – FCFF & FCFE",
+    "url": "https://zerodha.com/varsity/chapter/fcff-fcfe/"
+  },
+  {
+    "id": "chap-404",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "16. Valuation (Part 3) – Risk Premium & Tax Shield",
+    "url": "https://zerodha.com/varsity/chapter/valuation-part-3-risk-premium-tax-shield/"
+  },
+  {
+    "id": "chap-405",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "17. Weighted average cost of capital and Terminal Growth",
+    "url": "https://zerodha.com/varsity/chapter/weighted-average-cost-of-capital-and-terminal-growth/"
+  },
+  {
+    "id": "chap-406",
+    "moduleUrl": "https://zerodha.com/varsity/module/financial-modelling/",
+    "title": "18. Discounted Cash Flow Analysis (DCF)",
+    "url": "https://zerodha.com/varsity/chapter/discounted-cash-flow-analysis-dcf/"
+  },
+  {
+    "id": "chap-407",
+    "moduleUrl": "https://zerodha.com/varsity/module/insurance/",
+    "title": "1. Introduction",
+    "url": "https://zerodha.com/varsity/chapter/introduction/"
+  },
+  {
+    "id": "chap-408",
+    "moduleUrl": "https://zerodha.com/varsity/module/insurance/",
+    "title": "2. Perverse Incentives",
+    "url": "https://zerodha.com/varsity/chapter/perverse-incentives/"
+  },
+  {
+    "id": "chap-409",
+    "moduleUrl": "https://zerodha.com/varsity/module/insurance/",
+    "title": "3. The nudge",
+    "url": "https://zerodha.com/varsity/chapter/the-nudge/"
+  },
+  {
+    "id": "chap-410",
+    "moduleUrl": "https://zerodha.com/varsity/module/insurance/",
+    "title": "4. Skin in the game",
+    "url": "https://zerodha.com/varsity/chapter/skin-in-the-game/"
+  },
+  {
+    "id": "chap-411",
+    "moduleUrl": "https://zerodha.com/varsity/module/insurance/",
+    "title": "5. Dunning Kruger effect",
+    "url": "https://zerodha.com/varsity/chapter/dunning-kruger-effect/"
+  },
+  {
+    "id": "chap-412",
+    "moduleUrl": "https://zerodha.com/varsity/module/insurance/",
+    "title": "6. A mighty defence",
+    "url": "https://zerodha.com/varsity/chapter/a-mighty-defence/"
+  },
+  {
+    "id": "chap-413",
+    "moduleUrl": "https://zerodha.com/varsity/module/insurance/",
+    "title": "7. No free lunch",
+    "url": "https://zerodha.com/varsity/chapter/no-free-lunch/"
+  },
+  {
+    "id": "chap-414",
+    "moduleUrl": "https://zerodha.com/varsity/module/insurance/",
+    "title": "8. Gimmick or not (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/gimmik-or-not-part-1/"
+  },
+  {
+    "id": "chap-415",
+    "moduleUrl": "https://zerodha.com/varsity/module/insurance/",
+    "title": "9. Gimmick or not (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/gimmik-or-not-part-2/"
+  },
+  {
+    "id": "chap-416",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "1. Sector analysis overview",
+    "url": "https://zerodha.com/varsity/chapter/sector-analysis-overview/"
+  },
+  {
+    "id": "chap-417",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "2. Cement",
+    "url": "https://zerodha.com/varsity/chapter/cement/"
+  },
+  {
+    "id": "chap-418",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "3. Insurance (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/insurance-part-1/"
+  },
+  {
+    "id": "chap-419",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "4. Insurance (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/understanding-insurance-sector-part-2/"
+  },
+  {
+    "id": "chap-420",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "5. Information Technology",
+    "url": "https://zerodha.com/varsity/chapter/information-technology/"
+  },
+  {
+    "id": "chap-421",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "6. Automobiles (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/automobiles-part-1/"
+  },
+  {
+    "id": "chap-422",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "7. Automobiles (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/automobiles-part-2/"
+  },
+  {
+    "id": "chap-423",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "8. Banking (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/banking-part-1/"
+  },
+  {
+    "id": "chap-424",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "9. Banking (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/banking-part-2/"
+  },
+  {
+    "id": "chap-425",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "10. Steel (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/steel-part-1/"
+  },
+  {
+    "id": "chap-426",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "11. Steel (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/steel-part-2/"
+  },
+  {
+    "id": "chap-427",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "12. Hotels (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/hotels-part-1/"
+  },
+  {
+    "id": "chap-428",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "13. Hotels (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/hotels-part-2/"
+  },
+  {
+    "id": "chap-429",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "14. Retail (Part 1)",
+    "url": "https://zerodha.com/varsity/chapter/retail-part-1/"
+  },
+  {
+    "id": "chap-430",
+    "moduleUrl": "https://zerodha.com/varsity/module/sector-analysis/",
+    "title": "15. Retail (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/retail-part-2/"
+  },
+  {
+    "id": "chap-431",
+    "moduleUrl": "https://zerodha.com/varsity/module/social-stock-exchanges-sses/",
+    "title": "1. Social Stock Exchanges – An Introduction",
+    "url": "https://zerodha.com/varsity/chapter/social-stock-exchanges-an-introduction/"
+  },
+  {
+    "id": "chap-432",
+    "moduleUrl": "https://zerodha.com/varsity/module/social-stock-exchanges-sses/",
+    "title": "2. Who can raise funds on SSE?",
+    "url": "https://zerodha.com/varsity/chapter/who-can-raise-funds-on-sse/"
+  },
+  {
+    "id": "chap-433",
+    "moduleUrl": "https://zerodha.com/varsity/module/social-stock-exchanges-sses/",
+    "title": "3. Modes of raising funds (Part 1) : ZCZP and other instruments",
+    "url": "https://zerodha.com/varsity/chapter/modes-of-raising-funds-part-1-zczp-and-other-instruments/"
+  },
+  {
+    "id": "chap-434",
+    "moduleUrl": "https://zerodha.com/varsity/module/social-stock-exchanges-sses/",
+    "title": "4. Modes of raising funds (Part 2)",
+    "url": "https://zerodha.com/varsity/chapter/modes-of-raising-funds-part-2/"
+  },
+  {
+    "id": "chap-435",
+    "moduleUrl": "https://zerodha.com/varsity/module/national-pension-scheme/",
+    "title": "1. Introduction to NPS",
+    "url": "https://zerodha.com/varsity/chapter/national-pension-system-nps/"
+  },
+  {
+    "id": "chap-436",
+    "moduleUrl": "https://zerodha.com/varsity/module/national-pension-scheme/",
+    "title": "2. NPS vs. other retirement plans",
+    "url": "https://zerodha.com/varsity/chapter/nps-vs-other-retirement-plans/"
+  },
+  {
+    "id": "chap-437",
+    "moduleUrl": "https://zerodha.com/varsity/module/national-pension-scheme/",
+    "title": "3. Investment Options in NPS",
+    "url": "https://zerodha.com/varsity/chapter/investment-options-in-nps/"
+  },
+  {
+    "id": "chap-438",
+    "moduleUrl": "https://zerodha.com/varsity/module/national-pension-scheme/",
+    "title": "4. NPS: Exit & Withdrawals",
+    "url": "https://zerodha.com/varsity/chapter/exit-withdrawals/"
+  },
+  {
+    "id": "chap-439",
+    "moduleUrl": "https://zerodha.com/varsity/module/national-pension-scheme/",
+    "title": "5. NPS Tier II Account",
+    "url": "https://zerodha.com/varsity/chapter/nps-tier-ii-account/"
+  },
+  {
+    "id": "chap-440",
+    "moduleUrl": "https://zerodha.com/varsity/module/national-pension-scheme/",
+    "title": "6. NPS Tax rules & benefits",
+    "url": "https://zerodha.com/varsity/chapter/nps-tax-rules-benefits/"
+  },
+  {
+    "id": "chap-441",
+    "moduleUrl": "https://zerodha.com/varsity/module/national-pension-scheme/",
+    "title": "7. NPS structure, fees, how to open an account, and start a SIP",
+    "url": "https://zerodha.com/varsity/chapter/nps-structure-fees-how-to-open-an-account-and-start-a-sip/"
+  },
+  {
+    "id": "chap-442",
+    "moduleUrl": "https://zerodha.com/varsity/module/national-pension-scheme/",
+    "title": "8. NPS Vatsalya",
+    "url": "https://zerodha.com/varsity/chapter/nps-vatsalya/"
+  },
+  {
+    "id": "chap-443",
+    "moduleUrl": "https://zerodha.com/varsity/module/national-pension-scheme/",
+    "title": "9. Corporate NPS",
+    "url": "https://zerodha.com/varsity/chapter/corporate-nps/"
+  }
+]
