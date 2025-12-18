@@ -2,15 +2,12 @@ const fs = require('fs');
 const path = require('path');
 
 // CONFIGURATION
-const INPUT_FILE = 'chapterContent.json';
-// We try to detect if you are in the root or inside frontend
+const LINKS_FILE = 'chapterLinks.json'; 
 const BASE_PATH = fs.existsSync('frontend/src/data') ? 'frontend/src/data' : 'src/data';
-
-// OUTPUT FILES (Exact names your components import)
-const OUTPUT_LIST_FILE = path.join(BASE_PATH, 'chapters.js');        // For ModuleDetailPage
-const OUTPUT_CONTENT_FILE = path.join(BASE_PATH, 'chapterContent.js'); // For ChapterPage
+const OUTPUT_LIST_FILE = path.join(BASE_PATH, 'chapters.js'); 
 
 // MAP ZERODHA URL SLUGS TO MODULE IDS
+// Updated based on the specific URLs you provided
 const MODULE_MAP = {
     "introduction-to-stock-markets": 1,
     "technical-analysis": 2,
@@ -20,89 +17,94 @@ const MODULE_MAP = {
     "option-strategies": 6,
     "markets-and-taxation": 7,
     "currency-commodity-government-securities": 8,
-    "risk-management-trading-psychology": 9,
+    
+    // UPDATED: Matches https://zerodha.com/varsity/module/risk-management/
+    "risk-management": 9,  
+
     "trading-systems": 10,
     "personal-finance": 11,
-    "innerworth": 12
+    
+    // UPDATED: Matches https://zerodha.com/varsity/module/innerworth/
+    "innerworth": 12       
 };
 
 function getModuleId(url) {
     if (!url) return 99;
-    const parts = url.split('/').filter(p => p.length > 0);
+    
+    // 1. Clean the URL (remove trailing slash)
+    const cleanUrl = url.replace(/\/$/, ''); 
+    
+    // 2. Get the last part (the slug)
+    const parts = cleanUrl.split('/');
     const slug = parts[parts.length - 1]; 
-    return MODULE_MAP[slug] || 99;
+    
+    // 3. Check the map
+    if (MODULE_MAP[slug]) {
+        return MODULE_MAP[slug];
+    }
+
+    // 4. Fallback: Check if the URL *contains* the key (Partial match)
+    // This catches cases like "innerworth-mind" vs "innerworth"
+    for (const [key, id] of Object.entries(MODULE_MAP)) {
+        if (cleanUrl.includes(key)) return id;
+    }
+
+    return 99;
 }
 
 function generate() {
-    console.log("🚀 Starting Data Generation for React App...");
+    console.log("🚀 Generating chapters.js from chapterLinks.json...");
 
-    if (!fs.existsSync(INPUT_FILE)) {
-        console.error(`❌ Error: ${INPUT_FILE} not found. Run the scraper first!`);
+    if (!fs.existsSync(LINKS_FILE)) {
+        console.error(`❌ Error: ${LINKS_FILE} not found. Run Master Scraper (Phase 1) first!`);
         return;
     }
 
-    // 1. Read Raw Data
-    const rawData = JSON.parse(fs.readFileSync(INPUT_FILE, 'utf8'));
+    const rawLinks = JSON.parse(fs.readFileSync(LINKS_FILE, 'utf8'));
     
-    // 2. Group Chapters by Module
-    // Structure: { 1: [chapObj, chapObj], 2: [chapObj] ... }
+    // Group by Module
     const moduleBuckets = {};
 
-    Object.values(rawData).forEach(chapter => {
-        const modId = getModuleId(chapter.moduleUrl);
-        if (!moduleBuckets[modId]) moduleBuckets[modId] = [];
-        moduleBuckets[modId].push(chapter);
+    rawLinks.forEach(linkObj => {
+        const modId = getModuleId(linkObj.moduleUrl);
+        
+        // Log warnings for debugging (so you know if something is still missing)
+        if (modId === 99) {
+            // console.warn(`⚠ Unmapped URL: ${linkObj.moduleUrl}`);
+        } else {
+            if (!moduleBuckets[modId]) moduleBuckets[modId] = [];
+            moduleBuckets[modId].push(linkObj);
+        }
     });
 
-    // 3. Prepare the two data structures
-    const chaptersData = {};   // For chapters.js
-    const chapterContent = {}; // For chapterContent.js
+    // Build final object
+    const chaptersData = {};
+    const sortedKeys = Object.keys(moduleBuckets).sort((a, b) => parseInt(a) - parseInt(b));
 
-    Object.keys(moduleBuckets).forEach(modId => {
-        // Sort chapters (optional, but good if scraper grabbed them out of order)
-        // Assuming scraper grabbed in order, we just map them.
+    sortedKeys.forEach(modId => {
         const chapters = moduleBuckets[modId];
+        console.log(`   Mapped Module ${modId}: ${chapters.length} chapters`);
 
-        // A. Build the List for ModuleDetailPage
         chaptersData[modId] = chapters.map((chap, index) => ({
-            id: index + 1, // This creates the '1', '2', '3' chapter index
+            id: index + 1,
             title: chap.title,
-            description: "Read this chapter to learn about " + chap.title, // Placeholder description
-            slug: `chapter-${index + 1}`
+            description: `Read this chapter to learn about ${chap.title}`, 
+            slug: `chapter-${index + 1}`,
+            url: chap.url 
         }));
-
-        // B. Build the Content for ChapterPage (Key format: "ModuleID-ChapterIndex")
-        chapters.map((chap, index) => {
-            const key = `${modId}-${index + 1}`; // e.g., "1-1"
-            
-            chapterContent[key] = {
-                title: chap.title,
-                moduleName: `Module ${modId}`, 
-                audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-                content: chap.content
-            };
-        });
     });
 
-    // 4. Ensure Directory Exists
     if (!fs.existsSync(BASE_PATH)){
         fs.mkdirSync(BASE_PATH, { recursive: true });
-        console.log(`📂 Created directory: ${BASE_PATH}`);
     }
 
-    // 5. Write "chapters.js"
-    const listContent = `// Auto-generated for ModuleDetailPage.jsx
-export const chaptersData = ${JSON.stringify(chaptersData, null, 2)};
-`;
-    fs.writeFileSync(OUTPUT_LIST_FILE, listContent);
-    console.log(`✅ Created: ${OUTPUT_LIST_FILE}`);
+    // Save as module.exports for Node usage
+    const fileContent = `// Auto-generated for React
+    export const chaptersData = ${JSON.stringify(chaptersData, null, 2)};
+    `;
 
-    // 6. Write "chapterContent.js"
-    const detailContent = `// Auto-generated for ChapterPage.jsx
-export const chapterContent = ${JSON.stringify(chapterContent, null, 2)};
-`;
-    fs.writeFileSync(OUTPUT_CONTENT_FILE, detailContent);
-    console.log(`✅ Created: ${OUTPUT_CONTENT_FILE}`);
+    fs.writeFileSync(OUTPUT_LIST_FILE, fileContent);
+    console.log(`✅ Success! Updated chapters.js`);
 }
 
 generate();
