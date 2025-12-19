@@ -5,6 +5,7 @@ import { useParams, Link } from 'react-router-dom';
 import { chapterContent } from '../data/chapterContent';
 import { chaptersData } from '../data/chapters';
 import AudioPlayer from '../components/AudioPlayer';
+import { useAuth } from '../context/AuthContext';
 
 // --- Helper: Renders Text, Images, Tables ---
 const ContentBlock = ({ block }) => {
@@ -42,7 +43,7 @@ const ContentBlock = ({ block }) => {
 const ChapterPage = () => {
   // 1. Matches "/module/:moduleId/chapter/:chapterId" in App.jsx
   const { moduleId, chapterId } = useParams();
-  
+  const { isAdmin } = useAuth(); // <--- THIS IS THE NEW MAGIC LINE  
   const [contentData, setContentData] = useState(null);
   const [chapterTitle, setChapterTitle] = useState("");
 
@@ -76,6 +77,10 @@ const ChapterPage = () => {
     return <div className="p-10 text-center">Loading content for Chapter {chapterId}...</div>;
   }
 
+  const handleConvertAction = async () => {
+        // ... (keep your mock alert for now) ...
+    };  
+
   return (
     <div className="min-h-screen bg-gray-50 pb-20">
       {/* Navbar with Back Button */}
@@ -85,6 +90,8 @@ const ChapterPage = () => {
           <Link to={`/module/${moduleId}`} className="text-blue-600 font-medium flex items-center">
             ← Back to Module {moduleId}
           </Link>
+          {/* visual indicator */}
+          {isAdmin && <span className="text-xs bg-red-100 text-red-800 px-2 py-1 rounded font-bold">ADMIN</span>}          
         </div>
       </div>
 
@@ -105,6 +112,9 @@ const ChapterPage = () => {
       <AudioPlayer 
         audioUrl={contentData?.audio_url} 
         chapterTitle={contentData.title || chapterTitle}
+        status={contentData?.status} 
+        isAdmin={isAdmin}             // Pass the real admin status
+        onConvert={handleConvertAction}        
       />
     </div>
   );
