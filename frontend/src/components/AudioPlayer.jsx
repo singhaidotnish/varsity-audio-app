@@ -52,29 +52,22 @@ const AudioPlayer = ({ audioUrl, chapterTitle }) => {
   };
 
   // Mock "Request Audio" function
+// WhatsApp Request Logic
   const handleRequestAudio = () => {
-    alert(`Request sent for: ${chapterTitle}\n(This will trigger the backend generator in the future)`);
-  };
+    // 1. REPLACE WITH YOUR PHONE NUMBER (International format, no + or -)
+    // Example: 919999999999 for India
+    const adminNumber = "919029555541"; 
 
-  // --- SCENARIO 1: NO AUDIO FOUND ---
-  if (!audioUrl) {
-    return (
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t p-4 shadow-lg z-50">
-        <div className="max-w-3xl mx-auto flex items-center justify-between">
-          <div>
-            <p className="text-sm font-bold text-gray-800">Audio not available</p>
-            <p className="text-xs text-gray-500">Generate an AI narration for this chapter.</p>
-          </div>
-          <button 
-            onClick={handleRequestAudio}
-            className="bg-gray-800 hover:bg-black text-white px-6 py-2 rounded-full text-sm font-bold transition-all"
-          >
-            Request Audio
-          </button>
-        </div>
-      </div>
-    );
-  }
+    // 2. Create the message
+    const text = `Hi Admin, I want to request the audio for:\n\nModule: ${chapterTitle}\n(URL: ${window.location.href})`;
+    
+    // 3. Encode for URL
+    const encodedText = encodeURIComponent(text);
+    
+    // 4. Open WhatsApp
+    const whatsappUrl = `https://wa.me/${adminNumber}?text=${encodedText}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
   // --- SCENARIO 2: AUDIO EXISTS (WAVEFORM) ---
   return (

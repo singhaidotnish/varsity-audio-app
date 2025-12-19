@@ -1,63 +1,111 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+
+// Import your existing data and components
 import { chapterContent } from '../data/chapterContent';
+import { chaptersData } from '../data/chapters';
+import AudioPlayer from '../components/AudioPlayer';
+
+// --- Helper: Renders Text, Images, Tables ---
+const ContentBlock = ({ block }) => {
+  switch (block.type) {
+    case 'h1':
+    case 'h2': 
+      return <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-800 border-b pb-2">{block.text}</h2>;
+    case 'h3': 
+      return <h3 className="text-xl font-semibold mt-6 mb-3 text-gray-700">{block.text}</h3>;
+    case 'image':
+      return (
+        <div className="my-8 flex flex-col items-center">
+          <img 
+            src={block.src} 
+            alt={block.alt || 'Varsity Illustration'} 
+            className="rounded-lg shadow-md max-w-full h-auto border border-gray-100"
+            onError={(e) => e.target.style.display = 'none'} 
+          />
+        </div>
+      );
+    case 'table':
+      return (
+        <div className="my-6 overflow-x-auto border border-gray-200 rounded-lg shadow-sm bg-white">
+          <div 
+            className="p-4 text-sm text-gray-700"
+            dangerouslySetInnerHTML={{ __html: block.html }} 
+          />
+        </div>
+      );
+    default: 
+      return <p className="mb-4 text-gray-600 leading-relaxed text-lg">{block.text}</p>;
+  }
+};
 
 const ChapterPage = () => {
+  // 1. Matches "/module/:moduleId/chapter/:chapterId" in App.jsx
   const { moduleId, chapterId } = useParams();
-  const chapterKey = `${moduleId}-${chapterId}`;
-  const data = chapterContent[chapterKey];
+  
+  const [contentData, setContentData] = useState(null);
+  const [chapterTitle, setChapterTitle] = useState("");
 
-  if (!data) return <div className="p-10">Chapter content not found.</div>;
+  useEffect(() => {
+    // A. Find Title from list
+    const moduleList = chaptersData[moduleId];
+    if (moduleList) {
+      const meta = moduleList.find(ch => String(ch.id) === String(chapterId));
+      if (meta) setChapterTitle(meta.title);
+    }
+
+    // B. Find Content using the key "ModuleID-ChapterID" (e.g., "4-1")
+    const uniqueKey = `${moduleId}-${chapterId}`;
+    const data = chapterContent[uniqueKey];
+
+    if (data) {
+       // Deduplication Logic (Keeps images clean)
+       const seenImages = new Set();
+       const cleanContent = data.content.filter(block => {
+         if (block.type === 'image') {
+           if (seenImages.has(block.src)) return false;
+           seenImages.add(block.src);
+         }
+         return true;
+       });
+       setContentData({ ...data, content: cleanContent });
+    }
+  }, [moduleId, chapterId]);
+
+  if (!contentData) {
+    return <div className="p-10 text-center">Loading content for Chapter {chapterId}...</div>;
+  }
 
   return (
-    <div className="min-h-screen bg-white font-serif text-gray-900 pb-32">
-      {/* Top Navigation */}
-      <nav className="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur z-10">
-        <div className="max-w-3xl mx-auto px-6 py-4 flex justify-between items-center">
-             <Link to={`/module/${moduleId}`} className="text-gray-500 hover:text-blue-600 text-sm font-sans">
-               ← Back to Module
-             </Link>
-             <div className="font-bold text-gray-800 font-sans">VARSITY</div>
-        </div>
-      </nav>
-
-      <div className="max-w-3xl mx-auto px-6 mt-10">
-        {/* Chapter Header */}
-        <div className="mb-8">
-            <span className="text-blue-600 text-sm font-bold uppercase tracking-wide font-sans">
-                {data.moduleName}
-            </span>
-            <h1 className="text-4xl font-bold text-gray-900 mt-2 mb-6 leading-tight">
-                {data.title}
-            </h1>
-        </div>
-
-        {/* Text Content */}
-        <article className="prose prose-lg text-gray-700 leading-loose">
-            {data.content.map((block, index) => {
-                if (block.type === 'h3') {
-                    return <h3 key={index} className="text-2xl font-bold text-gray-900 mt-8 mb-4">{block.text}</h3>;
-                }
-                return <p key={index} className="mb-6">{block.text}</p>;
-            })}
-        </article>
-      </div>
-
-      {/* Sticky Audio Player Bar */}
-      <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] p-4">
-        <div className="max-w-3xl mx-auto flex items-center gap-4">
-            <div className="hidden sm:block">
-                <p className="text-xs text-gray-500 font-sans">Now Playing</p>
-                <p className="text-sm font-bold text-gray-800 truncate w-48 font-sans">{data.title}</p>
-            </div>
-            
-            {/* HTML5 Audio Player */}
-            <audio controls className="w-full h-10 bg-gray-50 rounded">
-                <source src={data.audioUrl} type="audio/mpeg" />
-                Your browser does not support the audio element.
-            </audio>
+    <div className="min-h-screen bg-gray-50 pb-20">
+      {/* Navbar with Back Button */}
+      <div className="bg-white shadow-sm sticky top-0 z-10">
+        <div className="max-w-3xl mx-auto px-4 py-4">
+          {/* Link goes back to the LIST page */}
+          <Link to={`/module/${moduleId}`} className="text-blue-600 font-medium flex items-center">
+            ← Back to Module {moduleId}
+          </Link>
         </div>
       </div>
+
+      {/* Main Content */}
+      <div className="max-w-3xl mx-auto px-4 mt-8">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 leading-tight">
+          {contentData.title || chapterTitle}
+        </h1>
+        
+        <div className="bg-white p-6 md:p-10 rounded-xl shadow-sm mt-6">
+          {contentData.content.map((block, index) => (
+            <ContentBlock key={index} block={block} />
+          ))}
+        </div>
+      </div>
+
+      {/* Audio Player */}
+      <AudioPlayer 
+        audioUrl={contentData?.audio_url} 
+        chapterTitle={contentData.title || chapterTitle}
+      />
     </div>
   );
 };
