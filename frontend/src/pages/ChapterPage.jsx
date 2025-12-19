@@ -77,9 +77,25 @@ const ChapterPage = () => {
     return <div className="p-10 text-center">Loading content for Chapter {chapterId}...</div>;
   }
 
+// --- ADMIN ACTION: TRIGGER GENERATION ---
   const handleConvertAction = async () => {
-        // ... (keep your mock alert for now) ...
-    };  
+    // 1. Log to console (Press F12 to see this)
+    console.log("Admin clicked convert!");
+
+    // 2. Show visible feedback
+    const confirmGen = window.confirm(
+      `Generate audio for:\nModule: ${moduleId}\nChapter: ${chapterId}\n\nThis will trigger the backend script.`
+    );
+    
+    if (!confirmGen) return;
+
+    // 3. (Future Step) This is where we will call the backend
+    // await fetch('http://localhost:5000/api/generate', { ... })
+    
+    // Simulate delay
+    await new Promise(r => setTimeout(r, 2000));
+    alert("Simulation complete! (Next step: Connect this to Node.js)");
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 pb-20">
