@@ -1,36 +1,63 @@
 import React, { useEffect, useRef, useState } from 'react';
 import WaveSurfer from 'wavesurfer.js';
 
-const AudioPlayer = ({ audioUrl, chapterTitle, status, isAdmin, onConvert }) => {
+// 1. Added 'chapterId' to props
+const AudioPlayer = ({ audioUrl, chapterTitle, chapterId, status, isAdmin }) => {
   const waveformRef = useRef(null);
   const wavesurfer = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [loading, setLoading] = useState(true);
   const [isConverting, setIsConverting] = useState(false);
 
-  // 1. Check Local Storage (Did *this specific user* click request?)
+  // --- LOGIC: Handle User Request (Local Storage) ---
   const storageKey = `request_sent_${chapterTitle}`;
   const [localRequestSent, setLocalRequestSent] = useState(() => {
     return localStorage.getItem(storageKey) === 'true';
   });
 
-  // --- LOGIC: Handle User Request ---
   const handleRequestAudio = async () => {
-    // 1. Fake API delay
     setLocalRequestSent(true); 
-    localStorage.setItem(storageKey, 'true'); // Remember locally
-    
-    // In a real app, this sends a ping to your backend
+    localStorage.setItem(storageKey, 'true'); 
+    // In a real app, you might send a "vote" to the backend here
     await new Promise(r => setTimeout(r, 1000));
   };
 
+  // --- 2. UPDATED LOGIC: Call Backend Directly ---
   const handleAdminConvert = async () => {
+    if (!chapterId) {
+        alert("Error: Cannot find Chapter ID.");
+        return;
+    }
+
+    if (!confirm(`Generate audio for "${chapterTitle}"?\nThis will take about 1-2 minutes.`)) return;
+
     setIsConverting(true);
-    await onConvert();
-    setIsConverting(false);
+
+    try {
+      // Calls your existing route in admin.js: router.post('/chapters/:chapterId/convert', ...)
+
+      const response = await fetch(`http://localhost:5000/api/admin/chapters/${chapterId}/convert`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      });      
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert("✅ Audio generation started! The page will reload to update status.");
+        window.location.reload(); // Reloads page to show "Processing..." state
+      } else {
+        alert("❌ Server Error: " + (result.error || "Unknown error"));
+        setIsConverting(false);
+      }
+    } catch (error) {
+      console.error(error);
+      alert("❌ Network Error: Is the backend running?");
+      setIsConverting(false);
+    }
   };
 
-  // --- LOGIC: Waveform (Same as before) ---
+  // --- LOGIC: Waveform (Standard) ---
   useEffect(() => {
     if (audioUrl && waveformRef.current) {
       wavesurfer.current = WaveSurfer.create({
@@ -61,8 +88,7 @@ const AudioPlayer = ({ audioUrl, chapterTitle, status, isAdmin, onConvert }) => 
 
   // ================= RENDER LOGIC =================
 
-  // 1. AUDIO READY (Global)
-  // If URL exists, ignore everything else and show player
+  // 1. AUDIO READY
   if (audioUrl) {
     return (
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-lg z-50">
@@ -79,7 +105,7 @@ const AudioPlayer = ({ audioUrl, chapterTitle, status, isAdmin, onConvert }) => 
     );
   }
 
-  // 2. ADMIN MODE
+  // 2. ADMIN MODE (The "Convert" Button)
   if (isAdmin) {
     return (
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-yellow-100 p-4 shadow-lg z-50">
@@ -90,16 +116,23 @@ const AudioPlayer = ({ audioUrl, chapterTitle, status, isAdmin, onConvert }) => 
                {status === 'processing' ? 'Status: Processing...' : 'Audio missing.'}
             </p>
           </div>
-          <button onClick={handleAdminConvert} disabled={isConverting} className={`px-6 py-2 rounded-full text-sm font-bold shadow-lg text-white ${isConverting ? 'bg-gray-400' : 'bg-green-600 hover:bg-green-700'}`}>
-            {isConverting ? 'Generating...' : '⚡ Convert to Audio'}
+          <button 
+            onClick={handleAdminConvert} 
+            disabled={isConverting || status === 'processing'} 
+            className={`px-6 py-2 rounded-full text-sm font-bold shadow-lg text-white transition-colors ${
+              isConverting || status === 'processing' 
+                ? 'bg-gray-400 cursor-not-allowed' 
+                : 'bg-green-600 hover:bg-green-700'
+            }`}
+          >
+            {isConverting || status === 'processing' ? 'Processing...' : '⚡ Convert to Audio'}
           </button>
         </div>
       </div>
     );
   }
 
-  // 3. PROCESSING (Global from File)
-  // You (Admin) updated the file to say "processing", so everyone sees this.
+  // 3. PROCESSING
   if (status === 'processing') {
     return (
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t p-4 shadow-lg z-50">
@@ -115,7 +148,6 @@ const AudioPlayer = ({ audioUrl, chapterTitle, status, isAdmin, onConvert }) => 
   }
 
   // 4. REQUEST SENT (Local)
-  // The file says nothing, but *this user* clicked the button previously.
   if (localRequestSent) {
     return (
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t p-4 shadow-lg z-50">
@@ -127,8 +159,7 @@ const AudioPlayer = ({ audioUrl, chapterTitle, status, isAdmin, onConvert }) => 
     );
   }
 
-  // 5. DEFAULT (Idle)
-  // No audio, no global status, and user hasn't clicked yet.
+  // 5. DEFAULT (User Request Button)
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white border-t p-4 shadow-lg z-50">
       <div className="max-w-3xl mx-auto flex items-center justify-between">

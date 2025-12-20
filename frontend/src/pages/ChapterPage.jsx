@@ -97,6 +97,8 @@ const ChapterPage = () => {
     alert("Simulation complete! (Next step: Connect this to Node.js)");
   };
 
+  console.log("🔍 DEBUG DATA:", contentData);
+
   return (
     <div className="min-h-screen bg-gray-50 pb-20">
       {/* Navbar with Back Button */}
@@ -128,6 +130,7 @@ const ChapterPage = () => {
       <AudioPlayer 
         audioUrl={contentData?.audio_url} 
         chapterTitle={contentData.title || chapterTitle}
+        chapterId={chapterId}        
         status={contentData?.status} 
         isAdmin={isAdmin}             // Pass the real admin status
         onConvert={handleConvertAction}        

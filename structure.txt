@@ -15,8 +15,9 @@
 │   ├── routes
 │   │   └── admin.js
 │   ├── seed.js
-│   └── services
-│       └── tts.js
+│   ├── services
+│   │   └── tts.js
+│   └── text-to-speech-api-457510-37290210a01c.json
 ├── frontend
 │   ├── index.html
 │   ├── package.json
@@ -27,6 +28,7 @@
 │   ├── src
 │   │   ├── App.jsx
 │   │   ├── components
+│   │   ├── context
 │   │   ├── data
 │   │   ├── globals.css
 │   │   ├── index.css
@@ -36,13 +38,31 @@
 │   ├── tailwind.config.js
 │   └── vite.config.js
 ├── project-structure.txt
+├── puppeteer.config.cjs
 ├── scraper
 │   ├── chapterContent.json
 │   ├── chapterLinks.json
+│   ├── convert_to_app.js
+│   ├── fetchInnerWorth.js
+│   ├── fetchMissingLinks.js
+│   ├── generate_app_data.js
+│   ├── innerworth_files
+│   │   ├── appstore.png
+│   │   ├── css.css
+│   │   ├── logo.png
+│   │   ├── logo-small.png
+│   │   ├── playstore.png
+│   │   ├── skeleton.css
+│   │   └── style.css
+│   ├── innerworth.html
 │   ├── masterscraper.js
 │   ├── package.json
 │   ├── package-lock.json
-│   └── scraper.js
-└── structure.txt
+│   ├── parseLocalInnerworth.js
+│   ├── selectiveScraper.js
+│   └── src
+│       └── data
+├── structure.txt
+└── TODO.md
 
-15 directories, 31 files
+19 directories, 47 files

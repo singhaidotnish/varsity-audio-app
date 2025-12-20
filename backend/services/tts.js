@@ -1,167 +1,116 @@
-// backend/services/tts.js
+const textToSpeech = require('@google-cloud/text-to-speech');
 const cloudinary = require('cloudinary').v2;
-const fs = require('fs').promises;
+const fs = require('fs');
+const util = require('util');
 const path = require('path');
 
-// For Google Cloud TTS v6.x
-let ttsClient = null;
-try {
-  // Check if we have Google credentials
-  const credentialsPath = path.join(__dirname, '..', 'google-credentials.json');
-  if (require('fs').existsSync(credentialsPath)) {
-    const textToSpeech = require('@google-cloud/text-to-speech');
-    ttsClient = new textToSpeech.TextToSpeechClient({
-      keyFilename: credentialsPath
-    });
-    console.log('✅ Google TTS client initialized');
-  } else {
-    console.warn('⚠️ Google credentials not found. TTS will use mock service.');
-  }
-} catch (error) {
-  console.warn('⚠️ Failed to initialize Google TTS:', error.message);
-}
+// CONFIGURATION
+const MAX_CHARS = 4800; // Safety buffer (Google limit is 5000)
 
-class TTSService {
-  constructor() {
-    this.maxTextLength = 4500; // Google TTS limit
-  }
+// Initialize Clients
+const ttsClient = new textToSpeech.TextToSpeechClient({
+    // Ensure this path points to your actual JSON key file
+    keyFile: path.join(__dirname, '../text-to-speech-api-457510-37290210a01c.json')
+});
 
-  async convertTextToSpeech(text, chapterId, title) {
-    try {
-      console.log(`🎙️ Converting to audio: ${title} (${chapterId})`);
-      
-      // Truncate text if too long
-      const truncatedText = text.length > this.maxTextLength 
-        ? text.substring(0, this.maxTextLength) + '... [Content truncated]'
-        : text;
-      
-      let audioBuffer;
-      
-      // Use Google TTS if available, otherwise mock
-      if (ttsClient) {
-        audioBuffer = await this.useGoogleTTS(truncatedText);
-      } else {
-        audioBuffer = await this.useMockTTS(truncatedText, chapterId);
-      }
-      
-      // Upload to Cloudinary
-      const uploadResult = await this.uploadToCloudinary(audioBuffer, chapterId);
-      
-      return {
-        success: true,
-        message: 'Audio converted and uploaded successfully',
-        audioUrl: uploadResult.url,
-        duration: uploadResult.duration,
-        publicId: uploadResult.publicId
-      };
-      
-    } catch (error) {
-      console.error('❌ TTS conversion error:', error);
-      return {
-        success: false,
-        message: `TTS conversion failed: ${error.message}`,
-        audioUrl: null,
-        duration: null
-      };
-    }
-  }
+cloudinary.config({ 
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME, 
+    api_key: process.env.CLOUDINARY_API_KEY, 
+    api_secret: process.env.CLOUDINARY_API_SECRET 
+});
 
-  async useGoogleTTS(text) {
-    console.log('🔊 Using Google TTS');
+/**
+ * Helper: Splits long text into chunks by sentences
+ */
+function splitTextIntoChunks(text) {
+    if (text.length <= MAX_CHARS) return [text];
+
+    const chunks = [];
+    let currentChunk = "";
     
-    const request = {
-      input: { text: text },
-      voice: { 
-        languageCode: 'en-US',
-        name: 'en-US-Standard-C',
-        ssmlGender: 'FEMALE'
-      },
-      audioConfig: {
-        audioEncoding: 'MP3',
-        speakingRate: 1.0,
-        pitch: 0,
-        volumeGainDb: 0
-      }
-    };
+    // Split by period to keep sentences intact
+    const sentences = text.split('. ');
 
-    const [response] = await ttsClient.synthesizeSpeech(request);
-    return Buffer.from(response.audioContent, 'base64');
-  }
-
-  async useMockTTS(text, chapterId) {
-    console.log('🔊 Using Mock TTS (for testing)');
-    
-    // Create a mock audio file
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    // Return a small MP3 header as buffer (fake audio)
-    const mockAudio = Buffer.from([
-      0x49, 0x44, 0x33, // "ID3" header
-      0x03, 0x00, // ID3v2.3
-      0x00, // Flags
-      0x00, 0x00, 0x00, 0x00, // Size
-      // Minimal MP3 frame
-      0xFF, 0xFB, 0x90, 0x64, 0x00, 0x0F, 0xF0, 0x00,
-      0x00, 0x69, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00,
-      0x0D, 0x20, 0x00, 0x00, 0x01, 0x00, 0x00, 0x01,
-      0xA4, 0x00, 0x00, 0x00, 0x20, 0x00, 0x00, 0x34,
-      0x80, 0x00, 0x00, 0x04, 0x4C, 0x41, 0x4D, 0x45,
-      0x33, 0x2E, 0x31, 0x30, 0x30, 0x55, 0x55, 0x55,
-      0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55,
-      0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55,
-      0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55,
-      0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55,
-      0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55,
-      0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55,
-      0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55,
-      0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x4C,
-      0x41, 0x4D, 0x45, 0x33, 0x2E, 0x31, 0x30, 0x30
-    ]);
-    
-    return mockAudio;
-  }
-
-  async uploadToCloudinary(audioBuffer, chapterId) {
-    return new Promise((resolve, reject) => {
-      const folder = process.env.CLOUDINARY_FOLDER || 'varsity-audio';
-      const publicId = `${folder}/${chapterId}-${Date.now()}`;
-      
-      const uploadStream = cloudinary.uploader.upload_stream(
-        {
-          resource_type: 'video',
-          folder: folder,
-          public_id: publicId,
-          overwrite: true,
-          tags: ['tts-audio', chapterId]
-        },
-        (error, result) => {
-          if (error) {
-            console.error('❌ Cloudinary upload error:', error);
-            reject(error);
-          } else {
-            console.log('✅ Audio uploaded to Cloudinary:', result.secure_url);
-            resolve({
-              url: result.secure_url,
-              duration: result.duration || 120,
-              publicId: result.public_id
-            });
-          }
+    sentences.forEach(sentence => {
+        const potentialChunk = currentChunk + sentence + ". ";
+        
+        if (potentialChunk.length < MAX_CHARS) {
+            currentChunk = potentialChunk;
+        } else {
+            chunks.push(currentChunk);
+            currentChunk = sentence + ". ";
         }
-      );
-      
-      uploadStream.end(audioBuffer);
     });
-  }
-
-  // Check TTS service availability
-  async checkServiceStatus() {
-    return {
-      googleTTS: !!ttsClient,
-      cloudinary: !!process.env.CLOUDINARY_URL,
-      maxTextLength: this.maxTextLength,
-      status: ttsClient ? 'ready' : 'mock-mode'
-    };
-  }
+    
+    if (currentChunk) chunks.push(currentChunk);
+    return chunks;
 }
 
-module.exports = new TTSService();
+/**
+ * Main Function called by adminController.js
+ */
+async function convertTextToSpeech(content, chapterId, title) {
+    console.log(`🎤 Starting TTS for: ${title} (Length: ${content.length} chars)`);
+    
+    // 1. Clean Content (Remove HTML tags if they exist in the raw text)
+    // Simple regex to strip tags, adjust if you need to keep pauses
+    const cleanText = content.replace(/<[^>]*>?/gm, '');
+    
+    const chunks = splitTextIntoChunks(cleanText);
+    console.log(`   -> Split into ${chunks.length} chunks.`);
+
+    const audioBuffers = [];
+
+    try {
+        // 2. Generate Audio for each chunk
+        for (let i = 0; i < chunks.length; i++) {
+            console.log(`   -> Processing chunk ${i + 1}/${chunks.length}...`);
+            
+            const request = {
+                input: { text: chunks[i] },
+                voice: { languageCode: 'en-IN', name: 'en-IN-Wavenet-D' },
+                audioConfig: { audioEncoding: 'MP3' },
+            };
+
+            const [response] = await ttsClient.synthesizeSpeech(request);
+            audioBuffers.push(response.audioContent);
+        }
+
+        // 3. Combine all buffers into one
+        const finalAudioBuffer = Buffer.concat(audioBuffers);
+
+        // 4. Save to temp file
+        const tempPath = path.join(__dirname, `../temp_${chapterId}.mp3`);
+        await util.promisify(fs.writeFile)(tempPath, finalAudioBuffer, 'binary');
+
+        // 5. Upload to Cloudinary
+        console.log("☁️ Uploading combined audio to Cloudinary...");
+        const uploadResult = await cloudinary.uploader.upload(tempPath, {
+            resource_type: "video",
+            folder: "varsity-audio",
+            public_id: `chap_${chapterId}`,
+            overwrite: true
+        });
+
+        // 6. Cleanup
+        fs.unlinkSync(tempPath);
+
+        console.log("✅ Audio Complete:", uploadResult.secure_url);
+
+        return {
+            success: true,
+            audioUrl: uploadResult.secure_url,
+            duration: uploadResult.duration,
+            message: "Audio converted successfully"
+        };
+
+    } catch (error) {
+        console.error("❌ TTS Service Error:", error);
+        return {
+            success: false,
+            message: error.message
+        };
+    }
+}
+
+module.exports = { convertTextToSpeech };
