@@ -1,0 +1,23 @@
+.
+├── controllers
+│   └── adminController.js
+├── db
+│   ├── chapters.json
+│   └── modules.json
+├── index.js
+├── index.js.backup
+├── middleware
+│   └── auth.js
+├── package.json
+├── package-lock.json
+├── README.md
+├── routes
+│   └── admin.js
+├── seed.js
+├── services
+│   ├── audioGeneratr.js
+│   └── tts.js
+├── structure.txt
+└── text-to-speech-api-457510-37290210a01c.json
+
+6 directories, 15 files

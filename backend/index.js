@@ -21,6 +21,8 @@ const corsOptions = {
       'http://127.0.0.1:5173',
       'http://localhost:5010',
       'https://varsity-audio-monorepo-cjpj.onrender.com',
+      'https://zerodha.com',
+      'https://varsity.zerodha.com'
     ];
     
     if (allowedOrigins.includes(origin)) {
@@ -135,6 +137,32 @@ app.get('/api/audios', async (req, res) => {
   }
 });
 
+// POST /api/check-audio
+app.post('/api/check-audio', (req, res) => {
+  const { chapterId } = req.body;
+  const chapters = readJsonSafe(CHAPTERS_PATH, []);
+  
+  const chapter = chapters.find(ch => ch.id === chapterId);
+  
+  // Read phone from .env (fallback to empty string if missing)
+  const adminPhone = process.env.ADMIN_PHONE || ""; 
+
+  if (chapter && chapter.audioUrl) {
+    return res.json({ 
+      hasAudio: true, 
+      audioUrl: chapter.audioUrl,
+      adminPhone: adminPhone // <--- Sending it here
+    });
+  }
+
+  // Even if no audio, send the phone number so the "WhatsApp" button works
+  res.json({ 
+    hasAudio: false, 
+    adminPhone 
+  });
+});
+
+
 // Admin login endpoint
 app.post('/api/admin/login', (req, res) => {
   const { email, password } = req.body;
@@ -183,6 +211,46 @@ app.use((err, req, res, next) => {
     error: 'Internal server error',
     message: process.env.NODE_ENV === 'development' ? err.message : undefined
   });
+});
+
+// index.js - Add this new route
+
+app.post('/api/request-manual', async (req, res) => {
+  const { title, url } = req.body;
+  const adminPhone = process.env.ADMIN_PHONE; // Ensure this is in your .env
+
+  console.log(`📩 Received manual request for: ${title}`);
+
+  try {
+    // === OPTION A: Using CallMeBot (Free for Personal Use) ===
+    // 1. Add phone number "+34 644 66 32 62" to your contacts.
+    // 2. Send the message "I allow callmebot" to that number via WhatsApp.
+    // 3. It will give you an API KEY (e.g., 123456).
+    // 4. Add CALLMEBOT_KEY=123456 to your .env file.
+    
+    const apiKey = process.env.CALLMEBOT_KEY; 
+    
+    if (apiKey && adminPhone) {
+        const message = `Audio Request Needed:\n\nTitle: ${title}\nLink: ${url}`;
+        const encodedMsg = encodeURIComponent(message);
+        
+        // Use standard fetch (requires Node 18+) or install 'node-fetch'
+        await fetch(`https://api.callmebot.com/whatsapp.php?phone=${adminPhone}&text=${encodedMsg}&apikey=${apiKey}`);
+        
+        console.log("✅ WhatsApp message sent via CallMeBot");
+    } else {
+        console.log("⚠️ CallMeBot Key missing - Logged to console only.");
+    }
+
+    // === OPTION B: Telegram Bot (Recommended/More Reliable) ===
+    // If you prefer Telegram, replace the block above with a Telegram API call.
+
+    res.json({ success: true, message: "Admin notified" });
+
+  } catch (error) {
+    console.error("Failed to send notification:", error);
+    res.status(500).json({ success: false, error: "Failed to send notification" });
+  }
 });
 
 // Start server
