@@ -9,6 +9,8 @@ const PORT = process.env.PORT || 5010;
 const PUBLIC_DIR = path.join(__dirname, 'public');
 const CHAPTERS_PATH = path.join(__dirname, 'db', 'chapters.json');
 
+const axios = require('axios'); 
+
 // ========== FIXED CORS CONFIGURATION ==========
 const corsOptions = {
   origin: function (origin, callback) {
@@ -68,6 +70,48 @@ function readJsonSafe(filePath, fallback = []) {
   }
 }
 
+
+app.post('/api/request-manual', async (req, res) => {
+  const { title, url } = req.body;
+  const botToken = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
+
+  console.log(`📩 Request: ${title}`);
+
+  // 1. Validate Env Vars
+  if (!botToken || !chatId) {
+    console.error("❌ Missing .env variables!");
+    return res.status(500).json({ success: false, error: "Missing Telegram Config" });
+  }
+
+  try {
+    const message = `🎙 *Audio Request*\n\n*Title:* ${title}\n*Link:* [Open Chapter](${url})`;
+
+    // 2. Try Sending
+    await axios.post(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+      chat_id: chatId,
+      text: message,
+      parse_mode: 'Markdown'
+    });
+
+    console.log("✅ Message Sent!");
+    res.json({ success: true });
+
+  } catch (error) {
+    // 3. LOG THE REAL ERROR
+    if (error.response) {
+      // The request was made and the server responded with a status code
+      // that falls out of the range of 2xx
+      console.error("❌ TELEGRAM REJECTED US:");
+      console.error("   Status:", error.response.status);
+      console.error("   Reason:", JSON.stringify(error.response.data, null, 2)); // <--- READ THIS IN TERMINAL
+    } else {
+      console.error("❌ NETWORK ERROR:", error.message);
+    }
+    
+    res.status(500).json({ success: false, error: "Telegram Failed" });
+  }
+});
 // GET /api/chapters
 app.get('/api/chapters', (req, res) => {
   const data = readJsonSafe(CHAPTERS_PATH, []);
@@ -213,45 +257,6 @@ app.use((err, req, res, next) => {
   });
 });
 
-// index.js - Add this new route
-
-app.post('/api/request-manual', async (req, res) => {
-  const { title, url } = req.body;
-  const adminPhone = process.env.ADMIN_PHONE; // Ensure this is in your .env
-
-  console.log(`📩 Received manual request for: ${title}`);
-
-  try {
-    // === OPTION A: Using CallMeBot (Free for Personal Use) ===
-    // 1. Add phone number "+34 644 66 32 62" to your contacts.
-    // 2. Send the message "I allow callmebot" to that number via WhatsApp.
-    // 3. It will give you an API KEY (e.g., 123456).
-    // 4. Add CALLMEBOT_KEY=123456 to your .env file.
-    
-    const apiKey = process.env.CALLMEBOT_KEY; 
-    
-    if (apiKey && adminPhone) {
-        const message = `Audio Request Needed:\n\nTitle: ${title}\nLink: ${url}`;
-        const encodedMsg = encodeURIComponent(message);
-        
-        // Use standard fetch (requires Node 18+) or install 'node-fetch'
-        await fetch(`https://api.callmebot.com/whatsapp.php?phone=${adminPhone}&text=${encodedMsg}&apikey=${apiKey}`);
-        
-        console.log("✅ WhatsApp message sent via CallMeBot");
-    } else {
-        console.log("⚠️ CallMeBot Key missing - Logged to console only.");
-    }
-
-    // === OPTION B: Telegram Bot (Recommended/More Reliable) ===
-    // If you prefer Telegram, replace the block above with a Telegram API call.
-
-    res.json({ success: true, message: "Admin notified" });
-
-  } catch (error) {
-    console.error("Failed to send notification:", error);
-    res.status(500).json({ success: false, error: "Failed to send notification" });
-  }
-});
 
 // Start server
 app.listen(PORT, () => {

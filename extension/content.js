@@ -1,11 +1,19 @@
 // content.js
 
-// 1. GLOBAL VARIABLES
-let adminPhoneNumber = ""; 
+// ==========================================
+// ⚙️ CONFIGURATION
+// ==========================================
 
-// 2. INJECT THE UI
+// OPTION 1: Development (Use this now while testing on your laptop)
+const API_BASE_URL = "http://localhost:5010";
+
+// OPTION 2: Production (Uncomment this later when you deploy to Render)
+// const API_BASE_URL = "https://your-app-name.onrender.com";
+
+// ==========================================
+
+// 1. INJECT THE UI
 function injectAudioPlayer() {
-  // Use a specific selector to find the correct header
   const header = document.querySelector('h1.chapter-title') || document.querySelector('h1');
   
   if (header && !document.getElementById('varsity-audio-btn')) {
@@ -26,13 +34,12 @@ function injectAudioPlayer() {
   }
 }
 
-// 3. SCRAPE PAGE DATA
+// 2. SCRAPE PAGE DATA
 function getPageData() {
   const urlParts = window.location.pathname.split('/').filter(Boolean);
   const chapterId = urlParts[urlParts.length - 1]; 
   const title = document.querySelector('h1')?.innerText.trim() || "Unknown Chapter";
   
-  // Try multiple selectors to find the content
   const contentEl = document.querySelector('.post-content') 
                  || document.querySelector('#content')
                  || document.querySelector('article')
@@ -43,26 +50,20 @@ function getPageData() {
   return { chapterId, title, text };
 }
 
-// 4. CHECK STATUS & UPDATE BUTTON
+// 3. CHECK STATUS
 async function checkAudioStatus() {
   const btn = document.getElementById('varsity-audio-btn');
-  // FIX: This line was missing in your previous code causing the ReferenceError
   const { chapterId } = getPageData(); 
-  
 
   try {
-    const response = await fetch('http://localhost:5010/api/check-audio', {
+    // Uses the API_BASE_URL defined at the top
+    const response = await fetch(`${API_BASE_URL}/api/check-audio`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ chapterId })
     });
 
     const data = await response.json();
-
-    // Store phone number if server sent it
-    if (data.adminPhone) {
-      adminPhoneNumber = data.adminPhone;
-    }
 
     if (data.hasAudio) {
       setupPlayButton(btn, data.audioUrl);
@@ -77,7 +78,7 @@ async function checkAudioStatus() {
   }
 }
 
-// 5. BUTTON STATES
+// 4. BUTTON STATES
 function setupPlayButton(btn, url) {
   btn.innerText = "▶ Play Audio";
   btn.style.backgroundColor = "#377dff"; // Blue
@@ -93,13 +94,13 @@ function setupGenerateButton(btn) {
   btn.onclick = () => handleGenerate(btn);
 }
 
-// 6. HANDLE GENERATION & WHATSAPP FALLBACK
+// 5. GENERATE HANDLER
 async function handleGenerate(btn) {
   const { chapterId, title, text } = getPageData();
 
-  // If scraping fails, go straight to WhatsApp
+  // If scraping fails, notify admin via Telegram
   if (!text) {
-    sendWhatsAppRequest(btn, title);
+    sendAdminRequest(btn, title); 
     return;
   }
 
@@ -108,7 +109,7 @@ async function handleGenerate(btn) {
   btn.style.backgroundColor = "#777";
 
   try {
-    const response = await fetch('http://localhost:5010/api/admin/convert', {
+    const response = await fetch(`${API_BASE_URL}/api/admin/convert`, {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
@@ -128,29 +129,25 @@ async function handleGenerate(btn) {
 
   } catch (error) {
     console.error("Generation error:", error);
-    // On error, offer manual request
-    sendWhatsAppRequest(btn, title);
+    // If auto-generation fails, fallback to manual request
+    sendAdminRequest(btn, title);
   }
 }
 
-// 7. WHATSAPP HELPER
-// content.js - Update this function
-
-async function sendWhatsAppRequest(btn, title) {
-  btn.innerText = "📨 Sending Request...";
+// 6. MANUAL REQUEST HANDLER (Uses Telegram via Backend)
+async function sendAdminRequest(btn, title) {
+  btn.innerText = "📨 Notifying Admin...";
   btn.disabled = true;
   btn.style.backgroundColor = "#777";
 
   try {
-    const { chapterId } = getPageData(); // Ensure we get the ID
+    const { chapterId } = getPageData();
 
-    // 1. Call your local backend
-    const response = await fetch('http://localhost:5010/api/request-manual', {
+    // Sends signal to backend -> backend sends Telegram message
+    console.log("+++ API base URL:", API_BASE_URL); // Debugging line    
+    const response = await fetch(`${API_BASE_URL}/api/request-manual`, {
       method: 'POST',
-      headers: { 
-        'Content-Type': 'application/json',
-        // 'Authorization': 'Bearer ...' // Add if you want security later
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ 
         chapterId: chapterId,
         title: title,
@@ -161,7 +158,7 @@ async function sendWhatsAppRequest(btn, title) {
     const result = await response.json();
 
     if (result.success) {
-      btn.innerText = "✅ Request Sent to Admin!";
+      btn.innerText = "✅ Admin Notified via Telegram!";
       btn.style.backgroundColor = "#4caf50"; // Green
       btn.style.cursor = "default";
     } else {
@@ -170,15 +167,12 @@ async function sendWhatsAppRequest(btn, title) {
 
   } catch (error) {
     console.error("Notification failed:", error);
-    btn.innerText = "❌ Failed. Retry?";
+    btn.innerText = "❌ Connection Failed";
     btn.disabled = false;
     btn.style.backgroundColor = "#d32f2f";
     
-    // Fallback: If API fails, you can still open the window manually
-    btn.onclick = () => {
-        const message = `Manual Request: ${title}\n${window.location.href}`;
-        window.open(`https://wa.me/${adminPhoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
-    };
+    // Since we are on Telegram now, we can't easily open a "wa.me" link.
+    // Just showing the error state is safer.
   }
 }
 

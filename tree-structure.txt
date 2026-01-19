@@ -1,0 +1,90 @@
+.
+├── backend
+│   ├── controllers
+│   │   └── adminController.js
+│   ├── db
+│   │   ├── chapters.json
+│   │   └── modules.json
+│   ├── index.js
+│   ├── index.js.backup
+│   ├── middleware
+│   │   └── auth.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── README.md
+│   ├── routes
+│   │   └── admin.js
+│   ├── seed.js
+│   ├── services
+│   │   ├── audioGeneratr.js
+│   │   └── tts.js
+│   └── structure.txt
+├── extension
+│   ├── content.js
+│   ├── manifest.json
+│   └── styles.css
+├── frontend_archived
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── postcss.config.js
+│   ├── public
+│   │   └── vite.svg
+│   ├── src
+│   │   ├── App.jsx
+│   │   ├── components
+│   │   │   ├── AudioPlayer.jsx
+│   │   │   └── ModulesCard.jsx
+│   │   ├── context
+│   │   │   └── AuthContext.jsx
+│   │   ├── data
+│   │   │   ├── chapterContent.js
+│   │   │   ├── chapters.js
+│   │   │   └── modulesData.js
+│   │   ├── globals.css
+│   │   ├── index.css
+│   │   ├── main.jsx
+│   │   ├── pages
+│   │   │   ├── AdminPage.css
+│   │   │   ├── AdminPage.jsx
+│   │   │   ├── ChapterPage.jsx
+│   │   │   ├── LoginPage.jsx
+│   │   │   ├── ModuleDetailPage.jsx
+│   │   │   └── ModulesPage.jsx
+│   │   └── styles
+│   │       └── zerodha.css
+│   ├── tailwind.config.js
+│   └── vite.config.js
+├── project-structure.txt
+├── puppeteer.config.cjs
+├── scraper
+│   ├── chapterContent.json
+│   ├── chapterLinks.json
+│   ├── convert_to_app.js
+│   ├── fetchInnerWorth.js
+│   ├── fetchMissingLinks.js
+│   ├── generate_app_data.js
+│   ├── innerworth_files
+│   │   ├── appstore.png
+│   │   ├── css.css
+│   │   ├── logo.png
+│   │   ├── logo-small.png
+│   │   ├── playstore.png
+│   │   ├── skeleton.css
+│   │   └── style.css
+│   ├── innerworth.html
+│   ├── masterscraper.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── parseLocalInnerworth.js
+│   ├── selectiveScraper.js
+│   └── src
+│       └── data
+│           ├── chapterContent.js
+│           └── chapters.js
+├── structure.txt
+├── TODO.md
+├── tree-structure.txt
+└── verify-db.js
+
+20 directories, 68 files
