@@ -67,10 +67,13 @@ async function checkAudioStatus() {
 
     if (data.hasAudio) {
       setupPlayButton(btn, data.audioUrl);
+    } else if (localStorage.getItem(`request_sent_${chapterId}`) === "true") {
+      btn.innerText = "✅ Request Already Sent";
+      btn.style.backgroundColor = "#4caf50";
+      btn.disabled = true;
     } else {
       setupGenerateButton(btn);
     }
-
   } catch (error) {
     console.error("Check failed:", error);
     btn.innerText = "❌ Server Offline";
@@ -158,6 +161,7 @@ async function sendAdminRequest(btn, title) {
     const result = await response.json();
 
     if (result.success) {
+      localStorage.setItem(`request_sent_${chapterId}`, "true");
       btn.innerText = "✅ Admin Notified via Telegram!";
       btn.style.backgroundColor = "#4caf50"; // Green
       btn.style.cursor = "default";

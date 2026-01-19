@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varsity Audio Admin</title>
+    <style>
+        body { font-family: -apple-system, system-ui, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background: #f4f4f9; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { margin-top: 0; color: #333; }
+        label { display: block; margin-bottom: 8px; font-weight: bold; color: #555; }
+        input { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background: #377dff; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: background 0.2s; }
+        button:hover { background: #2f6ad9; }
+        button:disabled { background: #ccc; cursor: not-allowed; }
+        #status { margin-top: 20px; padding: 15px; border-radius: 6px; display: none; }
+        .success { background: #e8f5e9; color: #2e7d32; }
+        .error { background: #ffebee; color: #c62828; }
+        .log { font-family: monospace; font-size: 12px; margin-top: 10px; color: #666; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🎙️ Audio Generator</h1>
+        
+        <label>Admin Secret</label>
+        <input type="password" id="token" value="test-admin-secret-123" placeholder="Enter Admin Token">
+
+        <label>Varsity Chapter URL</label>
+        <input type="text" id="url" placeholder="https://zerodha.com/varsity/chapter/..." />
+
+        <button id="btn" onclick="generateAudio()">🚀 Generate Audio</button>
+
+        <div id="status"></div>
+        <div id="logs" class="log"></div>
+    </div>
+
+    <script>
+        async function generateAudio() {
+            const btn = document.getElementById('btn');
+            const status = document.getElementById('status');
+            const logs = document.getElementById('logs');
+            const url = document.getElementById('url').value;
+            const token = document.getElementById('token').value;
+
+            if (!url) return alert("Please enter a URL");
+
+            // Reset UI
+            btn.disabled = true;
+            btn.innerText = "⚙️ Processing... (This takes 30-60s)";
+            status.style.display = 'none';
+            logs.innerText = "1. Sending request to server...\n";
+
+            try {
+                // We call a new endpoint that handles Scraping + TTS + Upload all in one go
+                const response = await fetch('/api/admin/generate-from-url', {
+                    method: 'POST',
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify({ url })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    status.className = 'success';
+                    status.innerText = `✅ Success! Audio available at: ${data.audioUrl}`;
+                    logs.innerText += `2. Audio Generated!\n3. Database Updated.\n4. Link: ${data.audioUrl}`;
+                    
+                    // Clear input
+                    document.getElementById('url').value = "";
+                } else {
+                    throw new Error(data.error || "Unknown server error");
+                }
+            } catch (error) {
+                status.className = 'error';
+                status.innerText = `❌ Error: ${error.message}`;
+                logs.innerText += `\n❌ Failed: ${error.message}`;
+            } finally {
+                status.style.display = 'block';
+                btn.disabled = false;
+                btn.innerText = "🚀 Generate Audio";
+            }
+        }
+    </script>
+</body>
+</html>
