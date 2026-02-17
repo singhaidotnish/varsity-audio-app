@@ -512,5 +512,23 @@
     ],
     "createdAt": "2024-11-24T00:00:00.000Z",
     "updatedAt": "2024-12-02T09:15:00.000Z"
+  },
+  {
+    "id": "risk-part-4-correlation-matrix-portfolio-variance",
+    "title": "5. Risk (Part 4) – Correlation Matrix & Portfolio Variance",
+    "pageUrl": "https://zerodha.com/varsity/chapter/risk-part-4-correlation-matrix-portfolio-variance/",
+    "hasAudio": true,
+    "audioUrl": "https://res.cloudinary.com/dbbzjbkwn/video/upload/v1771310600/varsity/audio/risk-part-4-correlation-matrix-portfolio-variance.mp3",
+    "audioDuration": 327.432,
+    "lastUpdated": "2026-02-17T06:43:21.817Z"
+  },
+  {
+    "id": "equity-curve",
+    "title": "6. Equity Curve",
+    "pageUrl": "https://zerodha.com/varsity/chapter/equity-curve/",
+    "hasAudio": true,
+    "audioUrl": "https://res.cloudinary.com/dbbzjbkwn/video/upload/v1771312235/varsity/audio/equity-curve.mp3",
+    "audioDuration": 359.976,
+    "lastUpdated": "2026-02-17T07:10:36.627Z"
   }
 ]

@@ -6,59 +6,58 @@ const path = require('path');
 
 // 1. Configure Cloudinary
 cloudinary.config({ 
-  cloud_name: 'YOUR_CLOUD_NAME', 
-  api_key: 'YOUR_API_KEY', 
-  api_secret: 'YOUR_API_SECRET' 
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME, 
+  api_key: process.env.CLOUDINARY_API_KEY, 
+  api_secret: process.env.CLOUDINARY_API_SECRET 
 });
 
 // 2. Configure Google TTS
 // Ensure your credentials.json is in the root or referenced correctly
-const ttsClient = new textToSpeech.TextToSpeechClient({
-    keyFile: './credentials.json'
-});
+const ttsClient = new textToSpeech.TextToSpeechClient(
+    process.env.GOOGLE_CREDENTIALS 
+    ? { credentials: JSON.parse(process.env.GOOGLE_CREDENTIALS) }
+    : { keyFile: './credentials.json' } // Fallback for local
+);
 
 async function generateAndUploadAudio(text, chapterId) {
-    console.log("🎤 Generating audio...");
+    console.log(`🎤 Generating audio for ${chapterId}...`);
 
-    // A. Construct the request
+    // Clean text (limit to 5000 chars for now to save cost/errors)
+    const safeText = text.substring(0, 4900); 
+
     const request = {
-        input: { text: text },
-        // Select the language and SSML voice gender (optional)
-        voice: { languageCode: 'en-IN', name: 'en-IN-Wavenet-D' }, // Indian English accent
+        input: { text: safeText },
+        voice: { languageCode: 'en-IN', name: 'en-IN-Wavenet-D' }, 
         audioConfig: { audioEncoding: 'MP3' },
     };
 
     try {
-        // B. Call Google API
         const [response] = await ttsClient.synthesizeSpeech(request);
         
-        // C. Save temporarily to disk
+        // Save temp file
         const tempFilePath = path.join(__dirname, `temp_${chapterId}.mp3`);
-        const writeFile = util.promisify(fs.writeFile);
-        await writeFile(tempFilePath, response.audioContent, 'binary');
-        console.log('   Audio content written to file: ' + tempFilePath);
+        await fs.promises.writeFile(tempFilePath, response.audioContent, 'binary');
 
-        // D. Upload to Cloudinary
+        // Upload to Cloudinary
         console.log("☁️ Uploading to Cloudinary...");
         const uploadResult = await cloudinary.uploader.upload(tempFilePath, {
-            resource_type: "video", // Cloudinary treats audio as 'video' for resource type
-            public_id: `varsity/audio/chap_${chapterId}`,
+            resource_type: "video",
+            public_id: `varsity/audio/${chapterId}`,
             overwrite: true
         });
 
-        // E. Cleanup: Delete temp file
+        // Cleanup
         fs.unlinkSync(tempFilePath);
 
-        console.log("✅ Success! Audio URL:", uploadResult.secure_url);
-        return uploadResult.secure_url;
+        return { 
+            audioUrl: uploadResult.secure_url,
+            duration: uploadResult.duration 
+        };
 
     } catch (error) {
-        console.error("❌ Audio Generation Failed:", error);
+        console.error("❌ Audio Gen Error:", error);
         throw error;
     }
 }
-
-// Example usage if you want to test this file alone:
-// generateAndUploadAudio("This is a test of the emergency broadcast system.", "9-2");
 
 module.exports = { generateAndUploadAudio };

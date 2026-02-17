@@ -5,34 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varsity Audio Admin</title>
     <style>
-        body { font-family: -apple-system, system-ui, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background: #f4f4f9; }
-        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1 { margin-top: 0; color: #333; }
-        label { display: block; margin-bottom: 8px; font-weight: bold; color: #555; }
-        input { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; }
-        button { width: 100%; padding: 12px; background: #377dff; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: background 0.2s; }
-        button:hover { background: #2f6ad9; }
-        button:disabled { background: #ccc; cursor: not-allowed; }
-        #status { margin-top: 20px; padding: 15px; border-radius: 6px; display: none; }
-        .success { background: #e8f5e9; color: #2e7d32; }
-        .error { background: #ffebee; color: #c62828; }
-        .log { font-family: monospace; font-size: 12px; margin-top: 10px; color: #666; white-space: pre-wrap; }
+        body { font-family: -apple-system, system-ui, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background: #f0f2f5; }
+        .card { background: white; padding: 40px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; }
+        h1 { margin-top: 0; color: #1a1a1a; font-size: 24px; }
+        
+        /* Inputs */
+        .input-group { text-align: left; margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px; }
+        input { width: 100%; padding: 12px; border: 2px solid #e1e4e8; border-radius: 8px; box-sizing: border-box; font-size: 16px; transition: 0.2s; }
+        input:focus { border-color: #377dff; outline: none; }
+
+        /* Button */
+        button { width: 100%; padding: 14px; background: #377dff; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: transform 0.1s, background 0.2s; }
+        button:hover { background: #2f6ad9; transform: translateY(-1px); }
+        button:active { transform: translateY(1px); }
+        button:disabled { background: #ccc; cursor: not-allowed; transform: none; }
+
+        /* Status & Logs */
+        #status { margin-top: 25px; padding: 20px; border-radius: 12px; display: none; animation: fadeIn 0.5s; }
+        .success { background: #e3f9e5; color: #0f5132; border: 2px solid #c3e6cb; }
+        .error { background: #ffebee; color: #c62828; border: 2px solid #ffcdd2; }
+        
+        .log { text-align: left; font-family: monospace; font-size: 12px; margin-top: 20px; color: #666; white-space: pre-wrap; background: #f8f9fa; padding: 15px; border-radius: 8px; border: 1px solid #eee; }
+
+        /* Celebration Image */
+        .celebrate-img { width: 100%; max-width: 300px; border-radius: 12px; margin: 15px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>🎙️ Audio Generator</h1>
+        <h1>🎙️ Varsity Audio Generator</h1>
         
-        <label>Admin Secret</label>
-        <input type="password" id="token" value="test-admin-secret-123" placeholder="Enter Admin Token">
+        <div class="input-group">
+            <label>Admin Secret</label>
+            <input type="password" id="token" value="test-admin-secret-123" placeholder="Enter Admin Token">
+        </div>
 
-        <label>Varsity Chapter URL</label>
-        <input type="text" id="url" placeholder="https://zerodha.com/varsity/chapter/..." />
+        <div class="input-group">
+            <label>Varsity Chapter URL</label>
+            <input type="text" id="url" placeholder="https://zerodha.com/varsity/chapter/..." />
+        </div>
 
         <button id="btn" onclick="generateAudio()">🚀 Generate Audio</button>
 
         <div id="status"></div>
-        <div id="logs" class="log"></div>
+        <div id="logs" class="log" style="display:none;"></div>
     </div>
 
     <script>
@@ -47,12 +66,12 @@
 
             // Reset UI
             btn.disabled = true;
-            btn.innerText = "⚙️ Processing... (This takes 30-60s)";
+            btn.innerText = "⚙️ Processing... (Please wait)";
             status.style.display = 'none';
+            logs.style.display = 'block';
             logs.innerText = "1. Sending request to server...\n";
 
             try {
-                // We call a new endpoint that handles Scraping + TTS + Upload all in one go
                 const response = await fetch('/api/admin/generate-from-url', {
                     method: 'POST',
                     headers: { 
@@ -66,17 +85,27 @@
 
                 if (response.ok) {
                     status.className = 'success';
-                    status.innerText = `✅ Success! Audio available at: ${data.audioUrl}`;
+                    // 🎉 THE CELEBRATION PART 🎉
+                    status.innerHTML = `
+                        <h2 style="margin:0">🎉 HURRAY! 🎉</h2>
+                        <p style="font-size:18px; margin:5px 0;">Audio Generated Successfully!</p>
+                        
+                        <img src="/public/rabbit.png" class="celebrate-img">
+                        
+                        <br>
+                        <a href="${data.audioUrl}" target="_blank" style="display:inline-block; padding:10px 20px; background:#2e7d32; color:white; text-decoration:none; border-radius:50px; font-weight:bold;">
+                            🎧 Listen Now
+                        </a>
+                    `;
                     logs.innerText += `2. Audio Generated!\n3. Database Updated.\n4. Link: ${data.audioUrl}`;
                     
-                    // Clear input
-                    document.getElementById('url').value = "";
+                    document.getElementById('url').value = ""; // Clear input
                 } else {
                     throw new Error(data.error || "Unknown server error");
                 }
             } catch (error) {
                 status.className = 'error';
-                status.innerText = `❌ Error: ${error.message}`;
+                status.innerHTML = `<strong>❌ Oops!</strong><br>${error.message}`;
                 logs.innerText += `\n❌ Failed: ${error.message}`;
             } finally {
                 status.style.display = 'block';
