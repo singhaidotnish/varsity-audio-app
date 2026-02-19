@@ -3,7 +3,10 @@
   "name": "Varsity Audio",
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
-  "host_permissions": ["https://zerodha.com/varsity/*", "http://localhost:5000/*"],
+  "host_permissions": [
+  "https://zerodha.com/varsity/*",
+  "https://varsity-audio-monorepo-cjpj.onrender.com/*"
+  ],
   "content_scripts": [
     {
       "matches": ["https://zerodha.com/varsity/chapter/*"],
