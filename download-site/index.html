@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Varsity Audio Extension</title>
+    <style>
+        body {
+            font-family: -apple-system, system-ui, sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+        }
+        h1 { margin: 0 0 15px 0; color: #1a1a1a; }
+        p { color: #666; line-height: 1.6; margin-bottom: 30px; }
+        /* The Download Button Style */
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #377dff;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: transform 0.2s, background 0.2s;
+            box-shadow: 0 4px 15px rgba(55, 125, 255, 0.3);
+        }
+        .download-btn:hover {
+            background: #2f6ad9;
+            transform: translateY(-2px);
+        }
+        .download-btn span { margin-left: 10px; }
+        
+        .instructions {
+            margin-top: 40px;
+            text-align: left;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
+        }
+        .instructions h3 { margin: 0 0 10px 0; color: #333; font-size: 16px; }
+        .instructions ol { margin: 0; padding-left: 25px; color: #555; }
+        .instructions li { margin-bottom: 10px; font-size: 14px; }
+        code { background: #eee; padding: 3px 6px; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3616/3616856.png" alt="Extension Icon" width="80" style="margin-bottom: 20px;">
+        <h1>Varsity Audio Extension</h1>
+        <p>Listen to Zerodha Varsity chapters directly in your browser. Download and install the official extension below.</p>
+        
+        <a href="varsity-extension.zip" download class="download-btn">
+            ⬇️ <span>Download Extension (.zip)</span>
+        </a>
+
+        <div class="instructions">
+            <h3>How to Install (Developer Mode):</h3>
+            <ol>
+                <li>Download the <code>.zip</code> file and <strong>unzip it</strong> into a folder.</li>
+                <li>Open Chrome and navigate to <code>chrome://extensions</code></li>
+                <li>Toggle the <strong>"Developer mode"</strong> switch in the top right corner.</li>
+                <li>Click the <strong>"Load unpacked"</strong> button in the top left.</li>
+                <li>Select the folder you unzipped in step 1.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
