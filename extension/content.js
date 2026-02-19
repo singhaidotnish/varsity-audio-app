@@ -5,10 +5,10 @@
 // ==========================================
 
 // OPTION 1: Development (Use this now while testing on your laptop)
-const API_BASE_URL = "http://localhost:5010";
+// const API_BASE_URL = "http://localhost:5010";
 
 // OPTION 2: Production (Uncomment this later when you deploy to Render)
-// const API_BASE_URL = "https://your-app-name.onrender.com";
+const API_BASE_URL = "https://varsity-audio-app.onrender.com";
 
 // ==========================================
 
