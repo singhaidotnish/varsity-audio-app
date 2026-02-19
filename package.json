@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "@google-cloud/text-to-speech": "^6.4.0",
-    "cloudinary": "^2.9.0",
-    "puppeteer": "^24.37.3"
+    "cloudinary": "^2.9.0"
   }
 }
