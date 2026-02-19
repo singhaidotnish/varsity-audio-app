@@ -5,6 +5,7 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
+app.use('/public', express.static(path.join(__dirname, 'public')));
 const PORT = process.env.PORT || 5010;
 const PUBLIC_DIR = path.join(__dirname, 'public');
 const CHAPTERS_PATH = path.join(__dirname, 'db', 'chapters.json');
